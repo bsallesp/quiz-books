@@ -1,0 +1,62 @@
+<div class="container mx-auto p-4 max-w-2xl" *ngIf="state$ | async as state">
+  <div class="mb-4 flex justify-between items-center">
+    <span class="text-gray-600 font-medium">Question {{ state.currentQuestionIndex + 1 }} of {{ state.questions.length }}</span>
+    <span class="text-sm bg-blue-100 text-blue-800 py-1 px-2 rounded">Chapter {{ currentQuestion(state).chapter }}</span>
+  </div>
+
+  <div class="w-full bg-gray-200 rounded-full h-2.5 mb-6">
+    <div class="bg-blue-600 h-2.5 rounded-full transition-all duration-300" 
+         [style.width.%]="((state.currentQuestionIndex + 1) / state.questions.length) * 100"></div>
+  </div>
+
+  <div class="bg-white p-6 rounded-lg shadow-lg mb-6">
+    <h2 class="text-xl font-semibold mb-4">{{ currentQuestion(state).text }}</h2>
+
+    <div class="space-y-3">
+      <div *ngFor="let option of currentQuestion(state).options"
+           (click)="selectAnswer(state, currentQuestion(state).id, option.key)"
+           [class.bg-blue-100]="!shouldShowFeedback(state, currentQuestion(state).id) && isSelected(state, currentQuestion(state).id, option.key)"
+           [class.border-blue-500]="!shouldShowFeedback(state, currentQuestion(state).id) && isSelected(state, currentQuestion(state).id, option.key)"
+           
+           [class.bg-green-100]="shouldShowFeedback(state, currentQuestion(state).id) && isCorrect(state, currentQuestion(state).id, option.key)"
+           [class.border-green-500]="shouldShowFeedback(state, currentQuestion(state).id) && isCorrect(state, currentQuestion(state).id, option.key)"
+           
+           [class.bg-red-100]="shouldShowFeedback(state, currentQuestion(state).id) && isSelected(state, currentQuestion(state).id, option.key) && !isCorrect(state, currentQuestion(state).id, option.key)"
+           [class.border-red-500]="shouldShowFeedback(state, currentQuestion(state).id) && isSelected(state, currentQuestion(state).id, option.key) && !isCorrect(state, currentQuestion(state).id, option.key)"
+           
+           [class.cursor-pointer]="!shouldShowFeedback(state, currentQuestion(state).id) || !state.userAnswers[currentQuestion(state).id]"
+           [class.cursor-default]="shouldShowFeedback(state, currentQuestion(state).id) && state.userAnswers[currentQuestion(state).id]"
+
+           class="p-4 border-2 rounded-lg hover:bg-gray-50 transition-colors border-gray-200">
+        <span class="font-bold mr-2">{{ option.key }}.</span>
+        <span>{{ option.text }}</span>
+      </div>
+    </div>
+
+    <!-- Explanation Box -->
+    <div *ngIf="shouldShowFeedback(state, currentQuestion(state).id)" class="mt-6 bg-blue-50 p-4 rounded text-sm text-gray-700 border-l-4 border-blue-500">
+        <span class="font-bold text-blue-800 block mb-1">Explanation:</span>
+        {{ currentQuestion(state).explanation }}
+    </div>
+  </div>
+
+  <div class="flex justify-between mt-6">
+    <button (click)="prev()" 
+            [disabled]="state.currentQuestionIndex === 0"
+            class="bg-gray-500 text-white py-2 px-6 rounded hover:bg-gray-600 disabled:opacity-50 disabled:cursor-not-allowed">
+      Previous
+    </button>
+
+    <button *ngIf="state.currentQuestionIndex < state.questions.length - 1"
+            (click)="next()" 
+            class="bg-blue-600 text-white py-2 px-6 rounded hover:bg-blue-700">
+      Next
+    </button>
+    
+    <button *ngIf="state.currentQuestionIndex === state.questions.length - 1"
+            (click)="finish()" 
+            class="bg-green-600 text-white py-2 px-6 rounded hover:bg-green-700">
+      Finish Quiz
+    </button>
+  </div>
+</div>

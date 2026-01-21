@@ -1,0 +1,20 @@
+<div class="min-h-screen bg-gray-100 flex flex-col">
+  <header class="bg-blue-800 text-white shadow-md">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <a routerLink="/" class="text-xl font-bold flex items-center gap-2 hover:text-blue-200 transition-colors">
+        <span>CompTIA A+ Quiz</span>
+      </a>
+      <span class="text-sm opacity-75">Exam 220-1101 & 1102</span>
+    </div>
+  </header>
+
+  <main class="flex-grow py-8">
+    <router-outlet></router-outlet>
+  </main>
+
+  <footer class="bg-gray-800 text-white py-4 text-center text-sm">
+    <div class="container mx-auto px-4">
+      <p>Study Guide Material based on CompTIA A+ Certification Study Guide.</p>
+    </div>
+  </footer>
+</div>
