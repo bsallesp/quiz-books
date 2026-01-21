@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Observable, of } from 'rxjs';
 
 export interface User {
   phoneNumber: string;
@@ -27,11 +27,23 @@ export class AuthService {
     }
   }
 
-  login(phoneNumber: string): void {
-    const user: User = { phoneNumber };
-    this.userSubject.next(user);
-    this.loggedIn$.next(true);
-    localStorage.setItem('user_session', JSON.stringify(user));
+  requestCode(phoneNumber: string): Observable<boolean> {
+    // TODO: Integrate with Azure Functions to send SMS
+    console.log(`Sending verification code to ${phoneNumber}`);
+    return of(true); // Simulate success
+  }
+
+  verifyCode(phoneNumber: string, code: string): Observable<boolean> {
+    // TODO: Integrate with Azure Functions to verify code
+    // For now, accept any 6-digit code
+    if (code.length === 6) {
+        const user: User = { phoneNumber };
+        this.userSubject.next(user);
+        this.loggedIn$.next(true);
+        localStorage.setItem('user_session', JSON.stringify(user));
+        return of(true);
+    }
+    return of(false);
   }
 
   signOut(): void {

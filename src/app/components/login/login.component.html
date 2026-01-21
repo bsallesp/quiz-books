@@ -1,10 +1,23 @@
 <div class="min-h-screen flex items-center justify-center bg-gray-100">
   <div class="bg-white p-8 rounded-lg shadow-lg text-center max-w-md w-full">
-    <h1 class="text-3xl font-bold text-blue-600 mb-6">CompTIA A+ Quiz Prep</h1>
-    <p class="text-gray-600 mb-8">Please sign in with your Google account to access the practice quizzes.</p>
+    <h1 class="text-3xl font-bold text-blue-600 mb-6" i18n="@@appTitle">CompTIA A+ Quiz Prep</h1>
     
-    <div class="flex justify-center">
-      <asl-google-signin-button type="standard" size="large" text="signin_with" shape="rectangular" theme="filled_blue"></asl-google-signin-button>
+    <div *ngIf="step === 'PHONE'">
+      <p class="text-gray-600 mb-8" i18n="@@enterPhonePrompt">Please enter your phone number to sign in.</p>
+      <input type="tel" [(ngModel)]="phoneNumber" placeholder="Phone Number" class="w-full p-2 border rounded mb-4" />
+      <button (click)="onRequestCode()" class="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700" i18n="@@sendCodeBtn">
+        Send Code
+      </button>
     </div>
+
+    <div *ngIf="step === 'CODE'">
+      <p class="text-gray-600 mb-8" i18n="@@enterCodePrompt">Enter the verification code sent to your phone.</p>
+      <input type="text" [(ngModel)]="verificationCode" placeholder="Verification Code" class="w-full p-2 border rounded mb-4" />
+      <button (click)="onVerifyCode()" class="w-full bg-green-600 text-white p-2 rounded hover:bg-green-700" i18n="@@verifyBtn">
+        Verify & Sign In
+      </button>
+      <button (click)="step = 'PHONE'" class="mt-4 text-blue-600 underline" i18n="@@backBtn">Back</button>
+    </div>
+
   </div>
 </div>
