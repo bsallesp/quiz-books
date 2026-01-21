@@ -3,6 +3,7 @@ import { LoginComponent } from './login.component';
 import { AuthService } from '../../services/auth.service';
 import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { of } from 'rxjs';
 
 describe('LoginComponent', () => {
   let component: LoginComponent;
@@ -12,7 +13,9 @@ describe('LoginComponent', () => {
 
   beforeEach(async () => {
     authServiceMock = {
-      login: jasmine.createSpy('login')
+      login: jasmine.createSpy('login'),
+      requestCode: jasmine.createSpy('requestCode'),
+      verifyCode: jasmine.createSpy('verifyCode')
     };
     routerMock = {
       navigate: jasmine.createSpy('navigate')
@@ -36,19 +39,33 @@ describe('LoginComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should call authService.login and navigate on valid phone number', () => {
+  it('should call authService.requestCode on valid phone number', () => {
     component.phoneNumber = '1234567890';
-    component.onLogin();
+    authServiceMock.requestCode.and.returnValue(of(true));
     
-    expect(authServiceMock.login).toHaveBeenCalledWith('1234567890');
+    component.onRequestCode();
+    
+    expect(authServiceMock.requestCode).toHaveBeenCalledWith('1234567890');
+    expect(component.step).toBe('CODE');
+  });
+
+  it('should call authService.verifyCode and navigate on valid code', () => {
+    component.phoneNumber = '1234567890';
+    component.verificationCode = '123456';
+    component.step = 'CODE';
+    authServiceMock.verifyCode.and.returnValue(of(true));
+    
+    component.onVerifyCode();
+    
+    expect(authServiceMock.verifyCode).toHaveBeenCalledWith('1234567890', '123456');
     expect(routerMock.navigate).toHaveBeenCalledWith(['/']);
   });
 
   it('should not call login if phone number is empty', () => {
     component.phoneNumber = '';
-    component.onLogin();
+    component.onRequestCode();
     
-    expect(authServiceMock.login).not.toHaveBeenCalled();
+    expect(authServiceMock.requestCode).not.toHaveBeenCalled();
     expect(routerMock.navigate).not.toHaveBeenCalled();
   });
 });
