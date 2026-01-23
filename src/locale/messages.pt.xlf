@@ -1,7 +1,51 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+  <file source-language="en-US" target-language="pt" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="appTitle" datatype="html">
+        <source>Quiz Books</source>
+        <target>Quiz Books</target>
+      </trans-unit>
+      <trans-unit id="enterPhonePrompt" datatype="html">
+        <source> Phone Number </source>
+        <target> Número de Telefone </target>
+      </trans-unit>
+      <trans-unit id="sendCodeBtn" datatype="html">
+        <source> Send Code </source>
+        <target> Enviar Código </target>
+      </trans-unit>
+      <trans-unit id="codeSentMsg" datatype="html">
+        <source>Code sent to <x id="INTERPOLATION" equiv-text="{{ phoneNumber }}"/></source>
+        <target>Código enviado para <x id="INTERPOLATION" equiv-text="{{ phoneNumber }}"/></target>
+      </trans-unit>
+      <trans-unit id="verificationCodeLabel" datatype="html">
+        <source> Verification Code </source>
+        <target> Código de Verificação </target>
+      </trans-unit>
+      <trans-unit id="verifyBtn" datatype="html">
+        <source> Verify &amp; Login </source>
+        <target> Verificar &amp; Entrar </target>
+      </trans-unit>
+      <trans-unit id="changePhoneBtn" datatype="html">
+        <source> Change Phone Number </source>
+        <target> Alterar Número de Telefone </target>
+      </trans-unit>
+      <trans-unit id="myStatsTitle" datatype="html">
+        <source>My Statistics</source>
+        <target>Minhas Estatísticas</target>
+      </trans-unit>
+      <trans-unit id="attemptsLabel" datatype="html">
+        <source>Attempts: <x id="INTERPOLATION" equiv-text="{{ item.totalAttempts }}"/></source>
+        <target>Tentativas: <x id="INTERPOLATION" equiv-text="{{ item.totalAttempts }}"/></target>
+      </trans-unit>
+      <trans-unit id="noStatsMsg" datatype="html">
+        <source>No quiz results yet. Take some quizzes to see your progress!</source>
+        <target>Nenhum resultado de quiz ainda. Responda alguns quizzes para ver seu progresso!</target>
+      </trans-unit>
+      <trans-unit id="loadingStatsMsg" datatype="html">
+        <source>Loading statistics...</source>
+        <target>Carregando estatísticas...</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

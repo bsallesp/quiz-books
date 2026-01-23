@@ -53,9 +53,15 @@
                 "glob": "**/*",
                 "input": "public"
               },
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "./node_modules/intl-tel-input/build/img",
+                "output": "assets"
+              }
             ],
             "styles": [
+              "intl-tel-input/build/css/intlTelInput.css",
               "src/styles.scss"
             ],
             "scripts": []

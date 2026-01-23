@@ -2,6 +2,83 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="appTitle" datatype="html">
+        <source>Quiz Books</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.ts</context>
+          <context context-type="linenumber">16,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="enterPhonePrompt" datatype="html">
+        <source> Phone Number </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.ts</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sendCodeBtn" datatype="html">
+        <source> Send Code </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.ts</context>
+          <context context-type="linenumber">47,48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="codeSentMsg" datatype="html">
+        <source>Code sent to <x id="INTERPOLATION" equiv-text="{{ phoneNumber }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.ts</context>
+          <context context-type="linenumber">53,54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="verificationCodeLabel" datatype="html">
+        <source> Verification Code </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.ts</context>
+          <context context-type="linenumber">55,57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="verifyBtn" datatype="html">
+        <source> Verify &amp; Login </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.ts</context>
+          <context context-type="linenumber">70,71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="changePhoneBtn" datatype="html">
+        <source> Change Phone Number </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.ts</context>
+          <context context-type="linenumber">78,79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="myStatsTitle" datatype="html">
+        <source>My Statistics</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/stats/stats.component.ts</context>
+          <context context-type="linenumber">12,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="attemptsLabel" datatype="html">
+        <source>Attempts: <x id="INTERPOLATION" equiv-text="{{ item.totalAttempts }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/stats/stats.component.ts</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="noStatsMsg" datatype="html">
+        <source>No quiz results yet. Take some quizzes to see your progress!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/stats/stats.component.ts</context>
+          <context context-type="linenumber">30,31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="loadingStatsMsg" datatype="html">
+        <source>Loading statistics...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/stats/stats.component.ts</context>
+          <context context-type="linenumber">34,36</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>

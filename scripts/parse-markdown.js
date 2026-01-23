@@ -1,136 +1,183 @@
 const fs = require('fs');
 const path = require('path');
-const readline = require('readline');
 
-const inputFile = path.join(__dirname, '../../CompTIA A+ Certification Study Guide, Eleventh Edition (Exams 220-1101 & 220-1102).md');
-const outputFile = path.join(__dirname, '../src/assets/questions.json');
+const inputFilePath = path.join(__dirname, '../../CompTIA A+ Certification Study Guide, Eleventh Edition (Exams 220-1101 & 220-1102).md');
+const outputFilePath = path.join(__dirname, '../src/assets/questions.json');
 
-// Ensure assets directory exists
-const assetsDir = path.dirname(outputFile);
-if (!fs.existsSync(assetsDir)) {
-  fs.mkdirSync(assetsDir, { recursive: true });
-}
+console.log(`Reading file from: ${inputFilePath}`);
 
-const questions = new Map(); // Key: "chapter-number" -> Question Object
+try {
+    const content = fs.readFileSync(inputFilePath, 'utf-8');
+    const lines = content.split(/\r?\n/);
 
-let currentChapter = '';
-let currentSection = 'NONE'; // 'QUESTIONS' or 'ANSWERS'
-let currentQuestion = null;
-let currentOptionKey = null;
+    const questions = [];
+    let currentChapter = 'Unknown Chapter';
+    let currentQuestion = null;
+    let mode = 'SCANNING'; // SCANNING, QUESTIONS, ANSWERS
+            let answerMap = new Map(); // Map<questionNumber, {correctAnswer, explanation}>
+            let currentAnswer = null;
+            
+            // Temporary storage for the current chapter's questions before we merge answers
+    let chapterQuestions = [];
 
-const rl = readline.createInterface({
-  input: fs.createReadStream(inputFile),
-  crlfDelay: Infinity
-});
-
-// Regex Patterns
-const questionStartRegex = /^\*\*\[(\d+)\]\((.*?)\)\.\*\*\s+(.*)$/;
-const optionStartRegex = /^([A-E])\.\s+(.*)$/;
-const answerStartRegex = /^\*\*\[(\d+)\]\((.*?)\)\.\*\*\s+\*\*([A-E])\.\*\*\s+(.*)$/;
-const chapterRegex = /^##\s+Chapter\s+(\d+)/i;
-const sectionQARegex = /^\*\*Q &A\*\*\s+Self Test/i;
-// The text has "**Q &A** Self Test", let's be flexible
-const sectionQARegexFlexible = /^\*\*Q\s?&A\*\*\s+Self Test/i;
-const sectionAnswersRegex = /Self Test Answers/i;
-
-function getUniqueId(link) {
-    // link format: ch1.xhtml#ch1ques17 or ch1.xhtml#r_ch1ques17
-    // Extract ch1ques17
-    const match = link.match(/([a-z0-9]+ques\d+)/);
-    if (match) return match[1].replace('r_', '');
-    return link;
-}
-
-rl.on('line', (line) => {
-  line = line.trim();
-  if (!line) return;
-
-  // Detect Chapter
-  const chapterMatch = line.match(chapterRegex);
-  if (chapterMatch) {
-    currentChapter = chapterMatch[1];
-    return;
-  }
-
-  // Detect Section Change
-  if (sectionQARegexFlexible.test(line)) {
-    currentSection = 'QUESTIONS';
-    currentQuestion = null;
-    currentOptionKey = null;
-    return;
-  }
-  
-  if (sectionAnswersRegex.test(line) && !line.includes('(')) { // Avoid matching links like [Self Test Answers](...)
-    currentSection = 'ANSWERS';
-    return;
-  }
-
-  if (currentSection === 'QUESTIONS') {
-    // Try to match start of a question
-    const qMatch = line.match(questionStartRegex);
-    if (qMatch) {
-      const [_, num, link, text] = qMatch;
-      const id = getUniqueId(link);
-      
-      currentQuestion = {
-        id: id,
-        number: num,
-        chapter: currentChapter || 'Unknown',
-        text: text,
-        options: [],
-        correctAnswer: '',
-        explanation: ''
-      };
-      questions.set(id, currentQuestion);
-      currentOptionKey = null;
-      return;
-    }
-
-    if (currentQuestion) {
-      // Try to match start of an option
-      const optMatch = line.match(optionStartRegex);
-      if (optMatch) {
-        const [_, key, text] = optMatch;
-        currentQuestion.options.push({ key, text });
-        currentOptionKey = key;
-      } else if (currentOptionKey) {
-        // Append to current option (multiline option)
-        const opt = currentQuestion.options.find(o => o.key === currentOptionKey);
-        if (opt) opt.text += ' ' + line;
-      } else {
-        // Append to question text (multiline question)
-        currentQuestion.text += ' ' + line;
-      }
-    }
-  } 
-  else if (currentSection === 'ANSWERS') {
-    // Try to match start of an answer
-    const ansMatch = line.match(answerStartRegex);
-    if (ansMatch) {
-        const [_, num, link, correctKey, explanationStart] = ansMatch;
-        const id = getUniqueId(link);
-        const q = questions.get(id);
-        
-        if (q) {
-            q.correctAnswer = correctKey;
-            q.explanation = explanationStart;
-            currentQuestion = q; // Re-use currentQuestion to append explanation
-        } else {
-            currentQuestion = null; // Answer for unknown question
+    // Regex patterns
+    const chapterRegex = /^##\s+(Chapter\s+\d+|[0-9]+\s+.*)/i;
+    const questionStartRegex = /^\*\*\[(\d+)\]\(.*?\)\.\*\*\s+(.*)/;
+    const optionRegex = /^([A-D])\.\s+(.*)/;
+    const answerSectionRegex = /###\s+.*SELF TEST ANSWERS/i;
+    const answerStartRegex = /^\*\*\[(\d+)\]\(.*?\)\.\*\*\s+(.*)/;
+    const answerPrefixRegex = /^((?:\*\*.*?\*\*|\s|and|,)+)(.*)/;
+    
+    // Helper to save current question
+    const saveCurrentQuestion = () => {
+        if (currentQuestion) {
+            chapterQuestions.push(currentQuestion);
+            currentQuestion = null;
         }
-        return;
+    };
+
+    // Helper to process chapter change
+    const finishChapter = () => {
+        saveCurrentQuestion();
+        
+        // Merge answers into questions
+        chapterQuestions.forEach(q => {
+            const ans = answerMap.get(q.localId);
+            if (ans) {
+                q.correctAnswer = ans.correctAnswer;
+                q.explanation = ans.explanation;
+            } else {
+                console.warn(`Warning: No answer found for Chapter "${q.chapter}" Question ${q.localId}`);
+            }
+            questions.push(q);
+        });
+
+        // Reset for next chapter
+        chapterQuestions = [];
+        answerMap.clear();
+        mode = 'SCANNING';
+    };
+
+    for (let i = 0; i < lines.length; i++) {
+        const line = lines[i].trim();
+        if (!line) continue;
+
+        // Check for Chapter Header
+        const chapterMatch = line.match(chapterRegex);
+        if (chapterMatch) {
+            finishChapter(); // Finish previous chapter
+            currentChapter = chapterMatch[1].trim();
+            console.log(`Processing ${currentChapter}...`);
+            continue;
+        }
+
+        // Check for Answer Section
+        if (answerSectionRegex.test(line)) {
+            saveCurrentQuestion(); // Finish any pending question
+            mode = 'ANSWERS';
+            continue;
+        }
+
+        if (mode === 'ANSWERS') {
+            // Parsing Answers
+            const ansMatch = line.match(answerStartRegex);
+            if (ansMatch) {
+                const qNum = ansMatch[1];
+                const rest = ansMatch[2];
+                
+                let correct = '';
+                let explanation = rest;
+
+                // Try to split answer keys from explanation
+                const splitMatch = rest.match(answerPrefixRegex);
+                if (splitMatch) {
+                    const answerPart = splitMatch[1];
+                    const potentialExplanation = splitMatch[2];
+                    
+                    // Extract A-D from answerPart
+                    const keys = answerPart.match(/[A-D]/g);
+                    if (keys && keys.length > 0) {
+                        correct = keys.join(',');
+                        explanation = potentialExplanation;
+                    }
+                } 
+                
+                if (!correct) {
+                     // Fallback: try to extract first bolded letter
+                     const fallbackMatch = rest.match(/^\*\*([A-D])\.\*\*\s+(.*)/);
+                     if (fallbackMatch) {
+                         correct = fallbackMatch[1];
+                         explanation = fallbackMatch[2];
+                     }
+                }
+
+                answerMap.set(qNum, {
+                    correctAnswer: correct,
+                    explanation: explanation
+                });
+                
+                // Determine current answer object for appending text
+                currentAnswer = answerMap.get(qNum);
+            } else if (currentAnswer) {
+                // Append text to explanation if it's not a new answer or header
+                // Heuristic: if line starts with **[digit], it's a new answer (handled above)
+                // If line starts with #, it's a header
+                if (!line.match(/^\*\*\[\d+\]/) && !line.startsWith('#')) {
+                    currentAnswer.explanation += ' ' + line;
+                }
+            }
+        } else {
+            // Parsing Questions (Default or Explicit QUESTIONS mode)
+            // Note: Questions appear before the Answer section in each chapter
+            
+            const qMatch = line.match(questionStartRegex);
+            if (qMatch) {
+                saveCurrentQuestion();
+                const qNum = qMatch[1];
+                const text = qMatch[2];
+                
+                currentQuestion = {
+                    id: `${currentChapter.replace(/\s+/g, '-')}-q${qNum}`,
+                    localId: qNum,
+                    chapter: currentChapter,
+                    text: text,
+                    options: [],
+                    correctAnswer: '', // Will be filled later
+                    explanation: ''    // Will be filled later
+                };
+            } else if (currentQuestion) {
+                const optMatch = line.match(optionRegex);
+                if (optMatch) {
+                    currentQuestion.options.push({
+                        key: optMatch[1],
+                        text: optMatch[2]
+                    });
+                } else {
+                    // Append to question text or option text
+                    // If we have options, append to the last option
+                    if (currentQuestion.options.length > 0) {
+                        currentQuestion.options[currentQuestion.options.length - 1].text += ' ' + line;
+                    } else {
+                        // Append to question text
+                        // Check if it's a header or something else
+                        if (!line.startsWith('#')) {
+                            currentQuestion.text += ' ' + line;
+                        }
+                    }
+                }
+            }
+        }
     }
 
-    if (currentQuestion) {
-        // Append to explanation
-        currentQuestion.explanation += ' ' + line;
-    }
-  }
-});
+    // Finish last chapter
+    finishChapter();
 
-rl.on('close', () => {
-  const questionsArray = Array.from(questions.values()).filter(q => q.options.length > 0 && q.correctAnswer);
-  
-  fs.writeFileSync(outputFile, JSON.stringify(questionsArray, null, 2));
-  console.log(`Parsed ${questionsArray.length} questions.`);
-});
+    console.log(`Parsed ${questions.length} questions.`);
+    
+    // Write to file
+    fs.writeFileSync(outputFilePath, JSON.stringify(questions, null, 2));
+    console.log(`Successfully wrote to ${outputFilePath}`);
+
+} catch (err) {
+    console.error('Error parsing markdown:', err);
+}

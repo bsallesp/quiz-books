@@ -1,0 +1,29 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/src/functions/*.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "clean": "rimraf dist",
+    "prestart": "npm run clean && npm run build",
+    "start": "func start",
+    "test": "echo \"No tests yet...\""
+  },
+  "dependencies": {
+    "@angular/animations": "^20.3.16",
+    "@azure/communication-sms": "^1.2.0-beta.4",
+    "@azure/functions": "^4.0.0",
+    "applicationinsights": "^3.13.0",
+    "mssql": "^12.2.0",
+    "ngx-bootstrap": "^20.0.2",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "18.x",
+    "azure-functions-core-tools": "^4.x",
+    "rimraf": "^5.0.0",
+    "typescript": "^5.0.0"
+  }
+}
