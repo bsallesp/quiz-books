@@ -1,0 +1,9 @@
+[
+  {
+    "id": "comptia-a-plus",
+    "title": "CompTIA A+ Certification",
+    "description": "Exams 220-1101 & 220-1102. Comprehensive practice questions.",
+    "icon": "computer",
+    "dataUrl": "assets/data/comptia-a-plus.json"
+  }
+]

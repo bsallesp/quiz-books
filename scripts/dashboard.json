@@ -1,0 +1,90 @@
+{
+  "properties": {
+    "lenses": [
+      {
+        "order": 0,
+        "parts": [
+          {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "colSpan": 6,
+              "rowSpan": 4
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "resourceType",
+                  "value": "components"
+                },
+                {
+                  "name": "id",
+                  "value": "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.Insights/components/{appInsightsName}"
+                }
+              ],
+              "type": "Extension/AppInsightsExtension/PartType/ResponseTimeChartPart"
+            }
+          },
+          {
+            "position": {
+              "x": 6,
+              "y": 0,
+              "colSpan": 6,
+              "rowSpan": 4
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "resourceType",
+                  "value": "components"
+                },
+                {
+                  "name": "id",
+                  "value": "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.Insights/components/{appInsightsName}"
+                }
+              ],
+              "type": "Extension/AppInsightsExtension/PartType/FailedRequestsChartPart"
+            }
+          },
+          {
+            "position": {
+              "x": 0,
+              "y": 4,
+              "colSpan": 6,
+              "rowSpan": 4
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "resourceType",
+                  "value": "components"
+                },
+                {
+                  "name": "id",
+                  "value": "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.Insights/components/{appInsightsName}"
+                }
+              ],
+              "type": "Extension/AppInsightsExtension/PartType/RequestsChartPart"
+            }
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "model": {
+        "timeRange": {
+          "value": {
+            "relative": {
+              "duration": 24,
+              "timeUnit": 1
+            }
+          },
+          "type": "MsPortalFx.Composition.Configuration.ValueTypes.TimeRange"
+        }
+      }
+    }
+  },
+  "tags": {
+    "hidden-title": "Quiz Books Dashboard"
+  }
+}

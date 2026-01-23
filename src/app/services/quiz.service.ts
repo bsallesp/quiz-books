@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { BehaviorSubject, map, Observable } from 'rxjs';
+import { BehaviorSubject, map, Observable, of, catchError } from 'rxjs';
+import { MonitoringService } from './monitoring.service';
 
 export interface Question {
   id: string;
@@ -12,7 +13,16 @@ export interface Question {
   explanation: string;
 }
 
+export interface Course {
+  id: string;
+  title: string;
+  description: string;
+  icon: string;
+  dataUrl: string;
+}
+
 export interface QuizState {
+  courseId: string | null;
   questions: Question[];
   currentQuestionIndex: number;
   userAnswers: Record<string, string>; // questionId -> selectedOptionKey
@@ -23,6 +33,7 @@ export interface QuizState {
 }
 
 const INITIAL_STATE: QuizState = {
+  courseId: null,
   questions: [],
   currentQuestionIndex: 0,
   userAnswers: {},
@@ -38,39 +49,102 @@ const INITIAL_STATE: QuizState = {
 export class QuizService {
   private state$ = new BehaviorSubject<QuizState>(INITIAL_STATE);
   private allQuestions: Question[] = [];
+  private currentCourseSubject = new BehaviorSubject<Course | null>(null);
+  currentCourse$ = this.currentCourseSubject.asObservable();
 
-  constructor(private http: HttpClient) {
-    this.loadQuestions();
+  constructor(private http: HttpClient, private monitoringService: MonitoringService) {
+    // Initial load logic can be moved to explicit course selection
   }
 
-  private loadQuestions() {
-    this.http.get<Question[]>('assets/questions.json').subscribe(questions => {
+  getCourses(): Observable<Course[]> {
+    return this.http.get<Course[]>('assets/courses.json').pipe(
+      catchError(err => {
+        this.monitoringService.logException(err);
+        return of([]);
+      })
+    );
+  }
+
+  selectCourse(course: Course) {
+    this.currentCourseSubject.next(course);
+    this.loadQuestions(course.dataUrl);
+    
+    // Update state with new courseId
+    const currentState = this.state$.value;
+    this.state$.next({
+      ...currentState,
+      courseId: course.id,
+      questions: [],
+      currentQuestionIndex: 0,
+      userAnswers: {},
+      isFinished: false
+    });
+  }
+
+  clearCourse() {
+    this.currentCourseSubject.next(null);
+    this.allQuestions = [];
+    this.state$.next(INITIAL_STATE);
+  }
+
+  private loadQuestions(url: string) {
+    this.http.get<Question[]>(url).pipe(
+      catchError(err => {
+        this.monitoringService.logException(err);
+        return of([]);
+      })
+    ).subscribe(questions => {
       this.allQuestions = questions;
     });
   }
 
-  getAllQuestions(): Observable<Question[]> {
-    return this.http.get<Question[]>('assets/questions.json');
+  getChapters(): Observable<string[]> {
+    if (this.allQuestions.length > 0) {
+      return of([...new Set(this.allQuestions.map(q => q.chapter))].sort((a, b) => parseInt(a) - parseInt(b)));
+    }
+    // If questions aren't loaded yet but course is selected, we might need to wait or return empty
+    return this.currentCourse$.pipe(
+      map(course => {
+        if (!course) return [];
+        // Ideally we should wait for questions to load. 
+        // For simplicity, let's assume UI waits for loadQuestions to complete or binds to allQuestions via an observable if we exposed it.
+        // But since loadQuestions is void, let's just return what we have or empty.
+        return [...new Set(this.allQuestions.map(q => q.chapter))].sort((a, b) => parseInt(a) - parseInt(b));
+      })
+    );
   }
 
-  getChapters(): Observable<string[]> {
-    return this.getAllQuestions().pipe(
-      map(questions => [...new Set(questions.map(q => q.chapter))].sort((a, b) => parseInt(a) - parseInt(b)))
+  // Helper to ensure questions are loaded before starting quiz
+  ensureQuestionsLoaded(): Observable<Question[]> {
+    if (this.allQuestions.length > 0) return of(this.allQuestions);
+    const course = this.currentCourseSubject.value;
+    if (!course) return of([]);
+    return this.http.get<Question[]>(course.dataUrl).pipe(
+      map(questions => {
+        this.allQuestions = questions;
+        return questions;
+      }),
+      catchError(err => {
+        this.monitoringService.logException(err);
+        return of([]);
+      })
     );
   }
 
   startQuiz(chapter?: string, count: number = 20, showImmediateFeedback: boolean = false) {
-    if (this.allQuestions.length > 0) {
-      this.runQuiz(this.allQuestions, chapter, count, showImmediateFeedback);
-    } else {
-      this.getAllQuestions().subscribe({
+    this.ensureQuestionsLoaded().subscribe({
         next: (questions) => {
-          this.allQuestions = questions;
+          if (questions.length === 0) {
+            console.error('No questions loaded');
+            return;
+          }
           this.runQuiz(questions, chapter, count, showImmediateFeedback);
         },
-        error: (err) => console.error('Failed to start quiz', err)
+        error: (err) => {
+          console.error('Failed to start quiz', err);
+          this.monitoringService.logException(err);
+        }
       });
-    }
   }
 
   private runQuiz(questions: Question[], chapter: string | undefined, count: number, showImmediateFeedback: boolean) {
@@ -90,7 +164,8 @@ export class QuizService {
       isFinished: false,
       config: {
         showImmediateFeedback
-      }
+      },
+      courseId: this.currentCourseSubject.value?.id || null
     });
   }
 
