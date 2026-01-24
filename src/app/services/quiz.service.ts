@@ -51,6 +51,8 @@ export class QuizService {
   private allQuestions: Question[] = [];
   private currentCourseSubject = new BehaviorSubject<Course | null>(null);
   currentCourse$ = this.currentCourseSubject.asObservable();
+  private questionsSubject = new BehaviorSubject<Question[]>([]);
+  public questions$ = this.questionsSubject.asObservable();
 
   constructor(private http: HttpClient, private monitoringService: MonitoringService) {
     // Initial load logic can be moved to explicit course selection
@@ -67,6 +69,7 @@ export class QuizService {
 
   selectCourse(course: Course) {
     this.currentCourseSubject.next(course);
+    this.questionsSubject.next([]); // Clear previous questions while loading
     this.loadQuestions(course.dataUrl);
     
     // Update state with new courseId
@@ -84,6 +87,7 @@ export class QuizService {
   clearCourse() {
     this.currentCourseSubject.next(null);
     this.allQuestions = [];
+    this.questionsSubject.next([]);
     this.state$.next(INITIAL_STATE);
   }
 
@@ -95,21 +99,15 @@ export class QuizService {
       })
     ).subscribe(questions => {
       this.allQuestions = questions;
+      this.questionsSubject.next(questions);
     });
   }
 
   getChapters(): Observable<string[]> {
-    if (this.allQuestions.length > 0) {
-      return of([...new Set(this.allQuestions.map(q => q.chapter))].sort((a, b) => parseInt(a) - parseInt(b)));
-    }
-    // If questions aren't loaded yet but course is selected, we might need to wait or return empty
-    return this.currentCourse$.pipe(
-      map(course => {
-        if (!course) return [];
-        // Ideally we should wait for questions to load. 
-        // For simplicity, let's assume UI waits for loadQuestions to complete or binds to allQuestions via an observable if we exposed it.
-        // But since loadQuestions is void, let's just return what we have or empty.
-        return [...new Set(this.allQuestions.map(q => q.chapter))].sort((a, b) => parseInt(a) - parseInt(b));
+    return this.questionsSubject.pipe(
+      map(questions => {
+        if (questions.length === 0) return [];
+        return [...new Set(questions.map(q => q.chapter))].sort((a, b) => parseInt(a) - parseInt(b));
       })
     );
   }
