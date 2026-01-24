@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, of, catchError } from 'rxjs';
 import { AuthService } from './auth.service';
 import { switchMap } from 'rxjs/operators';
 
@@ -23,9 +23,14 @@ export class StatsService {
     return this.authService.user$.pipe(
       switchMap(user => {
         if (!user || !user.phoneNumber) {
-           throw new Error('User not logged in');
+           return of([]); // Return empty stats if not logged in
         }
-        return this.http.get<StatItem[]>(`${this.apiUrl}/GetStats?userId=${encodeURIComponent(user.phoneNumber)}`);
+        return this.http.get<StatItem[]>(`${this.apiUrl}/GetStats?userId=${encodeURIComponent(user.phoneNumber)}`).pipe(
+          catchError(error => {
+            console.error('Error loading stats:', error);
+            return of([]); // Return empty stats on error to prevent UI breakage
+          })
+        );
       })
     );
   }

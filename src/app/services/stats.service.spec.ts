@@ -51,18 +51,32 @@ describe('StatsService', () => {
     req.flush(mockStats);
   });
 
-  it('should throw error when getting stats if user not logged in', (done) => {
+  it('should return empty stats when getting stats if user not logged in', (done) => {
     userSubject.next(null);
 
     service.getStats().subscribe({
-      next: () => fail('Should have failed'),
-      error: (error) => {
-        expect(error.message).toBe('User not logged in');
+      next: (stats) => {
+        expect(stats).toEqual([]);
         done();
+      },
+      error: (error) => {
+        fail('Should not have failed');
       }
     });
 
     httpMock.expectNone('/api/GetStats');
+  });
+
+  it('should return empty stats on API error', () => {
+    const mockUser = { phoneNumber: '1234567890' };
+    userSubject.next(mockUser);
+
+    service.getStats().subscribe(stats => {
+      expect(stats).toEqual([]);
+    });
+
+    const req = httpMock.expectOne('/api/GetStats?userId=1234567890');
+    req.flush('Error', { status: 500, statusText: 'Server Error' });
   });
 
   it('should submit result when user is logged in', () => {
