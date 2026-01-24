@@ -94,15 +94,35 @@ export class QuizService {
   }
 
   private loadQuestions(url: string) {
+    console.log('Loading questions from:', url);
+    // Safety timeout to prevent infinite loading
+    const timeoutId = setTimeout(() => {
+      if (this.loadingQuestionsSubject.value) {
+        console.warn('Loading timed out for:', url);
+        this.loadingQuestionsSubject.next(false);
+      }
+    }, 10000);
+
     this.http.get<Question[]>(url).pipe(
       catchError(err => {
+        console.error('Error loading questions:', err);
         this.monitoringService.logException(err);
         return of([]);
       }),
-      finalize(() => this.loadingQuestionsSubject.next(false))
-    ).subscribe(questions => {
-      this.allQuestions = questions;
-      this.questionsSubject.next(questions);
+      finalize(() => {
+        console.log('Finished loading questions (finalize)');
+        clearTimeout(timeoutId);
+        this.loadingQuestionsSubject.next(false);
+      })
+    ).subscribe({
+      next: (questions) => {
+        console.log('Questions loaded:', questions?.length);
+        this.allQuestions = questions;
+        this.questionsSubject.next(questions);
+      },
+      error: (err) => {
+        console.error('Subscription error:', err);
+      }
     });
   }
 

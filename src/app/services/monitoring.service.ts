@@ -27,7 +27,11 @@ export class MonitoringService {
   }
 
   logException(exception: Error, severityLevel?: number) {
-    this.appInsights.trackException({ exception, severityLevel });
+    try {
+      this.appInsights.trackException({ exception, severityLevel });
+    } catch (e) {
+      console.error('Failed to log exception to AppInsights', e);
+    }
   }
 
   logTrace(message: string, properties?: { [key: string]: any }) {

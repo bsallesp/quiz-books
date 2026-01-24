@@ -29,10 +29,13 @@ export class HomeComponent {
   ) {
     this.loadingQuestions$ = this.quizService.loadingQuestions$;
     this.courses$ = this.quizService.getCourses().pipe(
-      tap(() => this.loading = false),
+      tap(courses => {
+        console.log('Courses loaded:', courses?.length);
+        this.loading = false;
+      }),
       catchError(err => {
         console.error('Error loading courses', err);
-        this.error = 'Failed to load courses.';
+        this.error = 'Failed to load courses. Please try again.';
         this.loading = false;
         return of([]);
       })
