@@ -32,7 +32,8 @@ describe('HomeComponent', () => {
       }),
       getChapters: jasmine.createSpy('getChapters').and.returnValue(of(['Chapter 1', 'Chapter 2']).pipe(delay(1))),
       startQuiz: jasmine.createSpy('startQuiz'),
-      currentCourse$: currentCourseSubject.asObservable()
+      currentCourse$: currentCourseSubject.asObservable(),
+      loadingQuestions$: of(false)
     };
 
     mockAuthService = {

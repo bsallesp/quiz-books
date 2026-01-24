@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { BehaviorSubject, map, Observable, of, catchError } from 'rxjs';
+import { BehaviorSubject, map, Observable, of, catchError, finalize } from 'rxjs';
 import { MonitoringService } from './monitoring.service';
 
 export interface Question {
@@ -53,6 +53,8 @@ export class QuizService {
   currentCourse$ = this.currentCourseSubject.asObservable();
   private questionsSubject = new BehaviorSubject<Question[]>([]);
   public questions$ = this.questionsSubject.asObservable();
+  private loadingQuestionsSubject = new BehaviorSubject<boolean>(false);
+  public loadingQuestions$ = this.loadingQuestionsSubject.asObservable();
 
   constructor(private http: HttpClient, private monitoringService: MonitoringService) {
     // Initial load logic can be moved to explicit course selection
@@ -96,7 +98,8 @@ export class QuizService {
       catchError(err => {
         this.monitoringService.logException(err);
         return of([]);
-      })
+      }),
+      finalize(() => this.loadingQuestionsSubject.next(false))
     ).subscribe(questions => {
       this.allQuestions = questions;
       this.questionsSubject.next(questions);

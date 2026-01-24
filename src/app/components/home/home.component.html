@@ -79,8 +79,13 @@
               </button>
             </div>
             
-            <div *ngIf="chapters.length === 0" class="col-span-full text-center p-4 bg-yellow-50 rounded">
-              <p class="text-yellow-700">Loading chapters... (or none found)</p>
+            <div *ngIf="loadingQuestions$ | async" class="col-span-full text-center p-4">
+              <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mx-auto mb-2"></div>
+              <p class="text-gray-600">Loading chapters...</p>
+            </div>
+            
+            <div *ngIf="!(loadingQuestions$ | async) && chapters.length === 0" class="col-span-full text-center p-4 bg-yellow-50 rounded">
+              <p class="text-yellow-700">No chapters found for this course.</p>
             </div>
           </ng-container>
         </div>

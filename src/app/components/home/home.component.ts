@@ -17,6 +17,7 @@ export class HomeComponent {
   courses$: Observable<Course[]>;
   selectedCourse$: Observable<Course | null>;
   chapters$: Observable<string[]>;
+  loadingQuestions$: Observable<boolean>;
   loading = true;
   error: string | null = null;
   showImmediateFeedback = false;
@@ -26,6 +27,7 @@ export class HomeComponent {
     private router: Router,
     public authService: AuthService
   ) {
+    this.loadingQuestions$ = this.quizService.loadingQuestions$;
     this.courses$ = this.quizService.getCourses().pipe(
       tap(() => this.loading = false),
       catchError(err => {
