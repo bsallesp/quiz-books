@@ -6,12 +6,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxIntlTelInputModule } from 'ngx-intl-tel-input';
 import { of } from 'rxjs';
+import { MonitoringService } from '../../services/monitoring.service';
 
 describe('LoginComponent', () => {
   let component: LoginComponent;
   let fixture: ComponentFixture<LoginComponent>;
   let authServiceMock: any;
   let routerMock: any;
+  let monitoringServiceMock: any;
 
   beforeEach(async () => {
     authServiceMock = {
@@ -20,6 +22,10 @@ describe('LoginComponent', () => {
     };
     routerMock = {
       navigate: jasmine.createSpy('navigate')
+    };
+    monitoringServiceMock = {
+      logException: jasmine.createSpy('logException'),
+      logEvent: jasmine.createSpy('logEvent')
     };
 
     await TestBed.configureTestingModule({
@@ -32,7 +38,8 @@ describe('LoginComponent', () => {
       ],
       providers: [
         { provide: AuthService, useValue: authServiceMock },
-        { provide: Router, useValue: routerMock }
+        { provide: Router, useValue: routerMock },
+        { provide: MonitoringService, useValue: monitoringServiceMock }
       ]
     })
     .compileComponents();

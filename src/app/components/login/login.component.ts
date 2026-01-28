@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 import { AuthService } from '../../services/auth.service';
 import { NgxIntlTelInputModule } from 'ngx-intl-tel-input';
 import { SearchCountryField, CountryISO, PhoneNumberFormat } from 'ngx-intl-tel-input';
+import { MonitoringService } from '../../services/monitoring.service';
 
 @Component({
   selector: 'app-login',
@@ -104,31 +105,29 @@ export class LoginComponent {
   step: 'PHONE' | 'CODE' = 'PHONE';
   loading: boolean = false;
 
-  constructor(private authService: AuthService, private router: Router) {}
+  constructor(private authService: AuthService, private router: Router, private monitoringService: MonitoringService) {}
 
   onRequestCode() {
     if (this.loginForm.valid) {
       const phoneValue = this.loginForm.get('phone')?.value;
-      console.log('Phone Value:', phoneValue); // Debugging
+      // Removed debug log to keep console clean, using MonitoringService if needed for tracing
       
       // ngx-intl-tel-input returns object with e164Number
       if (phoneValue && (phoneValue as any).e164Number) {
         this.phoneNumber = (phoneValue as any).e164Number;
-        console.log('Requesting code for:', this.phoneNumber); // Debugging
         
         this.loading = true;
         this.authService.requestCode(this.phoneNumber).subscribe(success => {
           this.loading = false;
-          console.log('Request success:', success); // Debugging
           if (success) {
             this.step = 'CODE';
           }
         });
       } else {
-          console.error('Invalid phone value structure:', phoneValue);
+          this.monitoringService.logException(new Error('Invalid phone value structure: ' + JSON.stringify(phoneValue)));
       }
     } else {
-        console.log('Form invalid:', this.loginForm.errors);
+        // Form invalid, no action or simple user feedback (already handled by UI validation styles)
     }
   }
 

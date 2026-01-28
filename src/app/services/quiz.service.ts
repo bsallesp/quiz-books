@@ -90,7 +90,7 @@ export class QuizService {
         this.state$.next(state);
       }
     } catch (e) {
-      console.error('Failed to load state from storage', e);
+      this.monitoringService.logException(e as Error);
     }
   }
 

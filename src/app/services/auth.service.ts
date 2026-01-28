@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable, of, throwError } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { catchError, map, tap, delay } from 'rxjs/operators';
+import { MonitoringService } from './monitoring.service';
 
 export interface User {
   phoneNumber: string;
@@ -16,7 +17,7 @@ export class AuthService {
   loggedIn$ = new BehaviorSubject<boolean>(false);
   private apiUrl = '/api'; // Relative URL for SWA
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient, private monitoringService: MonitoringService) {
     // Restore session from local storage
     const savedUser = localStorage.getItem('user_session');
     if (savedUser) {
@@ -25,6 +26,7 @@ export class AuthService {
             this.userSubject.next(user);
             this.loggedIn$.next(true);
         } catch (e) {
+            this.monitoringService.logException(e as Error);
             localStorage.removeItem('user_session');
         }
     }
@@ -34,7 +36,7 @@ export class AuthService {
     return this.http.post<{message: string}>(`${this.apiUrl}/SendCode`, { phoneNumber }).pipe(
       map(() => true),
       catchError(error => {
-        console.error('Error sending code', error);
+        this.monitoringService.logException(error);
         // Fallback for local development without backend
         console.warn('Backend not reachable, mocking success for development.');
         return of(true).pipe(delay(1000));
@@ -52,7 +54,7 @@ export class AuthService {
         return false;
       }),
       catchError(error => {
-        console.error('Error verifying code', error);
+        this.monitoringService.logException(error);
         // Fallback for local development without backend
         if (code === '123456') { // Mock validation logic
              this.handleLoginSuccess(phoneNumber);

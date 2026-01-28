@@ -1,16 +1,26 @@
 import { TestBed } from '@angular/core/testing';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { AuthService, User } from './auth.service';
+import { MonitoringService } from './monitoring.service';
 
 describe('AuthService', () => {
   let service: AuthService;
   let httpMock: HttpTestingController;
+  let monitoringServiceMock: any;
 
   beforeEach(() => {
+    monitoringServiceMock = {
+      logException: jasmine.createSpy('logException'),
+      logEvent: jasmine.createSpy('logEvent')
+    };
+
     localStorage.clear();
     TestBed.configureTestingModule({
       imports: [HttpClientTestingModule],
-      providers: [AuthService]
+      providers: [
+        AuthService,
+        { provide: MonitoringService, useValue: monitoringServiceMock }
+      ]
     });
     service = TestBed.inject(AuthService);
     httpMock = TestBed.inject(HttpTestingController);
