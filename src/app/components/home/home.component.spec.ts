@@ -3,7 +3,7 @@ import { fakeAsync, tick } from '@angular/core/testing';
 import { HomeComponent } from './home.component';
 import { QuizService } from '../../services/quiz.service';
 import { AuthService } from '../../services/auth.service';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { of, BehaviorSubject } from 'rxjs';
 import { delay } from 'rxjs/operators';
 import { CommonModule } from '@angular/common';
@@ -15,6 +15,7 @@ describe('HomeComponent', () => {
   let mockQuizService: any;
   let mockAuthService: any;
   let mockRouter: any;
+  let mockActivatedRoute: any;
   let currentCourseSubject: BehaviorSubject<any>;
 
   beforeEach(async () => {
@@ -32,7 +33,8 @@ describe('HomeComponent', () => {
       }),
       getChapters: jasmine.createSpy('getChapters').and.returnValue(of(['Chapter 1', 'Chapter 2']).pipe(delay(1))),
       startQuiz: jasmine.createSpy('startQuiz'),
-      currentCourse$: currentCourseSubject.asObservable()
+      currentCourse$: currentCourseSubject.asObservable(),
+      getCurrentCourseId: jasmine.createSpy('getCurrentCourseId').and.returnValue('comptia-a-plus')
     };
 
     mockAuthService = {
@@ -43,13 +45,19 @@ describe('HomeComponent', () => {
     mockRouter = {
       navigate: jasmine.createSpy('navigate')
     };
+    mockActivatedRoute = {
+      paramMap: of({
+        get: (_: string) => null
+      })
+    };
 
     await TestBed.configureTestingModule({
       imports: [HomeComponent, CommonModule, FormsModule],
       providers: [
         { provide: QuizService, useValue: mockQuizService },
         { provide: AuthService, useValue: mockAuthService },
-        { provide: Router, useValue: mockRouter }
+        { provide: Router, useValue: mockRouter },
+        { provide: ActivatedRoute, useValue: mockActivatedRoute }
       ]
     }).compileComponents();
 
@@ -66,12 +74,11 @@ describe('HomeComponent', () => {
     expect(mockQuizService.getCourses).toHaveBeenCalled();
   });
 
-  it('should select course and load chapters', () => {
+  it('should navigate to course route when selecting a course', () => {
     const course = { id: 'comptia-a-plus', title: 'CompTIA A+', icon: 'cpu', description: 'Desc', dataUrl: 'url' };
     component.selectCourse(course);
     fixture.detectChanges();
-    
-    expect(mockQuizService.selectCourse).toHaveBeenCalledWith(course);
+    expect(mockRouter.navigate).toHaveBeenCalledWith(['/course', 'comptia-a-plus']);
   });
 
   it('should start quiz', () => {
@@ -81,6 +88,6 @@ describe('HomeComponent', () => {
 
     component.startQuiz('Chapter 1');
     expect(mockQuizService.startQuiz).toHaveBeenCalledWith('Chapter 1', 20, false);
-    expect(mockRouter.navigate).toHaveBeenCalledWith(['/quiz']);
+    expect(mockRouter.navigate).toHaveBeenCalledWith(['/quiz', 'comptia-a-plus']);
   });
 });

@@ -47,7 +47,8 @@ describe('QuizComponent', () => {
       answerQuestion: jasmine.createSpy('answerQuestion'),
       nextQuestion: jasmine.createSpy('nextQuestion'),
       prevQuestion: jasmine.createSpy('prevQuestion'),
-      finishQuiz: jasmine.createSpy('finishQuiz')
+      finishQuiz: jasmine.createSpy('finishQuiz'),
+      getCurrentCourseId: jasmine.createSpy('getCurrentCourseId').and.returnValue('test-course')
     };
     mockRouter = {
       navigate: jasmine.createSpy('navigate')
@@ -95,6 +96,6 @@ describe('QuizComponent', () => {
   it('should call finishQuiz and navigate when finish is clicked', () => {
     component.finish();
     expect(mockQuizService.finishQuiz).toHaveBeenCalled();
-    expect(mockRouter.navigate).toHaveBeenCalledWith(['/result']);
+    expect(mockRouter.navigate).toHaveBeenCalledWith(['/quiz', 'test-course', 'result']);
   });
 });

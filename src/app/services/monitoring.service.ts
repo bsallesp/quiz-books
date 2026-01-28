@@ -12,6 +12,7 @@ export class MonitoringService {
     this.appInsights = new ApplicationInsights({
       config: {
         instrumentationKey: environment.appInsights.instrumentationKey,
+        connectionString: undefined,
         enableAutoRouteTracking: true // Básico: rastreamento de rotas automático
       }
     });

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { StatsService, StatItem } from '../../services/stats.service';
+import { MonitoringService } from '../../services/monitoring.service';
 import { Observable, catchError, of } from 'rxjs';
 
 @Component({
@@ -48,12 +49,13 @@ export class StatsComponent implements OnInit {
   stats$!: Observable<StatItem[]>;
   error: string | null = null;
 
-  constructor(private statsService: StatsService) {}
+  constructor(private statsService: StatsService, private monitoring: MonitoringService) {}
 
   ngOnInit() {
     this.stats$ = this.statsService.getStats().pipe(
       catchError(err => {
-        console.error('Error loading stats', err);
+        this.monitoring.logException(err);
+        this.monitoring.logTrace('stats_load_error', { message: 'Error loading stats' });
         this.error = 'Could not load statistics. Please check your connection.';
         return of([]);
       })

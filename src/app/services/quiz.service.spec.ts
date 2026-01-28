@@ -69,6 +69,8 @@ describe('QuizService', () => {
 
     const req = httpMock.expectOne('assets/courses.json');
     req.flush([mockCourse]);
+    const req2 = httpMock.expectOne('assets/test-course.json');
+    req2.flush(mockQuestions);
   });
 
   it('should select course and load questions', () => {

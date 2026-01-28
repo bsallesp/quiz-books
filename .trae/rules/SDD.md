@@ -31,3 +31,11 @@ O **Quiz Books** é uma aplicação web para prática de questões de certifica�
 ## Fluxos Principais
 Consulte [SDD-flows.md](SDD-flows.md) para detalhes dos fluxos de autenticação e realização de quiz.
 
+## Logging
+- Frontend: Application Insights Web SDK com rastreamento automático de rotas e eventos customizados (trace, metrics, exceptions).
+- Backend (API/Functions): Application Insights integrado via configuração padrão de Azure Functions com correlação de requisições.
+- Níveis: DEBUG (trace técnico), INFO (eventos de uso), WARN (degradação), ERROR (falhas).
+- Correlation: IDs de correlação propagados entre frontend e backend quando possível.
+- Privacidade: Sem coleta de PII; mensagens claras para usuários e detalhadas para logs.
+- Configuração: Resource `quiz-books-ai` no `quiz-books-rg`; chave de instrumentação referenciada em build para frontend; connection string armazenada no Key Vault.
+

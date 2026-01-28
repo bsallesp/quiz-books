@@ -1,6 +1,16 @@
 import { app, HttpRequest, HttpResponseInit, InvocationContext } from "@azure/functions";
 import { getPool } from "../db";
 import { SmsClient } from "@azure/communication-sms";
+import { v4 as uuidv4 } from 'uuid';
+
+// Polyfill for global.crypto in Node environments that lack it (for Azure SDK compatibility)
+if (typeof crypto === 'undefined') {
+    (global as any).crypto = {
+        randomUUID: () => uuidv4()
+    };
+} else if (!(crypto as any).randomUUID) {
+     (crypto as any).randomUUID = () => uuidv4();
+}
 
 export async function SendCode(request: HttpRequest, context: InvocationContext): Promise<HttpResponseInit> {
     context.log(`Http function processed request for url "${request.url}"`);

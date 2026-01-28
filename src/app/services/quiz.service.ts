@@ -82,10 +82,6 @@ export class QuizService {
       if (savedCourse) {
         const course = JSON.parse(savedCourse);
         this.currentCourseSubject.next(course);
-        // Reload all questions for this course in background
-        if (course.dataUrl) {
-          this.loadQuestions(course.dataUrl).subscribe();
-        }
       }
 
       const savedState = localStorage.getItem(STORAGE_KEY);

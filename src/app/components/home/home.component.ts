@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, Optional } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Router, ActivatedRoute, RouterModule, ParamMap } from '@angular/router';
 import { QuizService, Course } from '../../services/quiz.service';
 import { AuthService } from '../../services/auth.service';
 import { Observable, catchError, of, tap } from 'rxjs';
+import { MonitoringService } from '../../services/monitoring.service';
 
 @Component({
   selector: 'app-home',
@@ -30,13 +31,15 @@ export class HomeComponent {
   constructor(
     public quizService: QuizService, 
     private router: Router,
-    private route: ActivatedRoute,
-    public authService: AuthService
+    @Optional() private route: ActivatedRoute,
+    public authService: AuthService,
+    private monitoring: MonitoringService
   ) {
     this.courses$ = this.quizService.getCourses().pipe(
       tap(() => this.loading = false),
       catchError(err => {
-        console.error('Error loading courses', err);
+        this.monitoring.logException(err);
+        this.monitoring.logTrace('courses_load_error');
         this.error = 'Failed to load courses.';
         this.loading = false;
         return of([]);
@@ -48,19 +51,22 @@ export class HomeComponent {
 
     this.chapters$ = this.quizService.getChapters().pipe(
       catchError(err => {
-        console.error('Error loading chapters', err);
+        this.monitoring.logException(err);
+        this.monitoring.logTrace('chapters_load_error');
         return of([]);
       })
     );
 
-    this.route.paramMap.subscribe((params: ParamMap) => {
-      const courseId = params.get('courseId');
-      if (courseId) {
-        this.quizService.loadCourseById(courseId).subscribe();
-      } else {
-        this.quizService.clearCourse();
-      }
-    });
+    if (this.route) {
+      this.route.paramMap.subscribe((params: ParamMap) => {
+        const courseId = params.get('courseId');
+        if (courseId) {
+          this.quizService.loadCourseById(courseId).subscribe();
+        } else {
+          this.quizService.clearCourse();
+        }
+      });
+    }
   }
 
   selectCourse(course: Course) {
