@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { BehaviorSubject, map, Observable, of, catchError } from 'rxjs';
+import { BehaviorSubject, map, Observable, of, catchError, switchMap, forkJoin, tap } from 'rxjs';
 import { MonitoringService } from './monitoring.service';
 
 export interface Question {
@@ -19,6 +19,7 @@ export interface Course {
   description: string;
   icon: string;
   dataUrl: string;
+  questionCount?: number;
 }
 
 export interface QuizState {
@@ -43,21 +44,72 @@ const INITIAL_STATE: QuizState = {
   }
 };
 
+const STORAGE_KEY = 'quiz_state';
+const COURSE_KEY = 'quiz_course';
+
 @Injectable({
   providedIn: 'root'
 })
 export class QuizService {
   private state$ = new BehaviorSubject<QuizState>(INITIAL_STATE);
-  private allQuestions: Question[] = [];
+  
+  private questionsSubject = new BehaviorSubject<Question[]>([]);
+  questions$ = this.questionsSubject.asObservable();
+  
+  private loadingQuestionsSubject = new BehaviorSubject<boolean>(false);
+  loadingQuestions$ = this.loadingQuestionsSubject.asObservable();
+
   private currentCourseSubject = new BehaviorSubject<Course | null>(null);
   currentCourse$ = this.currentCourseSubject.asObservable();
 
   constructor(private http: HttpClient, private monitoringService: MonitoringService) {
-    // Initial load logic can be moved to explicit course selection
+    this.loadState();
+
+    this.state$.subscribe(state => {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    });
+
+    this.currentCourse$.subscribe(course => {
+      if (course) {
+        localStorage.setItem(COURSE_KEY, JSON.stringify(course));
+      }
+    });
+  }
+
+  private loadState() {
+    try {
+      const savedCourse = localStorage.getItem(COURSE_KEY);
+      if (savedCourse) {
+        const course = JSON.parse(savedCourse);
+        this.currentCourseSubject.next(course);
+        // Reload all questions for this course in background
+        if (course.dataUrl) {
+          this.loadQuestions(course.dataUrl).subscribe();
+        }
+      }
+
+      const savedState = localStorage.getItem(STORAGE_KEY);
+      if (savedState) {
+        const state = JSON.parse(savedState);
+        this.state$.next(state);
+      }
+    } catch (e) {
+      console.error('Failed to load state from storage', e);
+    }
   }
 
   getCourses(): Observable<Course[]> {
     return this.http.get<Course[]>('assets/courses.json').pipe(
+      switchMap(courses => {
+        if (!courses || courses.length === 0) return of([]);
+        const requests = courses.map(course => 
+          this.http.get<Question[]>(course.dataUrl).pipe(
+            map(questions => ({ ...course, questionCount: questions.length })),
+            catchError(() => of({ ...course, questionCount: 0 }))
+          )
+        );
+        return forkJoin(requests);
+      }),
       catchError(err => {
         this.monitoringService.logException(err);
         return of([]);
@@ -65,9 +117,15 @@ export class QuizService {
     );
   }
 
+  getCourseById(id: string): Observable<Course | undefined> {
+    return this.getCourses().pipe(
+      map(courses => courses.find(c => c.id === id))
+    );
+  }
+
   selectCourse(course: Course) {
     this.currentCourseSubject.next(course);
-    this.loadQuestions(course.dataUrl);
+    this.loadQuestions(course.dataUrl).subscribe();
     
     // Update state with new courseId
     const currentState = this.state$.value;
@@ -81,54 +139,60 @@ export class QuizService {
     });
   }
 
-  clearCourse() {
-    this.currentCourseSubject.next(null);
-    this.allQuestions = [];
-    this.state$.next(INITIAL_STATE);
+  loadCourseById(id: string): Observable<Course | null> {
+    return this.getCourseById(id).pipe(
+      tap(course => {
+        if (course) {
+          this.selectCourse(course);
+        }
+      }),
+      map(course => course || null)
+    );
   }
 
-  private loadQuestions(url: string) {
-    this.http.get<Question[]>(url).pipe(
+  getCurrentCourseId(): string | null {
+    return this.currentCourseSubject.value?.id || null;
+  }
+
+  clearCourse() {
+    this.currentCourseSubject.next(null);
+    this.questionsSubject.next([]);
+    this.state$.next(INITIAL_STATE);
+    localStorage.removeItem(STORAGE_KEY);
+    localStorage.removeItem(COURSE_KEY);
+  }
+
+  private loadQuestions(url: string): Observable<Question[]> {
+    this.loadingQuestionsSubject.next(true);
+    return this.http.get<Question[]>(url).pipe(
+      tap(questions => {
+        this.questionsSubject.next(questions);
+        this.loadingQuestionsSubject.next(false);
+      }),
       catchError(err => {
         this.monitoringService.logException(err);
+        this.questionsSubject.next([]);
+        this.loadingQuestionsSubject.next(false);
         return of([]);
       })
-    ).subscribe(questions => {
-      this.allQuestions = questions;
-    });
+    );
   }
 
   getChapters(): Observable<string[]> {
-    if (this.allQuestions.length > 0) {
-      return of([...new Set(this.allQuestions.map(q => q.chapter))].sort((a, b) => parseInt(a) - parseInt(b)));
-    }
-    // If questions aren't loaded yet but course is selected, we might need to wait or return empty
-    return this.currentCourse$.pipe(
-      map(course => {
-        if (!course) return [];
-        // Ideally we should wait for questions to load. 
-        // For simplicity, let's assume UI waits for loadQuestions to complete or binds to allQuestions via an observable if we exposed it.
-        // But since loadQuestions is void, let's just return what we have or empty.
-        return [...new Set(this.allQuestions.map(q => q.chapter))].sort((a, b) => parseInt(a) - parseInt(b));
+    return this.questions$.pipe(
+      map(questions => {
+        const chapters = [...new Set(questions.map(q => q.chapter))];
+        return chapters.sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
       })
     );
   }
 
   // Helper to ensure questions are loaded before starting quiz
   ensureQuestionsLoaded(): Observable<Question[]> {
-    if (this.allQuestions.length > 0) return of(this.allQuestions);
+    if (this.questionsSubject.value.length > 0) return of(this.questionsSubject.value);
     const course = this.currentCourseSubject.value;
     if (!course) return of([]);
-    return this.http.get<Question[]>(course.dataUrl).pipe(
-      map(questions => {
-        this.allQuestions = questions;
-        return questions;
-      }),
-      catchError(err => {
-        this.monitoringService.logException(err);
-        return of([]);
-      })
-    );
+    return this.loadQuestions(course.dataUrl);
   }
 
   startQuiz(chapter?: string, count: number = 20, showImmediateFeedback: boolean = false) {

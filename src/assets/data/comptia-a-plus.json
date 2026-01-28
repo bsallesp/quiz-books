@@ -2,7 +2,7 @@
   {
     "id": "Chapter-1-q1",
     "localId": "1",
-    "chapter": "Chapter 1",
+    "chapter": "Chapter 1: Safety and Operational Procedures",
     "text": "Which of the following is the correct fire extinguisher class for an electrical fire?",
     "options": [
       {
@@ -28,7 +28,7 @@
   {
     "id": "Chapter-1-q2",
     "localId": "2",
-    "chapter": "Chapter 1",
+    "chapter": "Chapter 1: Safety and Operational Procedures",
     "text": "You plan to replace the power supply in a computer. What is the most important safety measure you should take to protect yourself?",
     "options": [
       {
@@ -54,7 +54,7 @@
   {
     "id": "Chapter-1-q3",
     "localId": "3",
-    "chapter": "Chapter 1",
+    "chapter": "Chapter 1: Safety and Operational Procedures",
     "text": "A client has a large CRT monitor. It is malfunctioning, and none of the external buttons on the monitor help, nor can you fix it using the Properties settings in Windows. Although the monitor is quite old, the client likes it, and wants it to be repaired if possible. What should you do?",
     "options": [
       {
@@ -80,7 +80,7 @@
   {
     "id": "Chapter-1-q4",
     "localId": "4",
-    "chapter": "Chapter 1",
+    "chapter": "Chapter 1: Safety and Operational Procedures",
     "text": "What should you do before moving any computer equipment?",
     "options": [
       {
@@ -106,7 +106,7 @@
   {
     "id": "Chapter-1-q5",
     "localId": "5",
-    "chapter": "Chapter 1",
+    "chapter": "Chapter 1: Safety and Operational Procedures",
     "text": "When should you wear an air filtration mask and goggles?",
     "options": [
       {
@@ -132,7 +132,7 @@
   {
     "id": "Chapter-1-q6",
     "localId": "6",
-    "chapter": "Chapter 1",
+    "chapter": "Chapter 1: Safety and Operational Procedures",
     "text": "Which of these is _not_ good advice for safe lifting and moving?",
     "options": [
       {
@@ -158,7 +158,7 @@
   {
     "id": "Chapter-1-q7",
     "localId": "7",
-    "chapter": "Chapter 1",
+    "chapter": "Chapter 1: Safety and Operational Procedures",
     "text": "Which statement is _not_ true about ESD?",
     "options": [
       {
@@ -184,7 +184,7 @@
   {
     "id": "Chapter-1-q8",
     "localId": "8",
-    "chapter": "Chapter 1",
+    "chapter": "Chapter 1: Safety and Operational Procedures",
     "text": "What can you use to protect a PC from power sags?",
     "options": [
       {
@@ -210,7 +210,7 @@
   {
     "id": "Chapter-1-q9",
     "localId": "9",
-    "chapter": "Chapter 1",
+    "chapter": "Chapter 1: Safety and Operational Procedures",
     "text": "What is the ideal environment for ESD to occur?",
     "options": [
       {
@@ -236,7 +236,7 @@
   {
     "id": "Chapter-1-q10",
     "localId": "10",
-    "chapter": "Chapter 1",
+    "chapter": "Chapter 1: Safety and Operational Procedures",
     "text": "You are getting ready to install a new component, a memory stick that came in its own antistatic bag. What is the correct way to handle this component and the bag?",
     "options": [
       {
@@ -262,7 +262,7 @@
   {
     "id": "Chapter-1-q11",
     "localId": "11",
-    "chapter": "Chapter 1",
+    "chapter": "Chapter 1: Safety and Operational Procedures",
     "text": "When cleaning dirty items with compressed air, what safety equipment should you wear?",
     "options": [
       {
@@ -288,7 +288,7 @@
   {
     "id": "Chapter-1-q12",
     "localId": "12",
-    "chapter": "Chapter 1",
+    "chapter": "Chapter 1: Safety and Operational Procedures",
     "text": "In what way could compressed air harm a human body?",
     "options": [
       {
@@ -314,7 +314,7 @@
   {
     "id": "Chapter-1-q13",
     "localId": "13",
-    "chapter": "Chapter 1",
+    "chapter": "Chapter 1: Safety and Operational Procedures",
     "text": "When a computer system is no longer functioning and is not repairable, how should you dispose of it?",
     "options": [
       {
@@ -340,7 +340,7 @@
   {
     "id": "Chapter-1-q14",
     "localId": "14",
-    "chapter": "Chapter 1",
+    "chapter": "Chapter 1: Safety and Operational Procedures",
     "text": "You do not know the proper handling of an old solvent previously used in your company, and now you need to discard it. How can you find out more about it?",
     "options": [
       {
@@ -366,7 +366,7 @@
   {
     "id": "Chapter-1-q15",
     "localId": "15",
-    "chapter": "Chapter 1",
+    "chapter": "Chapter 1: Safety and Operational Procedures",
     "text": "What should you do with a large number of used batteries accumulated in your office?",
     "options": [
       {
@@ -392,7 +392,7 @@
   {
     "id": "Chapter-1-q16",
     "localId": "16",
-    "chapter": "Chapter 1",
+    "chapter": "Chapter 1: Safety and Operational Procedures",
     "text": "Which of the following protects against blackouts?",
     "options": [
       {
@@ -418,7 +418,7 @@
   {
     "id": "Chapter-1-q17",
     "localId": "17",
-    "chapter": "Chapter 1",
+    "chapter": "Chapter 1: Safety and Operational Procedures",
     "text": "What unit of measurement describes a surge suppressor’s ability to protect from power surges?",
     "options": [
       {
@@ -444,7 +444,7 @@
   {
     "id": "Chapter-1-q18",
     "localId": "18",
-    "chapter": "Chapter 1",
+    "chapter": "Chapter 1: Safety and Operational Procedures",
     "text": "Which of these is a metal that a battery might contain, requiring special disposition of it?",
     "options": [
       {
@@ -470,7 +470,7 @@
   {
     "id": "Chapter-1-q19",
     "localId": "19",
-    "chapter": "Chapter 1",
+    "chapter": "Chapter 1: Safety and Operational Procedures",
     "text": "What is it about a circuit board that makes it subject to special disposal procedures?",
     "options": [
       {
@@ -496,7 +496,7 @@
   {
     "id": "Chapter-1-q20",
     "localId": "20",
-    "chapter": "Chapter 1",
+    "chapter": "Chapter 1: Safety and Operational Procedures",
     "text": "What is the best way to recycle a cell phone?",
     "options": [
       {
@@ -522,7 +522,7 @@
   {
     "id": "Chapter-2-q1",
     "localId": "1",
-    "chapter": "Chapter 2",
+    "chapter": "Chapter 2: Professionalism and Communication",
     "text": "When you are explaining something technical to a customer, which of the following is the best technique to use to confirm the customer understands your explanation?",
     "options": [
       {
@@ -548,7 +548,7 @@
   {
     "id": "Chapter-2-q2",
     "localId": "2",
-    "chapter": "Chapter 2",
+    "chapter": "Chapter 2: Professionalism and Communication",
     "text": "When someone has explained something to you, how can you make sure you heard and understood what she said?",
     "options": [
       {
@@ -574,7 +574,7 @@
   {
     "id": "Chapter-2-q3",
     "localId": "3",
-    "chapter": "Chapter 2",
+    "chapter": "Chapter 2: Professionalism and Communication",
     "text": "Which of the following is a technique you would use to show respect to a customer? (Select all that apply.)",
     "options": [
       {
@@ -600,7 +600,7 @@
   {
     "id": "Chapter-2-q4",
     "localId": "4",
-    "chapter": "Chapter 2",
+    "chapter": "Chapter 2: Professionalism and Communication",
     "text": "When a customer is explaining a problem, what is the single most important thing you must do?",
     "options": [
       {
@@ -626,7 +626,7 @@
   {
     "id": "Chapter-2-q5",
     "localId": "5",
-    "chapter": "Chapter 2",
+    "chapter": "Chapter 2: Professionalism and Communication",
     "text": "What behavior shows a positive and professional attitude? (Select all that apply.)",
     "options": [
       {
@@ -652,7 +652,7 @@
   {
     "id": "Chapter-2-q6",
     "localId": "6",
-    "chapter": "Chapter 2",
+    "chapter": "Chapter 2: Professionalism and Communication",
     "text": "You believe you have witnessed prohibited behavior, and you have clearly identified it by referring to company policies. What should you do next?",
     "options": [
       {
@@ -678,7 +678,7 @@
   {
     "id": "Chapter-2-q7",
     "localId": "7",
-    "chapter": "Chapter 2",
+    "chapter": "Chapter 2: Professionalism and Communication",
     "text": "Which of these is the best way to ensure that all employees are aware of an important security policy?",
     "options": [
       {
@@ -704,7 +704,7 @@
   {
     "id": "Chapter-2-q8",
     "localId": "8",
-    "chapter": "Chapter 2",
+    "chapter": "Chapter 2: Professionalism and Communication",
     "text": "When investigating the finding of prohibited content on an employee’s computer, it is important to:",
     "options": [
       {
@@ -730,7 +730,7 @@
   {
     "id": "Chapter-2-q9",
     "localId": "9",
-    "chapter": "Chapter 2",
+    "chapter": "Chapter 2: Professionalism and Communication",
     "text": "What type of document specifies how many users or devices you can legally install a certain software product on?",
     "options": [
       {
@@ -756,7 +756,7 @@
   {
     "id": "Chapter-2-q10",
     "localId": "10",
-    "chapter": "Chapter 2",
+    "chapter": "Chapter 2: Professionalism and Communication",
     "text": "Which of these is _not_ true of enterprise licensing?",
     "options": [
       {
@@ -782,7 +782,7 @@
   {
     "id": "Chapter-2-q11",
     "localId": "11",
-    "chapter": "Chapter 2",
+    "chapter": "Chapter 2: Professionalism and Communication",
     "text": "Product activation is a form of:",
     "options": [
       {
@@ -808,7 +808,7 @@
   {
     "id": "Chapter-2-q12",
     "localId": "12",
-    "chapter": "Chapter 2",
+    "chapter": "Chapter 2: Professionalism and Communication",
     "text": "Which of these is an EU regulation that requires anyone collecting personal data to disclose that they are doing so?",
     "options": [
       {
@@ -834,7 +834,7 @@
   {
     "id": "Chapter-2-q13",
     "localId": "13",
-    "chapter": "Chapter 2",
+    "chapter": "Chapter 2: Professionalism and Communication",
     "text": "Which of the following is a document that defines what actions can be taken on data and computing resources in a company?",
     "options": [
       {
@@ -860,7 +860,7 @@
   {
     "id": "Chapter-2-q14",
     "localId": "14",
-    "chapter": "Chapter 2",
+    "chapter": "Chapter 2: Professionalism and Communication",
     "text": "Which of these does _not_ need to be included in IT documentation?",
     "options": [
       {
@@ -886,7 +886,7 @@
   {
     "id": "Chapter-2-q15",
     "localId": "15",
-    "chapter": "Chapter 2",
+    "chapter": "Chapter 2: Professionalism and Communication",
     "text": "Where should documentation be stored?",
     "options": [
       {
@@ -912,7 +912,7 @@
   {
     "id": "Chapter-2-q16",
     "localId": "16",
-    "chapter": "Chapter 2",
+    "chapter": "Chapter 2: Professionalism and Communication",
     "text": "Which type of document would you create in order to record information about a security breach?",
     "options": [
       {
@@ -938,7 +938,7 @@
   {
     "id": "Chapter-2-q17",
     "localId": "17",
-    "chapter": "Chapter 2",
+    "chapter": "Chapter 2: Professionalism and Communication",
     "text": "Which of these should _not_ be included in an incident report?",
     "options": [
       {
@@ -964,7 +964,7 @@
   {
     "id": "Chapter-2-q18",
     "localId": "18",
-    "chapter": "Chapter 2",
+    "chapter": "Chapter 2: Professionalism and Communication",
     "text": "Which of these is the best definition of change management?",
     "options": [
       {
@@ -990,7 +990,7 @@
   {
     "id": "Chapter-2-q19",
     "localId": "19",
-    "chapter": "Chapter 2",
+    "chapter": "Chapter 2: Professionalism and Communication",
     "text": "Change management can help with which of the following objectives?",
     "options": [
       {
@@ -1016,7 +1016,7 @@
   {
     "id": "Chapter-2-q20",
     "localId": "20",
-    "chapter": "Chapter 2",
+    "chapter": "Chapter 2: Professionalism and Communication",
     "text": "Which of these is a document that describes a plan to implement an IT system change?",
     "options": [
       {
@@ -1042,7 +1042,7 @@
   {
     "id": "Chapter-3-q1",
     "localId": "1",
-    "chapter": "Chapter 3",
+    "chapter": "Chapter 3: Operating System Fundamentals",
     "text": "Which of these is _not_ a responsibility of the operating system?",
     "options": [
       {
@@ -1068,7 +1068,7 @@
   {
     "id": "Chapter-3-q2",
     "localId": "2",
-    "chapter": "Chapter 3",
+    "chapter": "Chapter 3: Operating System Fundamentals",
     "text": "Which of these is an OS for a mobile device?",
     "options": [
       {
@@ -1094,7 +1094,7 @@
   {
     "id": "Chapter-3-q3",
     "localId": "3",
-    "chapter": "Chapter 3",
+    "chapter": "Chapter 3: Operating System Fundamentals",
     "text": "Which of these types of devices has a built-in OS that you can’t change (only update)?",
     "options": [
       {
@@ -1120,7 +1120,7 @@
   {
     "id": "Chapter-3-q4",
     "localId": "4",
-    "chapter": "Chapter 3",
+    "chapter": "Chapter 3: Operating System Fundamentals",
     "text": "Which operating system(s) can run on a system with a 64-bit CPU?",
     "options": [
       {
@@ -1146,7 +1146,7 @@
   {
     "id": "Chapter-3-q5",
     "localId": "5",
-    "chapter": "Chapter 3",
+    "chapter": "Chapter 3: Operating System Fundamentals",
     "text": "What is the benefit of using a 64-bit version of Windows?",
     "options": [
       {
@@ -1172,7 +1172,7 @@
   {
     "id": "Chapter-3-q6",
     "localId": "6",
-    "chapter": "Chapter 3",
+    "chapter": "Chapter 3: Operating System Fundamentals",
     "text": "What Microsoft policy defines the length of time Microsoft will support a product, as well as the support options for that product?",
     "options": [
       {
@@ -1198,7 +1198,7 @@
   {
     "id": "Chapter-3-q7",
     "localId": "7",
-    "chapter": "Chapter 3",
+    "chapter": "Chapter 3: Operating System Fundamentals",
     "text": "Windows 10 is a version; what is Windows 10 Enterprise?",
     "options": [
       {
@@ -1224,7 +1224,7 @@
   {
     "id": "Chapter-3-q8",
     "localId": "8",
-    "chapter": "Chapter 3",
+    "chapter": "Chapter 3: Operating System Fundamentals",
     "text": "What feature is not available in the Home editions of Windows 10?",
     "options": [
       {
@@ -1250,7 +1250,7 @@
   {
     "id": "Chapter-3-q9",
     "localId": "9",
-    "chapter": "Chapter 3",
+    "chapter": "Chapter 3: Operating System Fundamentals",
     "text": "What feature is available only in the Enterprise and Education editions of Windows?",
     "options": [
       {
@@ -1276,7 +1276,7 @@
   {
     "id": "Chapter-3-q10",
     "localId": "10",
-    "chapter": "Chapter 3",
+    "chapter": "Chapter 3: Operating System Fundamentals",
     "text": "Suppose you have a Windows 10 PC that can connect to a small workgroup network but not to a network domain. What should you do?",
     "options": [
       {
@@ -1302,7 +1302,7 @@
   {
     "id": "Chapter-3-q11",
     "localId": "11",
-    "chapter": "Chapter 3",
+    "chapter": "Chapter 3: Operating System Fundamentals",
     "text": "In which Control Panel applet will you find a collection of specialized applets for performing system maintenance tasks?",
     "options": [
       {
@@ -1328,7 +1328,7 @@
   {
     "id": "Chapter-3-q12",
     "localId": "12",
-    "chapter": "Chapter 3",
+    "chapter": "Chapter 3: Operating System Fundamentals",
     "text": "In which Control Panel applet can you find out the Windows version, edition, and build number?",
     "options": [
       {
@@ -1354,7 +1354,7 @@
   {
     "id": "Chapter-3-q13",
     "localId": "13",
-    "chapter": "Chapter 3",
+    "chapter": "Chapter 3: Operating System Fundamentals",
     "text": "In which section of the Settings app can you change the desktop background?",
     "options": [
       {
@@ -1380,7 +1380,7 @@
   {
     "id": "Chapter-3-q14",
     "localId": "14",
-    "chapter": "Chapter 3",
+    "chapter": "Chapter 3: Operating System Fundamentals",
     "text": "In which section of the Settings app can you adjust the display resolution?",
     "options": [
       {
@@ -1406,7 +1406,7 @@
   {
     "id": "Chapter-3-q15",
     "localId": "15",
-    "chapter": "Chapter 3",
+    "chapter": "Chapter 3: Operating System Fundamentals",
     "text": "From which app can you access the Network And Sharing Center?",
     "options": [
       {
@@ -1432,7 +1432,7 @@
   {
     "id": "Chapter-3-q16",
     "localId": "16",
-    "chapter": "Chapter 3",
+    "chapter": "Chapter 3: Operating System Fundamentals",
     "text": "Where in the Control Panel can you go to manage credentials, change environment variables, and set up profile roaming?",
     "options": [
       {
@@ -1458,7 +1458,7 @@
   {
     "id": "Chapter-3-q17",
     "localId": "17",
-    "chapter": "Chapter 3",
+    "chapter": "Chapter 3: Operating System Fundamentals",
     "text": "What is the name of the bar along the bottom of the screen in macOS?",
     "options": [
       {
@@ -1484,7 +1484,7 @@
   {
     "id": "Chapter-3-q18",
     "localId": "18",
-    "chapter": "Chapter 3",
+    "chapter": "Chapter 3: Operating System Fundamentals",
     "text": "Which feature provides file system browsing on a Mac?",
     "options": [
       {
@@ -1510,7 +1510,7 @@
   {
     "id": "Chapter-3-q19",
     "localId": "19",
-    "chapter": "Chapter 3",
+    "chapter": "Chapter 3: Operating System Fundamentals",
     "text": "How do you shut down a Mac?",
     "options": [
       {
@@ -1536,7 +1536,7 @@
   {
     "id": "Chapter-3-q20",
     "localId": "20",
-    "chapter": "Chapter 3",
+    "chapter": "Chapter 3: Operating System Fundamentals",
     "text": "The Linux _____ is open-source, but some ____ are commercial.",
     "options": [
       {
@@ -1562,7 +1562,7 @@
   {
     "id": "Chapter-4-q1",
     "localId": "1",
-    "chapter": "Chapter 4",
+    "chapter": "Chapter 4: Upgrading, Installing, and Configuring Operating Systems",
     "text": "What is the minimum CPU speed required for Windows 10?",
     "options": [
       {
@@ -1588,7 +1588,7 @@
   {
     "id": "Chapter-4-q2",
     "localId": "2",
-    "chapter": "Chapter 4",
+    "chapter": "Chapter 4: Upgrading, Installing, and Configuring Operating Systems",
     "text": "Which of the following is one of the system requirements Microsoft specifies for installing Windows?",
     "options": [
       {
@@ -1614,7 +1614,7 @@
   {
     "id": "Chapter-4-q3",
     "localId": "3",
-    "chapter": "Chapter 4",
+    "chapter": "Chapter 4: Upgrading, Installing, and Configuring Operating Systems",
     "text": "Which of the following is _not_ a valid in-place upgrade path?",
     "options": [
       {
@@ -1640,7 +1640,7 @@
   {
     "id": "Chapter-4-q4",
     "localId": "4",
-    "chapter": "Chapter 4",
+    "chapter": "Chapter 4: Upgrading, Installing, and Configuring Operating Systems",
     "text": "Which of these is _not_ a benefit of upgrading instead of doing a clean install?",
     "options": [
       {
@@ -1666,7 +1666,7 @@
   {
     "id": "Chapter-4-q5",
     "localId": "5",
-    "chapter": "Chapter 4",
+    "chapter": "Chapter 4: Upgrading, Installing, and Configuring Operating Systems",
     "text": "What should you do before an upgrade if you discover incompatible software or hardware?",
     "options": [
       {
@@ -1692,7 +1692,7 @@
   {
     "id": "Chapter-4-q6",
     "localId": "6",
-    "chapter": "Chapter 4",
+    "chapter": "Chapter 4: Upgrading, Installing, and Configuring Operating Systems",
     "text": "What Windows utility can be used to remove unnecessary files in preparation for a Windows upgrade?",
     "options": [
       {
@@ -1718,7 +1718,7 @@
   {
     "id": "Chapter-4-q7",
     "localId": "7",
-    "chapter": "Chapter 4",
+    "chapter": "Chapter 4: Upgrading, Installing, and Configuring Operating Systems",
     "text": "Which of the following refers to the lowest level of CPU, the minimum amount of RAM, and the free hard disk space needed to install an OS?",
     "options": [
       {
@@ -1744,7 +1744,7 @@
   {
     "id": "Chapter-4-q8",
     "localId": "8",
-    "chapter": "Chapter 4",
+    "chapter": "Chapter 4: Upgrading, Installing, and Configuring Operating Systems",
     "text": "What is the preferred file system for Windows?",
     "options": [
       {
@@ -1770,7 +1770,7 @@
   {
     "id": "Chapter-4-q9",
     "localId": "9",
-    "chapter": "Chapter 4",
+    "chapter": "Chapter 4: Upgrading, Installing, and Configuring Operating Systems",
     "text": "Which of the following boot sources for Windows Setup is designed to initiate an over-the-network installation?",
     "options": [
       {
@@ -1796,7 +1796,7 @@
   {
     "id": "Chapter-4-q10",
     "localId": "10",
-    "chapter": "Chapter 4",
+    "chapter": "Chapter 4: Upgrading, Installing, and Configuring Operating Systems",
     "text": "What type of installation requires a person’s real-time response to prompts?",
     "options": [
       {
@@ -1822,7 +1822,7 @@
   {
     "id": "Chapter-4-q11",
     "localId": "11",
-    "chapter": "Chapter 4",
+    "chapter": "Chapter 4: Upgrading, Installing, and Configuring Operating Systems",
     "text": "What installation method places an exact copy of a hard drive containing a previously installed operating system and applications (from a reference computer) onto the hard drive of another computer?",
     "options": [
       {
@@ -1848,7 +1848,7 @@
   {
     "id": "Chapter-4-q12",
     "localId": "12",
-    "chapter": "Chapter 4",
+    "chapter": "Chapter 4: Upgrading, Installing, and Configuring Operating Systems",
     "text": "What are the two general types of unattended installations? (Select two.)",
     "options": [
       {
@@ -1874,7 +1874,7 @@
   {
     "id": "Chapter-4-q13",
     "localId": "13",
-    "chapter": "Chapter 4",
+    "chapter": "Chapter 4: Upgrading, Installing, and Configuring Operating Systems",
     "text": "What is the minimum amount of RAM required for installing the 64-bit version of Windows 10?",
     "options": [
       {
@@ -1900,7 +1900,7 @@
   {
     "id": "Chapter-4-q14",
     "localId": "14",
-    "chapter": "Chapter 4",
+    "chapter": "Chapter 4: Upgrading, Installing, and Configuring Operating Systems",
     "text": "Which of the following statements is true of the Windows Setup?",
     "options": [
       {
@@ -1926,7 +1926,7 @@
   {
     "id": "Chapter-4-q15",
     "localId": "15",
-    "chapter": "Chapter 4",
+    "chapter": "Chapter 4: Upgrading, Installing, and Configuring Operating Systems",
     "text": "What bootable environment gives operating system support during three types of operations: installing Windows, troubleshooting, and recovery?",
     "options": [
       {
@@ -1952,7 +1952,7 @@
   {
     "id": "Chapter-4-q16",
     "localId": "16",
-    "chapter": "Chapter 4",
+    "chapter": "Chapter 4: Upgrading, Installing, and Configuring Operating Systems",
     "text": "What purpose does Microsoft Product Activation (MPA) serve?",
     "options": [
       {
@@ -1978,7 +1978,7 @@
   {
     "id": "Chapter-4-q17",
     "localId": "17",
-    "chapter": "Chapter 4",
+    "chapter": "Chapter 4: Upgrading, Installing, and Configuring Operating Systems",
     "text": "What is the consequence of not completing the activation process for Windows within the required time period?",
     "options": [
       {
@@ -2004,7 +2004,7 @@
   {
     "id": "Chapter-4-q18",
     "localId": "18",
-    "chapter": "Chapter 4",
+    "chapter": "Chapter 4: Upgrading, Installing, and Configuring Operating Systems",
     "text": "What app should you use to create an additional Windows account?",
     "options": [
       {
@@ -2030,7 +2030,7 @@
   {
     "id": "Chapter-4-q19",
     "localId": "19",
-    "chapter": "Chapter 4",
+    "chapter": "Chapter 4: Upgrading, Installing, and Configuring Operating Systems",
     "text": "How do Macs receive OS updates?",
     "options": [
       {
@@ -2056,7 +2056,7 @@
   {
     "id": "Chapter-4-q20",
     "localId": "20",
-    "chapter": "Chapter 4",
+    "chapter": "Chapter 4: Upgrading, Installing, and Configuring Operating Systems",
     "text": "What is the least expensive way to acquire a desktop version of Linux?",
     "options": [
       {
@@ -2082,7 +2082,7 @@
   {
     "id": "Chapter-5-q1",
     "localId": "1",
-    "chapter": "Chapter 5",
+    "chapter": "Chapter 5: Disk, File, and Application Management",
     "text": "Which of the following describes a partition from which Windows can boot?",
     "options": [
       {
@@ -2108,7 +2108,7 @@
   {
     "id": "Chapter-5-q2",
     "localId": "2",
-    "chapter": "Chapter 5",
+    "chapter": "Chapter 5: Disk, File, and Application Management",
     "text": "Which GUI tool should you use to create a partition on a new drive?",
     "options": [
       {
@@ -2134,7 +2134,7 @@
   {
     "id": "Chapter-5-q3",
     "localId": "3",
-    "chapter": "Chapter 5",
+    "chapter": "Chapter 5: Disk, File, and Application Management",
     "text": "How many logical drives are on a primary partition?",
     "options": [
       {
@@ -2160,7 +2160,7 @@
   {
     "id": "Chapter-5-q4",
     "localId": "4",
-    "chapter": "Chapter 5",
+    "chapter": "Chapter 5: Disk, File, and Application Management",
     "text": "What utility can you use from a command prompt to manage partitions?",
     "options": [
       {
@@ -2186,7 +2186,7 @@
   {
     "id": "Chapter-5-q5",
     "localId": "5",
-    "chapter": "Chapter 5",
+    "chapter": "Chapter 5: Disk, File, and Application Management",
     "text": "What utility can you use in macOS to manage partitions?",
     "options": [
       {
@@ -2212,7 +2212,7 @@
   {
     "id": "Chapter-5-q6",
     "localId": "6",
-    "chapter": "Chapter 5",
+    "chapter": "Chapter 5: Disk, File, and Application Management",
     "text": "Which file system supports file compression and encryption?",
     "options": [
       {
@@ -2238,7 +2238,7 @@
   {
     "id": "Chapter-5-q7",
     "localId": "7",
-    "chapter": "Chapter 5",
+    "chapter": "Chapter 5: Disk, File, and Application Management",
     "text": "Which feature of NTFS makes file searches faster?",
     "options": [
       {
@@ -2264,7 +2264,7 @@
   {
     "id": "Chapter-5-q8",
     "localId": "8",
-    "chapter": "Chapter 5",
+    "chapter": "Chapter 5: Disk, File, and Application Management",
     "text": "What is the maximum capacity for a FAT16 volume?",
     "options": [
       {
@@ -2290,7 +2290,7 @@
   {
     "id": "Chapter-5-q9",
     "localId": "9",
-    "chapter": "Chapter 5",
+    "chapter": "Chapter 5: Disk, File, and Application Management",
     "text": "Instead of a file allocation table, what does an NTFS volume have?",
     "options": [
       {
@@ -2316,7 +2316,7 @@
   {
     "id": "Chapter-5-q10",
     "localId": "10",
-    "chapter": "Chapter 5",
+    "chapter": "Chapter 5: Disk, File, and Application Management",
     "text": "If file extensions appear for some, but not all, files, what can you assume about a file for which the extension does _not_ appear?",
     "options": [
       {
@@ -2342,7 +2342,7 @@
   {
     "id": "Chapter-5-q11",
     "localId": "11",
-    "chapter": "Chapter 5",
+    "chapter": "Chapter 5: Disk, File, and Application Management",
     "text": "What disk error-checking program can you run from a command prompt to analyze the disk for physical and logical errors?",
     "options": [
       {
@@ -2368,7 +2368,7 @@
   {
     "id": "Chapter-5-q12",
     "localId": "12",
-    "chapter": "Chapter 5",
+    "chapter": "Chapter 5: Disk, File, and Application Management",
     "text": "What command is used in both Linux and Windows to shut down the computer from a command prompt or script?",
     "options": [
       {
@@ -2394,7 +2394,7 @@
   {
     "id": "Chapter-5-q13",
     "localId": "13",
-    "chapter": "Chapter 5",
+    "chapter": "Chapter 5: Disk, File, and Application Management",
     "text": "Which two of the following are command interpreters for Windows 10?",
     "options": [
       {
@@ -2420,7 +2420,7 @@
   {
     "id": "Chapter-5-q14",
     "localId": "14",
-    "chapter": "Chapter 5",
+    "chapter": "Chapter 5: Disk, File, and Application Management",
     "text": "To switch command interpreters in Windows, open the settings for what Windows interface feature?",
     "options": [
       {
@@ -2446,7 +2446,7 @@
   {
     "id": "Chapter-5-q15",
     "localId": "15",
-    "chapter": "Chapter 5",
+    "chapter": "Chapter 5: Disk, File, and Application Management",
     "text": "What is the purpose of opening an elevated command prompt?",
     "options": [
       {
@@ -2472,7 +2472,7 @@
   {
     "id": "Chapter-5-q16",
     "localId": "16",
-    "chapter": "Chapter 5",
+    "chapter": "Chapter 5: Disk, File, and Application Management",
     "text": "What is the purpose of the pwd command in Linux?",
     "options": [
       {
@@ -2498,7 +2498,7 @@
   {
     "id": "Chapter-5-q17",
     "localId": "17",
-    "chapter": "Chapter 5",
+    "chapter": "Chapter 5: Disk, File, and Application Management",
     "text": "What Windows command-line command scans and verifies the versions of protected system files?",
     "options": [
       {
@@ -2524,7 +2524,7 @@
   {
     "id": "Chapter-5-q18",
     "localId": "18",
-    "chapter": "Chapter 5",
+    "chapter": "Chapter 5: Disk, File, and Application Management",
     "text": "A traditional desktop application Setup file uses a Microsoft Installer (MSI) that does all of the following _except_ which one:",
     "options": [
       {
@@ -2550,7 +2550,7 @@
   {
     "id": "Chapter-5-q19",
     "localId": "19",
-    "chapter": "Chapter 5",
+    "chapter": "Chapter 5: Disk, File, and Application Management",
     "text": "If a downloaded application comes in a nonexecutable archive file, which of these would be a likely format for it?",
     "options": [
       {
@@ -2576,7 +2576,7 @@
   {
     "id": "Chapter-5-q20",
     "localId": "20",
-    "chapter": "Chapter 5",
+    "chapter": "Chapter 5: Disk, File, and Application Management",
     "text": "What Windows feature might help if an older application won’t run properly under Windows 10?",
     "options": [
       {
@@ -2602,7 +2602,7 @@
   {
     "id": "Chapter-6-q1",
     "localId": "1",
-    "chapter": "Chapter 6",
+    "chapter": "Chapter 6: Operating System Troubleshooting and Maintenance",
     "text": "Which of the following is _not_ a quick fix that you should at least consider before further investigation of a problem?",
     "options": [
       {
@@ -2628,7 +2628,7 @@
   {
     "id": "Chapter-6-q2",
     "localId": "2",
-    "chapter": "Chapter 6",
+    "chapter": "Chapter 6: Operating System Troubleshooting and Maintenance",
     "text": "What is the name of the executable file for System Information?",
     "options": [
       {
@@ -2654,7 +2654,7 @@
   {
     "id": "Chapter-6-q3",
     "localId": "3",
-    "chapter": "Chapter 6",
+    "chapter": "Chapter 6: Operating System Troubleshooting and Maintenance",
     "text": "Which of the following is a tool for making changes to the registry?",
     "options": [
       {
@@ -2680,7 +2680,7 @@
   {
     "id": "Chapter-6-q4",
     "localId": "4",
-    "chapter": "Chapter 6",
+    "chapter": "Chapter 6: Operating System Troubleshooting and Maintenance",
     "text": "Computer Management is a preconfigured version of what utility?",
     "options": [
       {
@@ -2706,7 +2706,7 @@
   {
     "id": "Chapter-6-q5",
     "localId": "5",
-    "chapter": "Chapter 6",
+    "chapter": "Chapter 6: Operating System Troubleshooting and Maintenance",
     "text": "What GUI tool do you use to stop an application that is not responding to mouse and keyboard commands?",
     "options": [
       {
@@ -2732,7 +2732,7 @@
   {
     "id": "Chapter-6-q6",
     "localId": "6",
-    "chapter": "Chapter 6",
+    "chapter": "Chapter 6: Operating System Troubleshooting and Maintenance",
     "text": "What application allows you to schedule system maintenance actions?",
     "options": [
       {
@@ -2758,7 +2758,7 @@
   {
     "id": "Chapter-6-q7",
     "localId": "7",
-    "chapter": "Chapter 6",
+    "chapter": "Chapter 6: Operating System Troubleshooting and Maintenance",
     "text": "What is virtual memory?",
     "options": [
       {
@@ -2784,7 +2784,7 @@
   {
     "id": "Chapter-6-q8",
     "localId": "8",
-    "chapter": "Chapter 6",
+    "chapter": "Chapter 6: Operating System Troubleshooting and Maintenance",
     "text": "Where can you change which applications load at startup in Windows 10?",
     "options": [
       {
@@ -2810,7 +2810,7 @@
   {
     "id": "Chapter-6-q9",
     "localId": "9",
-    "chapter": "Chapter 6",
+    "chapter": "Chapter 6: Operating System Troubleshooting and Maintenance",
     "text": "How can you access advanced boot options at startup?",
     "options": [
       {
@@ -2836,7 +2836,7 @@
   {
     "id": "Chapter-6-q10",
     "localId": "10",
-    "chapter": "Chapter 6",
+    "chapter": "Chapter 6: Operating System Troubleshooting and Maintenance",
     "text": "From what menu can you choose to start Windows in low-resolution video mode?",
     "options": [
       {
@@ -2862,7 +2862,7 @@
   {
     "id": "Chapter-6-q11",
     "localId": "11",
-    "chapter": "Chapter 6",
+    "chapter": "Chapter 6: Operating System Troubleshooting and Maintenance",
     "text": "Which of these is a way of starting the Windows Recovery Environment?",
     "options": [
       {
@@ -2888,7 +2888,7 @@
   {
     "id": "Chapter-6-q12",
     "localId": "12",
-    "chapter": "Chapter 6",
+    "chapter": "Chapter 6: Operating System Troubleshooting and Maintenance",
     "text": "What files does System Restore help you restore from previous saved versions?",
     "options": [
       {
@@ -2914,7 +2914,7 @@
   {
     "id": "Chapter-6-q13",
     "localId": "13",
-    "chapter": "Chapter 6",
+    "chapter": "Chapter 6: Operating System Troubleshooting and Maintenance",
     "text": "How do you recover after a STOP error?",
     "options": [
       {
@@ -2940,7 +2940,7 @@
   {
     "id": "Chapter-6-q14",
     "localId": "14",
-    "chapter": "Chapter 6",
+    "chapter": "Chapter 6: Operating System Troubleshooting and Maintenance",
     "text": "What should you suspect if Windows spontaneously reboots frequently?",
     "options": [
       {
@@ -2966,7 +2966,7 @@
   {
     "id": "Chapter-6-q15",
     "localId": "15",
-    "chapter": "Chapter 6",
+    "chapter": "Chapter 6: Operating System Troubleshooting and Maintenance",
     "text": "If a system suddenly experiences a performance slowdown after installing new software, what is a possible fix?",
     "options": [
       {
@@ -2992,7 +2992,7 @@
   {
     "id": "Chapter-6-q16",
     "localId": "16",
-    "chapter": "Chapter 6",
+    "chapter": "Chapter 6: Operating System Troubleshooting and Maintenance",
     "text": "If you get an “Operating system not found” or “No OS found” error message at startup on a system that has previously booted fine, what is the first thing to check?",
     "options": [
       {
@@ -3018,7 +3018,7 @@
   {
     "id": "Chapter-6-q17",
     "localId": "17",
-    "chapter": "Chapter 6",
+    "chapter": "Chapter 6: Operating System Troubleshooting and Maintenance",
     "text": "How can you recover from a BSOD error?",
     "options": [
       {
@@ -3044,7 +3044,7 @@
   {
     "id": "Chapter-6-q18",
     "localId": "18",
-    "chapter": "Chapter 6",
+    "chapter": "Chapter 6: Operating System Troubleshooting and Maintenance",
     "text": "What does the Optimize command (on the Tools tab in the drive’s Properties box) do to a drive in Windows 10?",
     "options": [
       {
@@ -3070,7 +3070,7 @@
   {
     "id": "Chapter-6-q19",
     "localId": "19",
-    "chapter": "Chapter 6",
+    "chapter": "Chapter 6: Operating System Troubleshooting and Maintenance",
     "text": "In which OS do you get system updates through the Software Update window?",
     "options": [
       {
@@ -3096,7 +3096,7 @@
   {
     "id": "Chapter-6-q20",
     "localId": "20",
-    "chapter": "Chapter 6",
+    "chapter": "Chapter 6: Operating System Troubleshooting and Maintenance",
     "text": "In which OS can you get system updates via apt-get update and apt-get upgrade?",
     "options": [
       {
@@ -3122,7 +3122,7 @@
   {
     "id": "Chapter-7-q1",
     "localId": "1",
-    "chapter": "Chapter 7",
+    "chapter": "Chapter 7: Client-Side Virtualization",
     "text": "You may use one of these animated graphic objects to represent you in a virtual world.",
     "options": [
       {
@@ -3148,7 +3148,7 @@
   {
     "id": "Chapter-7-q2",
     "localId": "2",
-    "chapter": "Chapter 7",
+    "chapter": "Chapter 7: Client-Side Virtualization",
     "text": "What type of virtualization is used in distance learning for interactive presentations by instructors?",
     "options": [
       {
@@ -3174,7 +3174,7 @@
   {
     "id": "Chapter-7-q3",
     "localId": "3",
-    "chapter": "Chapter 7",
+    "chapter": "Chapter 7: Client-Side Virtualization",
     "text": "This type of virtualization only provides support for an app’s user interface and the user interface itself exists on a client computer, while the app runs on a server.",
     "options": [
       {
@@ -3200,7 +3200,7 @@
   {
     "id": "Chapter-7-q4",
     "localId": "4",
-    "chapter": "Chapter 7",
+    "chapter": "Chapter 7: Client-Side Virtualization",
     "text": "In network virtualization, what portion of a network exists within one or more physical networks, creating a virtual network?",
     "options": [
       {
@@ -3226,7 +3226,7 @@
   {
     "id": "Chapter-7-q5",
     "localId": "5",
-    "chapter": "Chapter 7",
+    "chapter": "Chapter 7: Client-Side Virtualization",
     "text": "What acronym represents the term for hosting and managing multiple virtual desktops on a network?",
     "options": [
       {
@@ -3252,7 +3252,7 @@
   {
     "id": "Chapter-7-q6",
     "localId": "6",
-    "chapter": "Chapter 7",
+    "chapter": "Chapter 7: Client-Side Virtualization",
     "text": "In this type of client-side virtualization, a user runs an application in a virtualized application environment on the local computer, isolating the application.",
     "options": [
       {
@@ -3278,7 +3278,7 @@
   {
     "id": "Chapter-7-q7",
     "localId": "7",
-    "chapter": "Chapter 7",
+    "chapter": "Chapter 7: Client-Side Virtualization",
     "text": "Which acronym is a generic term for virtualization support found in modern CPUs?",
     "options": [
       {
@@ -3304,7 +3304,7 @@
   {
     "id": "Chapter-7-q8",
     "localId": "8",
-    "chapter": "Chapter 7",
+    "chapter": "Chapter 7: Client-Side Virtualization",
     "text": "Which of the following terms is used in computers to describe the use of software that allows you to run an OS or device on hardware with which it is completely incompatible?",
     "options": [
       {
@@ -3330,7 +3330,7 @@
   {
     "id": "Chapter-7-q9",
     "localId": "9",
-    "chapter": "Chapter 7",
+    "chapter": "Chapter 7: Client-Side Virtualization",
     "text": "Which of the following is a free hypervisor by Oracle with versions for Linux, Windows, and macOS hosts?",
     "options": [
       {
@@ -3356,7 +3356,7 @@
   {
     "id": "Chapter-7-q10",
     "localId": "10",
-    "chapter": "Chapter 7",
+    "chapter": "Chapter 7: Client-Side Virtualization",
     "text": "Which of the following does not require a host OS?",
     "options": [
       {
@@ -3382,7 +3382,7 @@
   {
     "id": "Chapter-7-q11",
     "localId": "11",
-    "chapter": "Chapter 7",
+    "chapter": "Chapter 7: Client-Side Virtualization",
     "text": "Which of the following terms is synonymous with hypervisor?",
     "options": [
       {
@@ -3408,7 +3408,7 @@
   {
     "id": "Chapter-7-q12",
     "localId": "12",
-    "chapter": "Chapter 7",
+    "chapter": "Chapter 7: Client-Side Virtualization",
     "text": "Which hypervisor is available only in 64-bit Pro and Enterprise versions of Windows?",
     "options": [
       {
@@ -3434,7 +3434,7 @@
   {
     "id": "Chapter-7-q13",
     "localId": "13",
-    "chapter": "Chapter 7",
+    "chapter": "Chapter 7: Client-Side Virtualization",
     "text": "What legal issue must you consider when installing a guest OS in a virtual machine?",
     "options": [
       {
@@ -3460,7 +3460,7 @@
   {
     "id": "Chapter-7-q14",
     "localId": "14",
-    "chapter": "Chapter 7",
+    "chapter": "Chapter 7: Client-Side Virtualization",
     "text": "Which of the following will release the mouse and keyboard from control of a virtual machine?",
     "options": [
       {
@@ -3486,7 +3486,7 @@
   {
     "id": "Chapter-7-q15",
     "localId": "15",
-    "chapter": "Chapter 7",
+    "chapter": "Chapter 7: Client-Side Virtualization",
     "text": "In desktop virtualization, the OS installed directly on the hardware is the ______ and the OS installed in a virtual machine is the _____.",
     "options": [
       {
@@ -3512,7 +3512,7 @@
   {
     "id": "Chapter-7-q16",
     "localId": "16",
-    "chapter": "Chapter 7",
+    "chapter": "Chapter 7: Client-Side Virtualization",
     "text": "Put the following steps in order: (1) Install guest OS; (2) Install hypervisor; (3) Create virtual machine; (4) Install security software.",
     "options": [
       {
@@ -3538,7 +3538,7 @@
   {
     "id": "Chapter-7-q17",
     "localId": "17",
-    "chapter": "Chapter 7",
+    "chapter": "Chapter 7: Client-Side Virtualization",
     "text": "Which OS cannot legally be used as a guest OS in a Type II hypervisor?",
     "options": [
       {
@@ -3564,7 +3564,7 @@
   {
     "id": "Chapter-7-q18",
     "localId": "18",
-    "chapter": "Chapter 7",
+    "chapter": "Chapter 7: Client-Side Virtualization",
     "text": "Which of the following identifies Intel’s CPUs with hardware-assisted virtualization technology?",
     "options": [
       {
@@ -3590,7 +3590,7 @@
   {
     "id": "Chapter-7-q19",
     "localId": "19",
-    "chapter": "Chapter 7",
+    "chapter": "Chapter 7: Client-Side Virtualization",
     "text": "Which of the following describes a Type I hypervisor?",
     "options": [
       {
@@ -3616,7 +3616,7 @@
   {
     "id": "Chapter-7-q20",
     "localId": "20",
-    "chapter": "Chapter 7",
+    "chapter": "Chapter 7: Client-Side Virtualization",
     "text": "Which of these is a recommended way of securing a guest OS?",
     "options": [
       {
@@ -3642,7 +3642,7 @@
   {
     "id": "Chapter-8-q1",
     "localId": "1",
-    "chapter": "Chapter 8",
+    "chapter": "Chapter 8: Personal Computer Components: Motherboards and Processors",
     "text": "What would you use to measure the resistance, voltage, and/or current in computer components using two probes?",
     "options": [
       {
@@ -3668,7 +3668,7 @@
   {
     "id": "Chapter-8-q2",
     "localId": "2",
-    "chapter": "Chapter 8",
+    "chapter": "Chapter 8: Personal Computer Components: Motherboards and Processors",
     "text": "Which of these is an example of an FRU?",
     "options": [
       {
@@ -3694,7 +3694,7 @@
   {
     "id": "Chapter-8-q3",
     "localId": "3",
-    "chapter": "Chapter 8",
+    "chapter": "Chapter 8: Personal Computer Components: Motherboards and Processors",
     "text": "Which is the most common type of RAM slot on modern desktop motherboards?",
     "options": [
       {
@@ -3720,7 +3720,7 @@
   {
     "id": "Chapter-8-q4",
     "localId": "4",
-    "chapter": "Chapter 8",
+    "chapter": "Chapter 8: Personal Computer Components: Motherboards and Processors",
     "text": "Which of the following describes a motherboard form factor?",
     "options": [
       {
@@ -3746,7 +3746,7 @@
   {
     "id": "Chapter-8-q5",
     "localId": "5",
-    "chapter": "Chapter 8",
+    "chapter": "Chapter 8: Personal Computer Components: Motherboards and Processors",
     "text": "Which of these motherboards is the smallest?",
     "options": [
       {
@@ -3772,7 +3772,7 @@
   {
     "id": "Chapter-8-q6",
     "localId": "6",
-    "chapter": "Chapter 8",
+    "chapter": "Chapter 8: Personal Computer Components: Motherboards and Processors",
     "text": "Where is a PC’s main chipset located?",
     "options": [
       {
@@ -3798,7 +3798,7 @@
   {
     "id": "Chapter-8-q7",
     "localId": "7",
-    "chapter": "Chapter 8",
+    "chapter": "Chapter 8: Personal Computer Components: Motherboards and Processors",
     "text": "Which of the following describes a difference between PCI and PCIe?",
     "options": [
       {
@@ -3824,7 +3824,7 @@
   {
     "id": "Chapter-8-q8",
     "localId": "8",
-    "chapter": "Chapter 8",
+    "chapter": "Chapter 8: Personal Computer Components: Motherboards and Processors",
     "text": "What type of local bus connector is used for video cards on modern systems?",
     "options": [
       {
@@ -3850,7 +3850,7 @@
   {
     "id": "Chapter-8-q9",
     "localId": "9",
-    "chapter": "Chapter 8",
+    "chapter": "Chapter 8: Personal Computer Components: Motherboards and Processors",
     "text": "Which of these busses is used to connect solid-state devices such as SSDs to the motherboard on a modern system?",
     "options": [
       {
@@ -3876,7 +3876,7 @@
   {
     "id": "Chapter-8-q10",
     "localId": "10",
-    "chapter": "Chapter 8",
+    "chapter": "Chapter 8: Personal Computer Components: Motherboards and Processors",
     "text": "What is the purpose of the control unit in the machine cycle?",
     "options": [
       {
@@ -3902,7 +3902,7 @@
   {
     "id": "Chapter-8-q11",
     "localId": "11",
-    "chapter": "Chapter 8",
+    "chapter": "Chapter 8: Personal Computer Components: Motherboards and Processors",
     "text": "What is the purpose of the L1 cache?",
     "options": [
       {
@@ -3928,7 +3928,7 @@
   {
     "id": "Chapter-8-q12",
     "localId": "12",
-    "chapter": "Chapter 8",
+    "chapter": "Chapter 8: Personal Computer Components: Motherboards and Processors",
     "text": "What component in a CPU is responsible for all logical and mathematical operations?",
     "options": [
       {
@@ -3954,7 +3954,7 @@
   {
     "id": "Chapter-8-q13",
     "localId": "13",
-    "chapter": "Chapter 8",
+    "chapter": "Chapter 8: Personal Computer Components: Motherboards and Processors",
     "text": "What CPU component temporarily stores data inside the CPU as it is being processed?",
     "options": [
       {
@@ -3980,7 +3980,7 @@
   {
     "id": "Chapter-8-q14",
     "localId": "14",
-    "chapter": "Chapter 8",
+    "chapter": "Chapter 8: Personal Computer Components: Motherboards and Processors",
     "text": "What CPU technology allows two threads to execute at the same time within a single execution core?",
     "options": [
       {
@@ -4006,7 +4006,7 @@
   {
     "id": "Chapter-8-q15",
     "localId": "15",
-    "chapter": "Chapter 8",
+    "chapter": "Chapter 8: Personal Computer Components: Motherboards and Processors",
     "text": "Which of the following statements are true? (Choose two.)",
     "options": [
       {
@@ -4032,7 +4032,7 @@
   {
     "id": "Chapter-8-q16",
     "localId": "16",
-    "chapter": "Chapter 8",
+    "chapter": "Chapter 8: Personal Computer Components: Motherboards and Processors",
     "text": "In a system with an integrated GPU, into what component is the GPU integrated?",
     "options": [
       {
@@ -4058,7 +4058,7 @@
   {
     "id": "Chapter-8-q17",
     "localId": "17",
-    "chapter": "Chapter 8",
+    "chapter": "Chapter 8: Personal Computer Components: Motherboards and Processors",
     "text": "Which of these is a company that makes CPUs for personal computers?",
     "options": [
       {
@@ -4084,7 +4084,7 @@
   {
     "id": "Chapter-8-q18",
     "localId": "18",
-    "chapter": "Chapter 8",
+    "chapter": "Chapter 8: Personal Computer Components: Motherboards and Processors",
     "text": "What does an Admin or Supervisor password in firmware setup prevent unauthorized people from doing?",
     "options": [
       {
@@ -4110,7 +4110,7 @@
   {
     "id": "Chapter-8-q19",
     "localId": "19",
-    "chapter": "Chapter 8",
+    "chapter": "Chapter 8: Personal Computer Components: Motherboards and Processors",
     "text": "What is UEFI?",
     "options": [
       {
@@ -4136,7 +4136,7 @@
   {
     "id": "Chapter-8-q20",
     "localId": "20",
-    "chapter": "Chapter 8",
+    "chapter": "Chapter 8: Personal Computer Components: Motherboards and Processors",
     "text": "Which helps prevent malware (such as a rootkit replacing the Windows boot loader) and unauthorized OSs from loading during the system boot process?",
     "options": [
       {
@@ -4162,7 +4162,7 @@
   {
     "id": "Chapter-9-q1",
     "localId": "1",
-    "chapter": "Chapter 9",
+    "chapter": "Chapter 9: Personal Computer Components: Memory, Adapters, and Storage",
     "text": "This type of memory is volatile, is used as temporary workspace by the CPU, and loses its contents every time a computer is powered down.",
     "options": [
       {
@@ -4188,7 +4188,7 @@
   {
     "id": "Chapter-9-q2",
     "localId": "2",
-    "chapter": "Chapter 9",
+    "chapter": "Chapter 9: Personal Computer Components: Memory, Adapters, and Storage",
     "text": "Cache memory uses which type of RAM chip because of its speed?",
     "options": [
       {
@@ -4214,7 +4214,7 @@
   {
     "id": "Chapter-9-q3",
     "localId": "3",
-    "chapter": "Chapter 9",
+    "chapter": "Chapter 9: Personal Computer Components: Memory, Adapters, and Storage",
     "text": "This type of SDRAM doubled the speed at which standard SDRAM processed data by accessing the module twice per clock cycle.",
     "options": [
       {
@@ -4240,7 +4240,7 @@
   {
     "id": "Chapter-9-q4",
     "localId": "4",
-    "chapter": "Chapter 9",
+    "chapter": "Chapter 9: Personal Computer Components: Memory, Adapters, and Storage",
     "text": "This type of RAM module uses a 240-pin DIMM socket.",
     "options": [
       {
@@ -4266,7 +4266,7 @@
   {
     "id": "Chapter-9-q5",
     "localId": "5",
-    "chapter": "Chapter 9",
+    "chapter": "Chapter 9: Personal Computer Components: Memory, Adapters, and Storage",
     "text": "This specialized type of DDR3 runs at 1.35V, which decreases the electricity used.",
     "options": [
       {
@@ -4292,7 +4292,7 @@
   {
     "id": "Chapter-9-q6",
     "localId": "6",
-    "chapter": "Chapter 9",
+    "chapter": "Chapter 9: Personal Computer Components: Memory, Adapters, and Storage",
     "text": "What is ECC RAM’s advantage over non-ECC RAM?",
     "options": [
       {
@@ -4318,7 +4318,7 @@
   {
     "id": "Chapter-9-q7",
     "localId": "7",
-    "chapter": "Chapter 9",
+    "chapter": "Chapter 9: Personal Computer Components: Memory, Adapters, and Storage",
     "text": "This chip manages the main memory on a motherboard.",
     "options": [
       {
@@ -4344,7 +4344,7 @@
   {
     "id": "Chapter-9-q8",
     "localId": "8",
-    "chapter": "Chapter 9",
+    "chapter": "Chapter 9: Personal Computer Components: Memory, Adapters, and Storage",
     "text": "Which of the following is _not_ a technology for connecting external devices?",
     "options": [
       {
@@ -4370,7 +4370,7 @@
   {
     "id": "Chapter-9-q9",
     "localId": "9",
-    "chapter": "Chapter 9",
+    "chapter": "Chapter 9: Personal Computer Components: Memory, Adapters, and Storage",
     "text": "Name a common communications adapter card used to connect PCs to a LAN.",
     "options": [
       {
@@ -4396,7 +4396,7 @@
   {
     "id": "Chapter-9-q10",
     "localId": "10",
-    "chapter": "Chapter 9",
+    "chapter": "Chapter 9: Personal Computer Components: Memory, Adapters, and Storage",
     "text": "What type of adapter would you install in order to connect an external hard drive via a fast interface?",
     "options": [
       {
@@ -4422,7 +4422,7 @@
   {
     "id": "Chapter-9-q11",
     "localId": "11",
-    "chapter": "Chapter 9",
+    "chapter": "Chapter 9: Personal Computer Components: Memory, Adapters, and Storage",
     "text": "This is the component in a magnetic hard drive that reads and writes data.",
     "options": [
       {
@@ -4448,7 +4448,7 @@
   {
     "id": "Chapter-9-q12",
     "localId": "12",
-    "chapter": "Chapter 9",
+    "chapter": "Chapter 9: Personal Computer Components: Memory, Adapters, and Storage",
     "text": "Suppose you have an old EIDE hard drive you need to connect to a desktop PC to see what’s on it. Which interface would you use?",
     "options": [
       {
@@ -4474,7 +4474,7 @@
   {
     "id": "Chapter-9-q13",
     "localId": "13",
-    "chapter": "Chapter 9",
+    "chapter": "Chapter 9: Personal Computer Components: Memory, Adapters, and Storage",
     "text": "Which of the following is an example of a magnetic mass storage device?",
     "options": [
       {
@@ -4500,7 +4500,7 @@
   {
     "id": "Chapter-9-q14",
     "localId": "14",
-    "chapter": "Chapter 9",
+    "chapter": "Chapter 9: Personal Computer Components: Memory, Adapters, and Storage",
     "text": "Name two common interfaces for external hard drives.",
     "options": [
       {
@@ -4526,7 +4526,7 @@
   {
     "id": "Chapter-9-q15",
     "localId": "15",
-    "chapter": "Chapter 9",
+    "chapter": "Chapter 9: Personal Computer Components: Memory, Adapters, and Storage",
     "text": "Which of these is _not_ a connection for attaching storage to a PC?",
     "options": [
       {
@@ -4552,7 +4552,7 @@
   {
     "id": "Chapter-9-q16",
     "localId": "16",
-    "chapter": "Chapter 9",
+    "chapter": "Chapter 9: Personal Computer Components: Memory, Adapters, and Storage",
     "text": "Which type of RAID provides mirroring for fault tolerance but not striping for performance?",
     "options": [
       {
@@ -4578,7 +4578,7 @@
   {
     "id": "Chapter-9-q17",
     "localId": "17",
-    "chapter": "Chapter 9",
+    "chapter": "Chapter 9: Personal Computer Components: Memory, Adapters, and Storage",
     "text": "Which version of SATA allows a cable length of 2 meters and transfers data at up to 2.4 Gbps?",
     "options": [
       {
@@ -4604,7 +4604,7 @@
   {
     "id": "Chapter-9-q18",
     "localId": "18",
-    "chapter": "Chapter 9",
+    "chapter": "Chapter 9: Personal Computer Components: Memory, Adapters, and Storage",
     "text": "This feature indicates that a drive can be connected or disconnected without shutting down the system.",
     "options": [
       {
@@ -4630,7 +4630,7 @@
   {
     "id": "Chapter-9-q19",
     "localId": "19",
-    "chapter": "Chapter 9",
+    "chapter": "Chapter 9: Personal Computer Components: Memory, Adapters, and Storage",
     "text": "How many drives are required to implement RAID 0?",
     "options": [
       {
@@ -4656,7 +4656,7 @@
   {
     "id": "Chapter-9-q20",
     "localId": "20",
-    "chapter": "Chapter 9",
+    "chapter": "Chapter 9: Personal Computer Components: Memory, Adapters, and Storage",
     "text": "This is a group of standards defining several schemes for using multiple identical hard drives, working together in an array with the goal of achieving either better performance or redundancy.",
     "options": [
       {
@@ -4682,7 +4682,7 @@
   {
     "id": "Chapter-10-q1",
     "localId": "1",
-    "chapter": "Chapter 10",
+    "chapter": "Chapter 10: Power Supplies, Display Devices, and Peripherals",
     "text": "Which statement is true?",
     "options": [
       {
@@ -4708,7 +4708,7 @@
   {
     "id": "Chapter-10-q2",
     "localId": "2",
-    "chapter": "Chapter 10",
+    "chapter": "Chapter 10: Power Supplies, Display Devices, and Peripherals",
     "text": "What is the name of the main power connector that goes between an ATX power supply and an ATX motherboard?",
     "options": [
       {
@@ -4734,7 +4734,7 @@
   {
     "id": "Chapter-10-q3",
     "localId": "3",
-    "chapter": "Chapter 10",
+    "chapter": "Chapter 10: Power Supplies, Display Devices, and Peripherals",
     "text": "The capacity of a power supply is normally stated in these units.",
     "options": [
       {
@@ -4760,7 +4760,7 @@
   {
     "id": "Chapter-10-q4",
     "localId": "4",
-    "chapter": "Chapter 10",
+    "chapter": "Chapter 10: Power Supplies, Display Devices, and Peripherals",
     "text": "What type of current is required by internal PC components?",
     "options": [
       {
@@ -4786,7 +4786,7 @@
   {
     "id": "Chapter-10-q5",
     "localId": "5",
-    "chapter": "Chapter 10",
+    "chapter": "Chapter 10: Power Supplies, Display Devices, and Peripherals",
     "text": "Which of these is _not_ a common voltage that computer components require?",
     "options": [
       {
@@ -4812,7 +4812,7 @@
   {
     "id": "Chapter-10-q6",
     "localId": "6",
-    "chapter": "Chapter 10",
+    "chapter": "Chapter 10: Power Supplies, Display Devices, and Peripherals",
     "text": "Which of the following calculations would you use to determine the capacity you require in a power supply?",
     "options": [
       {
@@ -4838,7 +4838,7 @@
   {
     "id": "Chapter-10-q7",
     "localId": "7",
-    "chapter": "Chapter 10",
+    "chapter": "Chapter 10: Power Supplies, Display Devices, and Peripherals",
     "text": "This active component of a typical power supply dissipates heat.",
     "options": [
       {
@@ -4864,7 +4864,7 @@
   {
     "id": "Chapter-10-q8",
     "localId": "8",
-    "chapter": "Chapter 10",
+    "chapter": "Chapter 10: Power Supplies, Display Devices, and Peripherals",
     "text": "What is a common term for a laptop power supply?",
     "options": [
       {
@@ -4890,7 +4890,7 @@
   {
     "id": "Chapter-10-q9",
     "localId": "9",
-    "chapter": "Chapter 10",
+    "chapter": "Chapter 10: Power Supplies, Display Devices, and Peripherals",
     "text": "Select all the items that should be considered when selecting a new power supply.",
     "options": [
       {
@@ -4916,7 +4916,7 @@
   {
     "id": "Chapter-10-q10",
     "localId": "10",
-    "chapter": "Chapter 10",
+    "chapter": "Chapter 10: Power Supplies, Display Devices, and Peripherals",
     "text": "What equipment should you never use when working with a power supply?",
     "options": [
       {
@@ -4942,7 +4942,7 @@
   {
     "id": "Chapter-10-q11",
     "localId": "11",
-    "chapter": "Chapter 10",
+    "chapter": "Chapter 10: Power Supplies, Display Devices, and Peripherals",
     "text": "What does a Molex connector provide power to?",
     "options": [
       {
@@ -4968,7 +4968,7 @@
   {
     "id": "Chapter-10-q12",
     "localId": "12",
-    "chapter": "Chapter 10",
+    "chapter": "Chapter 10: Power Supplies, Display Devices, and Peripherals",
     "text": "Which of these is the oldest type of display connector?",
     "options": [
       {
@@ -4994,7 +4994,7 @@
   {
     "id": "Chapter-10-q13",
     "localId": "13",
-    "chapter": "Chapter 10",
+    "chapter": "Chapter 10: Power Supplies, Display Devices, and Peripherals",
     "text": "Which of the following video interface standards supports both analog and digital signals?",
     "options": [
       {
@@ -5020,7 +5020,7 @@
   {
     "id": "Chapter-10-q14",
     "localId": "14",
-    "chapter": "Chapter 10",
+    "chapter": "Chapter 10: Power Supplies, Display Devices, and Peripherals",
     "text": "This video standard supports both digital video and digital audio and has the thinnest cable and the smallest connectors.",
     "options": [
       {
@@ -5046,7 +5046,7 @@
   {
     "id": "Chapter-10-q15",
     "localId": "15",
-    "chapter": "Chapter 10",
+    "chapter": "Chapter 10: Power Supplies, Display Devices, and Peripherals",
     "text": "Cold cathode fluorescent lamps (CCFLs) are a feature of what kind of display?",
     "options": [
       {
@@ -5072,7 +5072,7 @@
   {
     "id": "Chapter-10-q16",
     "localId": "16",
-    "chapter": "Chapter 10",
+    "chapter": "Chapter 10: Power Supplies, Display Devices, and Peripherals",
     "text": "This modern type of display device replaces an older technology that used more power and took up more desk space.",
     "options": [
       {
@@ -5098,7 +5098,7 @@
   {
     "id": "Chapter-10-q17",
     "localId": "17",
-    "chapter": "Chapter 10",
+    "chapter": "Chapter 10: Power Supplies, Display Devices, and Peripherals",
     "text": "Which of the following connectors is _not_ used to connect a display to a digital video interface?",
     "options": [
       {
@@ -5124,7 +5124,7 @@
   {
     "id": "Chapter-10-q18",
     "localId": "18",
-    "chapter": "Chapter 10",
+    "chapter": "Chapter 10: Power Supplies, Display Devices, and Peripherals",
     "text": "Which of the following is _not_ a DVI connector type?",
     "options": [
       {
@@ -5150,7 +5150,7 @@
   {
     "id": "Chapter-10-q19",
     "localId": "19",
-    "chapter": "Chapter 10",
+    "chapter": "Chapter 10: Power Supplies, Display Devices, and Peripherals",
     "text": "Which types of video connectors include a digital rights management feature called HDCP? (Choose two.)",
     "options": [
       {
@@ -5176,7 +5176,7 @@
   {
     "id": "Chapter-10-q20",
     "localId": "20",
-    "chapter": "Chapter 10",
+    "chapter": "Chapter 10: Power Supplies, Display Devices, and Peripherals",
     "text": "What is the primary drawback to OLED?",
     "options": [
       {
@@ -5202,7 +5202,7 @@
   {
     "id": "Chapter-11-q1",
     "localId": "1",
-    "chapter": "Chapter 11",
+    "chapter": "Chapter 11: Installing and Upgrading PC Components",
     "text": "How can you determine which CPU and memory modules to use with a certain motherboard?",
     "options": [
       {
@@ -5228,7 +5228,7 @@
   {
     "id": "Chapter-11-q2",
     "localId": "2",
-    "chapter": "Chapter 11",
+    "chapter": "Chapter 11: Installing and Upgrading PC Components",
     "text": "What type of CPU socket uses a lever for aligning the contacts and a cover for firmly securing a CPU?",
     "options": [
       {
@@ -5254,7 +5254,7 @@
   {
     "id": "Chapter-11-q3",
     "localId": "3",
-    "chapter": "Chapter 11",
+    "chapter": "Chapter 11: Installing and Upgrading PC Components",
     "text": "How should you handle a motherboard?",
     "options": [
       {
@@ -5280,7 +5280,7 @@
   {
     "id": "Chapter-11-q4",
     "localId": "4",
-    "chapter": "Chapter 11",
+    "chapter": "Chapter 11: Installing and Upgrading PC Components",
     "text": "Which of the following must you do when installing a DIMM?",
     "options": [
       {
@@ -5306,7 +5306,7 @@
   {
     "id": "Chapter-11-q5",
     "localId": "5",
-    "chapter": "Chapter 11",
+    "chapter": "Chapter 11: Installing and Upgrading PC Components",
     "text": "What prevents you from installing a DDR4 module into a DDR3 socket?",
     "options": [
       {
@@ -5332,7 +5332,7 @@
   {
     "id": "Chapter-11-q6",
     "localId": "6",
-    "chapter": "Chapter 11",
+    "chapter": "Chapter 11: Installing and Upgrading PC Components",
     "text": "Suppose you replace the 8-GB DIMMs in your motherboard with 16-GB DIMMs, but now the system will not boot. What is the likely reason?",
     "options": [
       {
@@ -5358,7 +5358,7 @@
   {
     "id": "Chapter-11-q7",
     "localId": "7",
-    "chapter": "Chapter 11",
+    "chapter": "Chapter 11: Installing and Upgrading PC Components",
     "text": "How do you know when a DIMM is fully seated in the motherboard?",
     "options": [
       {
@@ -5384,7 +5384,7 @@
   {
     "id": "Chapter-11-q8",
     "localId": "8",
-    "chapter": "Chapter 11",
+    "chapter": "Chapter 11: Installing and Upgrading PC Components",
     "text": "What do modern PC cooling systems use to determine when to adjust the performance of the cooling system to keep the system cool?",
     "options": [
       {
@@ -5410,7 +5410,7 @@
   {
     "id": "Chapter-11-q9",
     "localId": "9",
-    "chapter": "Chapter 11",
+    "chapter": "Chapter 11: Installing and Upgrading PC Components",
     "text": "Which of the following could impair the functioning of the installed cooling system? (Select all that apply.)",
     "options": [
       {
@@ -5436,7 +5436,7 @@
   {
     "id": "Chapter-11-q10",
     "localId": "10",
-    "chapter": "Chapter 11",
+    "chapter": "Chapter 11: Installing and Upgrading PC Components",
     "text": "Adding this cooling component is an easy and inexpensive cooling system upgrade.",
     "options": [
       {
@@ -5462,7 +5462,7 @@
   {
     "id": "Chapter-11-q11",
     "localId": "11",
-    "chapter": "Chapter 11",
+    "chapter": "Chapter 11: Installing and Upgrading PC Components",
     "text": "You have just purchased a new device that requires USB 3.0, but your desktop’s USB ports are only at USB 2.0. What is a good solution?",
     "options": [
       {
@@ -5488,7 +5488,7 @@
   {
     "id": "Chapter-11-q12",
     "localId": "12",
-    "chapter": "Chapter 11",
+    "chapter": "Chapter 11: Installing and Upgrading PC Components",
     "text": "Before installing an adapter card in a computer, check the documentation and do one of the following, if necessary.",
     "options": [
       {
@@ -5514,7 +5514,7 @@
   {
     "id": "Chapter-11-q13",
     "localId": "13",
-    "chapter": "Chapter 11",
+    "chapter": "Chapter 11: Installing and Upgrading PC Components",
     "text": "To remove an internal HDD, which of these do you _not_ need to do?",
     "options": [
       {
@@ -5540,7 +5540,7 @@
   {
     "id": "Chapter-11-q14",
     "localId": "14",
-    "chapter": "Chapter 11",
+    "chapter": "Chapter 11: Installing and Upgrading PC Components",
     "text": "At what angle should you insert an M.2 module into a slot on the motherboard?",
     "options": [
       {
@@ -5566,7 +5566,7 @@
   {
     "id": "Chapter-11-q15",
     "localId": "15",
-    "chapter": "Chapter 11",
+    "chapter": "Chapter 11: Installing and Upgrading PC Components",
     "text": "Which of these is _not_ solid-state storage?",
     "options": [
       {
@@ -5592,7 +5592,7 @@
   {
     "id": "Chapter-11-q16",
     "localId": "16",
-    "chapter": "Chapter 11",
+    "chapter": "Chapter 11: Installing and Upgrading PC Components",
     "text": "Which types of drives connect to the motherboard via a SATA data cable? (Select all that apply.)",
     "options": [
       {
@@ -5618,7 +5618,7 @@
   {
     "id": "Chapter-11-q17",
     "localId": "17",
-    "chapter": "Chapter 11",
+    "chapter": "Chapter 11: Installing and Upgrading PC Components",
     "text": "How many SATA drives can be connected to a single data cable?",
     "options": [
       {
@@ -5644,7 +5644,7 @@
   {
     "id": "Chapter-11-q18",
     "localId": "18",
-    "chapter": "Chapter 11",
+    "chapter": "Chapter 11: Installing and Upgrading PC Components",
     "text": "Which of these interfaces would not be used to connect external storage?",
     "options": [
       {
@@ -5670,7 +5670,7 @@
   {
     "id": "Chapter-11-q19",
     "localId": "19",
-    "chapter": "Chapter 11",
+    "chapter": "Chapter 11: Installing and Upgrading PC Components",
     "text": "You have installed a new M.2 SSD in an existing system but Windows doesn’t recognize it. What have you neglected to do?",
     "options": [
       {
@@ -5696,7 +5696,7 @@
   {
     "id": "Chapter-11-q20",
     "localId": "20",
-    "chapter": "Chapter 11",
+    "chapter": "Chapter 11: Installing and Upgrading PC Components",
     "text": "You might be able to configure a hardware RAID without installing a RAID controller card if the ______ supports RAID.",
     "options": [
       {
@@ -5722,7 +5722,7 @@
   {
     "id": "Chapter-12-q1",
     "localId": "1",
-    "chapter": "Chapter 12",
+    "chapter": "Chapter 12: PC Hardware Troubleshooting and Maintenance",
     "text": "Which of the following is a hardware diagnostics tool that you insert into an expansion slot in a motherboard?",
     "options": [
       {
@@ -5748,7 +5748,7 @@
   {
     "id": "Chapter-12-q2",
     "localId": "2",
-    "chapter": "Chapter 12",
+    "chapter": "Chapter 12: PC Hardware Troubleshooting and Maintenance",
     "text": "What should you do before making any changes to a computer?",
     "options": [
       {
@@ -5774,7 +5774,7 @@
   {
     "id": "Chapter-12-q3",
     "localId": "3",
-    "chapter": "Chapter 12",
+    "chapter": "Chapter 12: PC Hardware Troubleshooting and Maintenance",
     "text": "According to troubleshooting methodology, what should you do immediately after establishing a theory of probable cause?",
     "options": [
       {
@@ -5800,7 +5800,7 @@
   {
     "id": "Chapter-12-q4",
     "localId": "4",
-    "chapter": "Chapter 12",
+    "chapter": "Chapter 12: PC Hardware Troubleshooting and Maintenance",
     "text": "When questioning a user to determine the cause of a problem, which of these is a respectfully phrased, useful question to ask?",
     "options": [
       {
@@ -5826,7 +5826,7 @@
   {
     "id": "Chapter-12-q5",
     "localId": "5",
-    "chapter": "Chapter 12",
+    "chapter": "Chapter 12: PC Hardware Troubleshooting and Maintenance",
     "text": "Suppose a user says that her PC sounds different than it used to when it’s on. You ask whether the sound is different all the time or only when accessing the HDD, and she reports that the sound is different all the time. What component is likely to be failing?",
     "options": [
       {
@@ -5852,7 +5852,7 @@
   {
     "id": "Chapter-12-q6",
     "localId": "6",
-    "chapter": "Chapter 12",
+    "chapter": "Chapter 12: PC Hardware Troubleshooting and Maintenance",
     "text": "Reorder the following troubleshooting steps from the least intrusive to the most intrusive.",
     "options": [
       {
@@ -5878,7 +5878,7 @@
   {
     "id": "Chapter-12-q7",
     "localId": "7",
-    "chapter": "Chapter 12",
+    "chapter": "Chapter 12: PC Hardware Troubleshooting and Maintenance",
     "text": "You first should narrow down the source of a problem to one of what two broad categories?",
     "options": [
       {
@@ -5904,7 +5904,7 @@
   {
     "id": "Chapter-12-q8",
     "localId": "8",
-    "chapter": "Chapter 12",
+    "chapter": "Chapter 12: PC Hardware Troubleshooting and Maintenance",
     "text": "How do you narrow down the problem to one hardware component?",
     "options": [
       {
@@ -5930,7 +5930,7 @@
   {
     "id": "Chapter-12-q9",
     "localId": "9",
-    "chapter": "Chapter 12",
+    "chapter": "Chapter 12: PC Hardware Troubleshooting and Maintenance",
     "text": "After you apply and test a solution, what should you have the user do as part of evaluating the solution?",
     "options": [
       {
@@ -5956,7 +5956,7 @@
   {
     "id": "Chapter-12-q10",
     "localId": "10",
-    "chapter": "Chapter 12",
+    "chapter": "Chapter 12: PC Hardware Troubleshooting and Maintenance",
     "text": "What should you do if you are unsure if a problem is limited to the single application that was in use at the time the problem occurred?",
     "options": [
       {
@@ -5982,7 +5982,7 @@
   {
     "id": "Chapter-12-q11",
     "localId": "11",
-    "chapter": "Chapter 12",
+    "chapter": "Chapter 12: PC Hardware Troubleshooting and Maintenance",
     "text": "A customer reports that the computer spontaneously reboots after being used for about 20 minutes and will not restart until it has sat idle for a few minutes. Furthermore, even when the computer does start, the fan does not make as much noise as before. What is the likely cause of these problems?",
     "options": [
       {
@@ -6008,7 +6008,7 @@
   {
     "id": "Chapter-12-q12",
     "localId": "12",
-    "chapter": "Chapter 12",
+    "chapter": "Chapter 12: PC Hardware Troubleshooting and Maintenance",
     "text": "Which of the following is the safest and easiest device for measuring the voltage output from a power supply?",
     "options": [
       {
@@ -6034,7 +6034,7 @@
   {
     "id": "Chapter-12-q13",
     "localId": "13",
-    "chapter": "Chapter 12",
+    "chapter": "Chapter 12: PC Hardware Troubleshooting and Maintenance",
     "text": "Your computer consistently loses its date and time settings. Which procedure will you use to solve the problem?",
     "options": [
       {
@@ -6060,7 +6060,7 @@
   {
     "id": "Chapter-12-q14",
     "localId": "14",
-    "chapter": "Chapter 12",
+    "chapter": "Chapter 12: PC Hardware Troubleshooting and Maintenance",
     "text": "A user reports that when he turns on his PC, it beeps three times and nothing appears on the screen. What do you suspect about the problem?",
     "options": [
       {
@@ -6086,7 +6086,7 @@
   {
     "id": "Chapter-12-q15",
     "localId": "15",
-    "chapter": "Chapter 12",
+    "chapter": "Chapter 12: PC Hardware Troubleshooting and Maintenance",
     "text": "Which of the following symptoms could _not_ be caused by a RAM error?",
     "options": [
       {
@@ -6112,7 +6112,7 @@
   {
     "id": "Chapter-12-q16",
     "localId": "16",
-    "chapter": "Chapter 12",
+    "chapter": "Chapter 12: PC Hardware Troubleshooting and Maintenance",
     "text": "Suppose you have a SATA drive that works in one PC, but when you move it to another PC, the new PC’s UEFI does not recognize it. Cables are all snug. What should you try next?",
     "options": [
       {
@@ -6138,7 +6138,7 @@
   {
     "id": "Chapter-12-q17",
     "localId": "17",
-    "chapter": "Chapter 12",
+    "chapter": "Chapter 12: PC Hardware Troubleshooting and Maintenance",
     "text": "With which type of RAID array do you need to rerun the RAID setup program to re-create the array after replacing a faulty drive?",
     "options": [
       {
@@ -6164,7 +6164,7 @@
   {
     "id": "Chapter-12-q18",
     "localId": "18",
-    "chapter": "Chapter 12",
+    "chapter": "Chapter 12: PC Hardware Troubleshooting and Maintenance",
     "text": "Your video display is blank. Which of the following should you do first?",
     "options": [
       {
@@ -6190,7 +6190,7 @@
   {
     "id": "Chapter-12-q19",
     "localId": "19",
-    "chapter": "Chapter 12",
+    "chapter": "Chapter 12: PC Hardware Troubleshooting and Maintenance",
     "text": "How do you repair a dead or stuck pixel on an LCD monitor?",
     "options": [
       {
@@ -6216,7 +6216,7 @@
   {
     "id": "Chapter-12-q20",
     "localId": "20",
-    "chapter": "Chapter 12",
+    "chapter": "Chapter 12: PC Hardware Troubleshooting and Maintenance",
     "text": "Which of the following is a possible cause of a display suddenly shutting down?",
     "options": [
       {
@@ -6242,7 +6242,7 @@
   {
     "id": "Chapter-13-q1",
     "localId": "1",
-    "chapter": "Chapter 13",
+    "chapter": "Chapter 13: Using and Supporting Printers",
     "text": "What is a common use for impact printers?",
     "options": [
       {
@@ -6268,7 +6268,7 @@
   {
     "id": "Chapter-13-q2",
     "localId": "2",
-    "chapter": "Chapter 13",
+    "chapter": "Chapter 13: Using and Supporting Printers",
     "text": "What type of printer is the most often used shared network printer in businesses?",
     "options": [
       {
@@ -6294,7 +6294,7 @@
   {
     "id": "Chapter-13-q3",
     "localId": "3",
-    "chapter": "Chapter 13",
+    "chapter": "Chapter 13: Using and Supporting Printers",
     "text": "In what stage of the laser printing process does a laser beam place an image on the photosensitive drum?",
     "options": [
       {
@@ -6320,7 +6320,7 @@
   {
     "id": "Chapter-13-q4",
     "localId": "4",
-    "chapter": "Chapter 13",
+    "chapter": "Chapter 13: Using and Supporting Printers",
     "text": "Which stage in the laser printing process is responsible for creating a permanent non-smearing image?",
     "options": [
       {
@@ -6346,7 +6346,7 @@
   {
     "id": "Chapter-13-q5",
     "localId": "5",
-    "chapter": "Chapter 13",
+    "chapter": "Chapter 13: Using and Supporting Printers",
     "text": "What type of printer applies wet ink to paper?",
     "options": [
       {
@@ -6372,7 +6372,7 @@
   {
     "id": "Chapter-13-q6",
     "localId": "6",
-    "chapter": "Chapter 13",
+    "chapter": "Chapter 13: Using and Supporting Printers",
     "text": "What is the unit of measure used to describe the size of droplets created by the nozzles in an inkjet printer?",
     "options": [
       {
@@ -6398,7 +6398,7 @@
   {
     "id": "Chapter-13-q7",
     "localId": "7",
-    "chapter": "Chapter 13",
+    "chapter": "Chapter 13: Using and Supporting Printers",
     "text": "When you select a printer in the Settings app and click Manage, several commands become available for managing the printer. Which of these would you choose if you wanted to share the printer on a LAN?",
     "options": [
       {
@@ -6424,7 +6424,7 @@
   {
     "id": "Chapter-13-q8",
     "localId": "8",
-    "chapter": "Chapter 13",
+    "chapter": "Chapter 13: Using and Supporting Printers",
     "text": "What important configuration task must you perform on a network printer before it will be recognized on the network?",
     "options": [
       {
@@ -6450,7 +6450,7 @@
   {
     "id": "Chapter-13-q9",
     "localId": "9",
-    "chapter": "Chapter 13",
+    "chapter": "Chapter 13: Using and Supporting Printers",
     "text": "Which of these would be the best location in which to install an Ethernet-enabled printer that multiple users in a legal department will access?",
     "options": [
       {
@@ -6476,7 +6476,7 @@
   {
     "id": "Chapter-13-q10",
     "localId": "10",
-    "chapter": "Chapter 13",
+    "chapter": "Chapter 13: Using and Supporting Printers",
     "text": "If you set up a network-enabled MFD to save scans to a centrally accessible storage location on the local LAN, what protocol would be used for that file sharing?",
     "options": [
       {
@@ -6502,7 +6502,7 @@
   {
     "id": "Chapter-13-q11",
     "localId": "11",
-    "chapter": "Chapter 13",
+    "chapter": "Chapter 13: Using and Supporting Printers",
     "text": "What should you do after installing a maintenance kit in a laser printer?",
     "options": [
       {
@@ -6528,7 +6528,7 @@
   {
     "id": "Chapter-13-q12",
     "localId": "12",
-    "chapter": "Chapter 13",
+    "chapter": "Chapter 13: Using and Supporting Printers",
     "text": "What simple maintenance task for printers helps maintain high-quality results?",
     "options": [
       {
@@ -6554,7 +6554,7 @@
   {
     "id": "Chapter-13-q13",
     "localId": "13",
-    "chapter": "Chapter 13",
+    "chapter": "Chapter 13: Using and Supporting Printers",
     "text": "For which type of printer would maintenance include replacing the print head and replacing the ribbon?",
     "options": [
       {
@@ -6580,7 +6580,7 @@
   {
     "id": "Chapter-13-q14",
     "localId": "14",
-    "chapter": "Chapter 13",
+    "chapter": "Chapter 13: Using and Supporting Printers",
     "text": "When multiple print jobs are backed up and not printing, check to see if this Windows service is running.",
     "options": [
       {
@@ -6606,7 +6606,7 @@
   {
     "id": "Chapter-13-q15",
     "localId": "15",
-    "chapter": "Chapter 13",
+    "chapter": "Chapter 13: Using and Supporting Printers",
     "text": "What can contribute to static buildup in a printer?",
     "options": [
       {
@@ -6632,7 +6632,7 @@
   {
     "id": "Chapter-13-q16",
     "localId": "16",
-    "chapter": "Chapter 13",
+    "chapter": "Chapter 13: Using and Supporting Printers",
     "text": "Which of these might be the cause of a grinding noise as the printer operates? (Choose two.)",
     "options": [
       {
@@ -6658,7 +6658,7 @@
   {
     "id": "Chapter-13-q17",
     "localId": "17",
-    "chapter": "Chapter 13",
+    "chapter": "Chapter 13: Using and Supporting Printers",
     "text": "What component on an inkjet printer may clog with ink?",
     "options": [
       {
@@ -6684,7 +6684,7 @@
   {
     "id": "Chapter-13-q18",
     "localId": "18",
-    "chapter": "Chapter 13",
+    "chapter": "Chapter 13: Using and Supporting Printers",
     "text": "What component in a laser printer could be the source of a repeated pattern of speckles?",
     "options": [
       {
@@ -6710,7 +6710,7 @@
   {
     "id": "Chapter-13-q19",
     "localId": "19",
-    "chapter": "Chapter 13",
+    "chapter": "Chapter 13: Using and Supporting Printers",
     "text": "When an echoed image from a previous page occurs on subsequent pages printed on a laser printer, what component is a probable source of the problem?",
     "options": [
       {
@@ -6736,7 +6736,7 @@
   {
     "id": "Chapter-13-q20",
     "localId": "20",
-    "chapter": "Chapter 13",
+    "chapter": "Chapter 13: Using and Supporting Printers",
     "text": "Of all the possible solutions for garbled printing, which two are the first ones you should try?",
     "options": [
       {
@@ -6762,7 +6762,7 @@
   {
     "id": "Chapter-14-q1",
     "localId": "1",
-    "chapter": "Chapter 14",
+    "chapter": "Chapter 14: Configuring and Using Laptops",
     "text": "How many pins does a DDR4 SODIMM have?",
     "options": [
       {
@@ -6788,7 +6788,7 @@
   {
     "id": "Chapter-14-q2",
     "localId": "2",
-    "chapter": "Chapter 14",
+    "chapter": "Chapter 14: Configuring and Using Laptops",
     "text": "What is the name for system memory used by the video adapter and therefore unavailable to the operating system?",
     "options": [
       {
@@ -6814,7 +6814,7 @@
   {
     "id": "Chapter-14-q3",
     "localId": "3",
-    "chapter": "Chapter 14",
+    "chapter": "Chapter 14: Configuring and Using Laptops",
     "text": "What type of battery is most common on a modern laptop?",
     "options": [
       {
@@ -6840,7 +6840,7 @@
   {
     "id": "Chapter-14-q4",
     "localId": "4",
-    "chapter": "Chapter 14",
+    "chapter": "Chapter 14: Configuring and Using Laptops",
     "text": "Which types of expansion slots are common on modern laptops? (Choose two.)",
     "options": [
       {
@@ -6866,7 +6866,7 @@
   {
     "id": "Chapter-14-q5",
     "localId": "5",
-    "chapter": "Chapter 14",
+    "chapter": "Chapter 14: Configuring and Using Laptops",
     "text": "Which of the following is a laptop component used to convert the DC power from the power adapter or battery to the AC power required by the LCD display?",
     "options": [
       {
@@ -6892,7 +6892,7 @@
   {
     "id": "Chapter-14-q6",
     "localId": "6",
-    "chapter": "Chapter 14",
+    "chapter": "Chapter 14: Configuring and Using Laptops",
     "text": "What is the most common laptop memory module?",
     "options": [
       {
@@ -6918,7 +6918,7 @@
   {
     "id": "Chapter-14-q7",
     "localId": "7",
-    "chapter": "Chapter 14",
+    "chapter": "Chapter 14: Configuring and Using Laptops",
     "text": "Which is a common size for a laptop hard disk drive (HDD)?",
     "options": [
       {
@@ -6944,7 +6944,7 @@
   {
     "id": "Chapter-14-q8",
     "localId": "8",
-    "chapter": "Chapter 14",
+    "chapter": "Chapter 14: Configuring and Using Laptops",
     "text": "Which of the following allows you to attach nearly any type of desktop component to a laptop?",
     "options": [
       {
@@ -6970,7 +6970,7 @@
   {
     "id": "Chapter-14-q9",
     "localId": "9",
-    "chapter": "Chapter 14",
+    "chapter": "Chapter 14: Configuring and Using Laptops",
     "text": "What utility in Windows could you use to migrate an HDD to a new SSD in Windows?",
     "options": [
       {
@@ -6996,7 +6996,7 @@
   {
     "id": "Chapter-14-q10",
     "localId": "10",
-    "chapter": "Chapter 14",
+    "chapter": "Chapter 14: Configuring and Using Laptops",
     "text": "How is a Mini PCIe card in a laptop different from a PCIe card on a desktop?",
     "options": [
       {
@@ -7022,7 +7022,7 @@
   {
     "id": "Chapter-14-q11",
     "localId": "11",
-    "chapter": "Chapter 14",
+    "chapter": "Chapter 14: Configuring and Using Laptops",
     "text": "Where is the hard disk located on a laptop?",
     "options": [
       {
@@ -7048,7 +7048,7 @@
   {
     "id": "Chapter-14-q12",
     "localId": "12",
-    "chapter": "Chapter 14",
+    "chapter": "Chapter 14: Configuring and Using Laptops",
     "text": "Which wireless communications standard is used between a laptop and nearby devices and is limited to devices within a few meters of the computer?",
     "options": [
       {
@@ -7074,7 +7074,7 @@
   {
     "id": "Chapter-14-q13",
     "localId": "13",
-    "chapter": "Chapter 14",
+    "chapter": "Chapter 14: Configuring and Using Laptops",
     "text": "On a touch screen, what component allows the screen to function as an input device?",
     "options": [
       {
@@ -7100,7 +7100,7 @@
   {
     "id": "Chapter-14-q14",
     "localId": "14",
-    "chapter": "Chapter 14",
+    "chapter": "Chapter 14: Configuring and Using Laptops",
     "text": "How can you manually place a PC in Sleep mode?",
     "options": [
       {
@@ -7126,7 +7126,7 @@
   {
     "id": "Chapter-14-q15",
     "localId": "15",
-    "chapter": "Chapter 14",
+    "chapter": "Chapter 14: Configuring and Using Laptops",
     "text": "What Windows utility can you use to configure low-battery options for a laptop?",
     "options": [
       {
@@ -7152,7 +7152,7 @@
   {
     "id": "Chapter-14-q16",
     "localId": "16",
-    "chapter": "Chapter 14",
+    "chapter": "Chapter 14: Configuring and Using Laptops",
     "text": "Which low-power mode uses the least amount of electricity?",
     "options": [
       {
@@ -7178,7 +7178,7 @@
   {
     "id": "Chapter-14-q17",
     "localId": "17",
-    "chapter": "Chapter 14",
+    "chapter": "Chapter 14: Configuring and Using Laptops",
     "text": "Which of these is not one of the actions you can assign to the act of closing a laptop’s lid?",
     "options": [
       {
@@ -7204,7 +7204,7 @@
   {
     "id": "Chapter-14-q18",
     "localId": "18",
-    "chapter": "Chapter 14",
+    "chapter": "Chapter 14: Configuring and Using Laptops",
     "text": "Which of these is _not_ a common connection interface for a modern laptop?",
     "options": [
       {
@@ -7230,7 +7230,7 @@
   {
     "id": "Chapter-14-q19",
     "localId": "19",
-    "chapter": "Chapter 14",
+    "chapter": "Chapter 14: Configuring and Using Laptops",
     "text": "What is the most urgent concern when a laptop comes in contact with water?",
     "options": [
       {
@@ -7256,7 +7256,7 @@
   {
     "id": "Chapter-14-q20",
     "localId": "20",
-    "chapter": "Chapter 14",
+    "chapter": "Chapter 14: Configuring and Using Laptops",
     "text": "How can you clear a laptop out of Sleep mode if it gets stuck in sleep and won’t wake up?",
     "options": [
       {
@@ -7282,7 +7282,7 @@
   {
     "id": "Chapter-15-q1",
     "localId": "1",
-    "chapter": "Chapter 15",
+    "chapter": "Chapter 15: Supporting Mobile Devices",
     "text": "When you purchase a smartphone, it has this type of connection configured for you.",
     "options": [
       {
@@ -7308,7 +7308,7 @@
   {
     "id": "Chapter-15-q2",
     "localId": "2",
-    "chapter": "Chapter 15",
+    "chapter": "Chapter 15: Supporting Mobile Devices",
     "text": "_______ means sharing your phone’s Internet connection with another Wi-Fi–enabled device.",
     "options": [
       {
@@ -7334,7 +7334,7 @@
   {
     "id": "Chapter-15-q3",
     "localId": "3",
-    "chapter": "Chapter 15",
+    "chapter": "Chapter 15: Supporting Mobile Devices",
     "text": "________ means connecting a Bluetooth-enabled accessory to a smartphone, tablet, or other mobile device.",
     "options": [
       {
@@ -7360,7 +7360,7 @@
   {
     "id": "Chapter-15-q4",
     "localId": "4",
-    "chapter": "Chapter 15",
+    "chapter": "Chapter 15: Supporting Mobile Devices",
     "text": "What mode on mobile devices turns off all RF broadcasts?",
     "options": [
       {
@@ -7386,7 +7386,7 @@
   {
     "id": "Chapter-15-q5",
     "localId": "5",
-    "chapter": "Chapter 15",
+    "chapter": "Chapter 15: Supporting Mobile Devices",
     "text": "What information do you need to configure your mobile device to connect to a Gmail account?",
     "options": [
       {
@@ -7412,7 +7412,7 @@
   {
     "id": "Chapter-15-q6",
     "localId": "6",
-    "chapter": "Chapter 15",
+    "chapter": "Chapter 15: Supporting Mobile Devices",
     "text": "What type of e-mail service is internally maintained for an organization’s employees, with all accounts centrally administered by the organization’s e-mail administrator?",
     "options": [
       {
@@ -7438,7 +7438,7 @@
   {
     "id": "Chapter-15-q7",
     "localId": "7",
-    "chapter": "Chapter 15",
+    "chapter": "Chapter 15: Supporting Mobile Devices",
     "text": "How might you perform a cloud synchronization on a mobile device?",
     "options": [
       {
@@ -7464,7 +7464,7 @@
   {
     "id": "Chapter-15-q8",
     "localId": "8",
-    "chapter": "Chapter 15",
+    "chapter": "Chapter 15: Supporting Mobile Devices",
     "text": "What security feature requires you to enter a PIN for access to a device?",
     "options": [
       {
@@ -7490,7 +7490,7 @@
   {
     "id": "Chapter-15-q9",
     "localId": "9",
-    "chapter": "Chapter 15",
+    "chapter": "Chapter 15: Supporting Mobile Devices",
     "text": "Which of these is an example of a profile security requirement?",
     "options": [
       {
@@ -7516,7 +7516,7 @@
   {
     "id": "Chapter-15-q10",
     "localId": "10",
-    "chapter": "Chapter 15",
+    "chapter": "Chapter 15: Supporting Mobile Devices",
     "text": "Which of these is a method of circumventing the built-in iOS protections against getting root access to a mobile device’s system files?",
     "options": [
       {
@@ -7542,7 +7542,7 @@
   {
     "id": "Chapter-15-q11",
     "localId": "11",
-    "chapter": "Chapter 15",
+    "chapter": "Chapter 15: Supporting Mobile Devices",
     "text": "Which of these is a biometric authentication feature?",
     "options": [
       {
@@ -7568,7 +7568,7 @@
   {
     "id": "Chapter-15-q12",
     "localId": "12",
-    "chapter": "Chapter 15",
+    "chapter": "Chapter 15: Supporting Mobile Devices",
     "text": "To ensure that you do not install malware on an Android device, what do you need to make sure you know?",
     "options": [
       {
@@ -7594,7 +7594,7 @@
   {
     "id": "Chapter-15-q13",
     "localId": "13",
-    "chapter": "Chapter 15",
+    "chapter": "Chapter 15: Supporting Mobile Devices",
     "text": "Which of these would you _not_ use after your mobile device is lost?",
     "options": [
       {
@@ -7620,7 +7620,7 @@
   {
     "id": "Chapter-15-q14",
     "localId": "14",
-    "chapter": "Chapter 15",
+    "chapter": "Chapter 15: Supporting Mobile Devices",
     "text": "Which of these would **not** be a likely cause of overheating?",
     "options": [
       {
@@ -7646,7 +7646,7 @@
   {
     "id": "Chapter-15-q15",
     "localId": "15",
-    "chapter": "Chapter 15",
+    "chapter": "Chapter 15: Supporting Mobile Devices",
     "text": "Which problem would a soft reset _not_ fix?",
     "options": [
       {
@@ -7672,7 +7672,7 @@
   {
     "id": "Chapter-15-q16",
     "localId": "16",
-    "chapter": "Chapter 15",
+    "chapter": "Chapter 15: Supporting Mobile Devices",
     "text": "When you are outdoors in a rural area and have a weak cell signal, what is likely the problem?",
     "options": [
       {
@@ -7698,7 +7698,7 @@
   {
     "id": "Chapter-15-q17",
     "localId": "17",
-    "chapter": "Chapter 15",
+    "chapter": "Chapter 15: Supporting Mobile Devices",
     "text": "Which of these would _not_ help a problem with slow or intermittent Wi-Fi?",
     "options": [
       {
@@ -7724,7 +7724,7 @@
   {
     "id": "Chapter-15-q18",
     "localId": "18",
-    "chapter": "Chapter 15",
+    "chapter": "Chapter 15: Supporting Mobile Devices",
     "text": "When two nearby Bluetooth-enabled devices don’t recognize each other, what is likely the problem?",
     "options": [
       {
@@ -7750,7 +7750,7 @@
   {
     "id": "Chapter-15-q19",
     "localId": "19",
-    "chapter": "Chapter 15",
+    "chapter": "Chapter 15: Supporting Mobile Devices",
     "text": "When an app crashes, what solution should you try first?",
     "options": [
       {
@@ -7776,7 +7776,7 @@
   {
     "id": "Chapter-15-q20",
     "localId": "20",
-    "chapter": "Chapter 15",
+    "chapter": "Chapter 15: Supporting Mobile Devices",
     "text": "How can you do a hard reset on an Android phone that is not responding to commands?",
     "options": [
       {
@@ -7802,7 +7802,7 @@
   {
     "id": "Chapter-16-q1",
     "localId": "1",
-    "chapter": "Chapter 16",
+    "chapter": "Chapter 16: Network Basics",
     "text": "Which type of network enables two laptops in the same room to share files?",
     "options": [
       {
@@ -7828,7 +7828,7 @@
   {
     "id": "Chapter-16-q2",
     "localId": "2",
-    "chapter": "Chapter 16",
+    "chapter": "Chapter 16: Network Basics",
     "text": "Which of the following statements is true about a LAN versus a WAN?",
     "options": [
       {
@@ -7854,7 +7854,7 @@
   {
     "id": "Chapter-16-q3",
     "localId": "3",
-    "chapter": "Chapter 16",
+    "chapter": "Chapter 16: Network Basics",
     "text": "Which of the following is a PAN technology?",
     "options": [
       {
@@ -7880,7 +7880,7 @@
   {
     "id": "Chapter-16-q4",
     "localId": "4",
-    "chapter": "Chapter 16",
+    "chapter": "Chapter 16: Network Basics",
     "text": "What is the type of network that connects many private networks in one metropolitan community?",
     "options": [
       {
@@ -7906,7 +7906,7 @@
   {
     "id": "Chapter-16-q5",
     "localId": "5",
-    "chapter": "Chapter 16",
+    "chapter": "Chapter 16: Network Basics",
     "text": "Which of the following uses copper telephone lines for Internet service?",
     "options": [
       {
@@ -7932,7 +7932,7 @@
   {
     "id": "Chapter-16-q6",
     "localId": "6",
-    "chapter": "Chapter 16",
+    "chapter": "Chapter 16: Network Basics",
     "text": "Which of the following Internet connection methods uses light rather than electricity to send and receive data?",
     "options": [
       {
@@ -7958,7 +7958,7 @@
   {
     "id": "Chapter-16-q7",
     "localId": "7",
-    "chapter": "Chapter 16",
+    "chapter": "Chapter 16: Network Basics",
     "text": "Which of the following Internet connection types uses a network originally created for television transmissions?",
     "options": [
       {
@@ -7984,7 +7984,7 @@
   {
     "id": "Chapter-16-q8",
     "localId": "8",
-    "chapter": "Chapter 16",
+    "chapter": "Chapter 16: Network Basics",
     "text": "Which of the following is a term that describes the amount of data that can travel over a network within a given time?",
     "options": [
       {
@@ -8010,7 +8010,7 @@
   {
     "id": "Chapter-16-q9",
     "localId": "9",
-    "chapter": "Chapter 16",
+    "chapter": "Chapter 16: Network Basics",
     "text": "Which of the following is a term that describes the amount of time it takes a packet to travel from one point to another?",
     "options": [
       {
@@ -8036,7 +8036,7 @@
   {
     "id": "Chapter-16-q10",
     "localId": "10",
-    "chapter": "Chapter 16",
+    "chapter": "Chapter 16: Network Basics",
     "text": "Which statement describing IPv4 versus IPv6 differences is correct?",
     "options": [
       {
@@ -8062,7 +8062,7 @@
   {
     "id": "Chapter-16-q11",
     "localId": "11",
-    "chapter": "Chapter 16",
+    "chapter": "Chapter 16: Network Basics",
     "text": "Which port is the correct one for Hypertext Transfer Protocol (HTTP) and web page transmission to a browser?",
     "options": [
       {
@@ -8088,7 +8088,7 @@
   {
     "id": "Chapter-16-q12",
     "localId": "12",
-    "chapter": "Chapter 16",
+    "chapter": "Chapter 16: Network Basics",
     "text": "What protocol used on the Internet is concerned with the logical addressing of hosts?",
     "options": [
       {
@@ -8114,7 +8114,7 @@
   {
     "id": "Chapter-16-q13",
     "localId": "13",
-    "chapter": "Chapter 16",
+    "chapter": "Chapter 16: Network Basics",
     "text": "What protocol adds the old Microsoft naming system to TCP/IP?",
     "options": [
       {
@@ -8140,7 +8140,7 @@
   {
     "id": "Chapter-16-q14",
     "localId": "14",
-    "chapter": "Chapter 16",
+    "chapter": "Chapter 16: Network Basics",
     "text": "What divides an IP address into its host ID and network ID components?",
     "options": [
       {
@@ -8166,7 +8166,7 @@
   {
     "id": "Chapter-16-q15",
     "localId": "15",
-    "chapter": "Chapter 16",
+    "chapter": "Chapter 16: Network Basics",
     "text": "A NIC has this type of a permanent address assigned to it by the manufacturer.",
     "options": [
       {
@@ -8192,7 +8192,7 @@
   {
     "id": "Chapter-16-q16",
     "localId": "16",
-    "chapter": "Chapter 16",
+    "chapter": "Chapter 16: Network Basics",
     "text": "A packet with a destination address not on the local network will be sent to the address identified by which label in the IP configuration?",
     "options": [
       {
@@ -8218,7 +8218,7 @@
   {
     "id": "Chapter-16-q17",
     "localId": "17",
-    "chapter": "Chapter 16",
+    "chapter": "Chapter 16: Network Basics",
     "text": "Which of the following statements is correct?",
     "options": [
       {
@@ -8244,7 +8244,7 @@
   {
     "id": "Chapter-16-q18",
     "localId": "18",
-    "chapter": "Chapter 16",
+    "chapter": "Chapter 16: Network Basics",
     "text": "Which of the following is not a network medium?",
     "options": [
       {
@@ -8270,7 +8270,7 @@
   {
     "id": "Chapter-16-q19",
     "localId": "19",
-    "chapter": "Chapter 16",
+    "chapter": "Chapter 16: Network Basics",
     "text": "Which type of cable uses ST, SC, or LC connectors?",
     "options": [
       {
@@ -8296,7 +8296,7 @@
   {
     "id": "Chapter-16-q20",
     "localId": "20",
-    "chapter": "Chapter 16",
+    "chapter": "Chapter 16: Network Basics",
     "text": "Thousands of this type of device exist on the Internet between networks, direct the traffic of the Internet using the destination IP address of each packet, and pass the packets to their destinations along the interconnected networks of the Internet.",
     "options": [
       {
@@ -8322,7 +8322,7 @@
   {
     "id": "Chapter-17-q1",
     "localId": "1",
-    "chapter": "Chapter 17",
+    "chapter": "Chapter 17: Installing a Small Office/Home Office (SOHO) Network",
     "text": "What tool would you use to connect a Cat-6 cable to a patch panel?",
     "options": [
       {
@@ -8348,7 +8348,7 @@
   {
     "id": "Chapter-17-q2",
     "localId": "2",
-    "chapter": "Chapter 17",
+    "chapter": "Chapter 17: Installing a Small Office/Home Office (SOHO) Network",
     "text": "What tool would you use to determine which cable in a wiring room maps to a certain network jack?",
     "options": [
       {
@@ -8374,7 +8374,7 @@
   {
     "id": "Chapter-17-q3",
     "localId": "3",
-    "chapter": "Chapter 17",
+    "chapter": "Chapter 17: Installing a Small Office/Home Office (SOHO) Network",
     "text": "Which of these is a SOHO network?",
     "options": [
       {
@@ -8400,7 +8400,7 @@
   {
     "id": "Chapter-17-q4",
     "localId": "4",
-    "chapter": "Chapter 17",
+    "chapter": "Chapter 17: Installing a Small Office/Home Office (SOHO) Network",
     "text": "What kind of cable connects a NIC to a switch in a SOHO network?",
     "options": [
       {
@@ -8426,7 +8426,7 @@
   {
     "id": "Chapter-17-q5",
     "localId": "5",
-    "chapter": "Chapter 17",
+    "chapter": "Chapter 17: Installing a Small Office/Home Office (SOHO) Network",
     "text": "Which Wi-Fi standard has the highest maximum data rate?",
     "options": [
       {
@@ -8452,7 +8452,7 @@
   {
     "id": "Chapter-17-q6",
     "localId": "6",
-    "chapter": "Chapter 17",
+    "chapter": "Chapter 17: Installing a Small Office/Home Office (SOHO) Network",
     "text": "Which of the following is the acronym for the name that identifies a wireless network?",
     "options": [
       {
@@ -8478,7 +8478,7 @@
   {
     "id": "Chapter-17-q7",
     "localId": "7",
-    "chapter": "Chapter 17",
+    "chapter": "Chapter 17: Installing a Small Office/Home Office (SOHO) Network",
     "text": "What radio band does 802.11ac use?",
     "options": [
       {
@@ -8504,7 +8504,7 @@
   {
     "id": "Chapter-17-q8",
     "localId": "8",
-    "chapter": "Chapter 17",
+    "chapter": "Chapter 17: Installing a Small Office/Home Office (SOHO) Network",
     "text": "What happens as you move a wireless NIC and host computer farther away from a WAP?",
     "options": [
       {
@@ -8530,7 +8530,7 @@
   {
     "id": "Chapter-17-q9",
     "localId": "9",
-    "chapter": "Chapter 17",
+    "chapter": "Chapter 17: Installing a Small Office/Home Office (SOHO) Network",
     "text": "How do you access the configuration utility of a WAP?",
     "options": [
       {
@@ -8556,7 +8556,7 @@
   {
     "id": "Chapter-17-q10",
     "localId": "10",
-    "chapter": "Chapter 17",
+    "chapter": "Chapter 17: Installing a Small Office/Home Office (SOHO) Network",
     "text": "What should you update on a WAP to ensure it has all available updates and fixes?",
     "options": [
       {
@@ -8582,7 +8582,7 @@
   {
     "id": "Chapter-17-q11",
     "localId": "11",
-    "chapter": "Chapter 17",
+    "chapter": "Chapter 17: Installing a Small Office/Home Office (SOHO) Network",
     "text": "What wireless encryption is the most secure and the one you should use when available?",
     "options": [
       {
@@ -8608,7 +8608,7 @@
   {
     "id": "Chapter-17-q12",
     "localId": "12",
-    "chapter": "Chapter 17",
+    "chapter": "Chapter 17: Installing a Small Office/Home Office (SOHO) Network",
     "text": "What routing feature hides the IP addresses on a private network from hosts beyond the router?",
     "options": [
       {
@@ -8634,7 +8634,7 @@
   {
     "id": "Chapter-17-q13",
     "localId": "13",
-    "chapter": "Chapter 17",
+    "chapter": "Chapter 17: Installing a Small Office/Home Office (SOHO) Network",
     "text": "Which of these is the best description of a screened subnet?",
     "options": [
       {
@@ -8660,7 +8660,7 @@
   {
     "id": "Chapter-17-q14",
     "localId": "14",
-    "chapter": "Chapter 17",
+    "chapter": "Chapter 17: Installing a Small Office/Home Office (SOHO) Network",
     "text": "Which of these do you specify when configuring a static IP address? (Select all that apply.)",
     "options": [
       {
@@ -8686,7 +8686,7 @@
   {
     "id": "Chapter-17-q15",
     "localId": "15",
-    "chapter": "Chapter 17",
+    "chapter": "Chapter 17: Installing a Small Office/Home Office (SOHO) Network",
     "text": "From what utility do you access the Network and Sharing Center?",
     "options": [
       {
@@ -8712,7 +8712,7 @@
   {
     "id": "Chapter-17-q16",
     "localId": "16",
-    "chapter": "Chapter 17",
+    "chapter": "Chapter 17: Installing a Small Office/Home Office (SOHO) Network",
     "text": "How can you connect to a Wi-Fi network with a hidden SSID?",
     "options": [
       {
@@ -8738,7 +8738,7 @@
   {
     "id": "Chapter-17-q17",
     "localId": "17",
-    "chapter": "Chapter 17",
+    "chapter": "Chapter 17: Installing a Small Office/Home Office (SOHO) Network",
     "text": "How can you set a network to metered status?",
     "options": [
       {
@@ -8764,7 +8764,7 @@
   {
     "id": "Chapter-17-q18",
     "localId": "18",
-    "chapter": "Chapter 17",
+    "chapter": "Chapter 17: Installing a Small Office/Home Office (SOHO) Network",
     "text": "How can you assign a static IP address to a connection? (Choose two methods.)",
     "options": [
       {
@@ -8790,7 +8790,7 @@
   {
     "id": "Chapter-17-q19",
     "localId": "19",
-    "chapter": "Chapter 17",
+    "chapter": "Chapter 17: Installing a Small Office/Home Office (SOHO) Network",
     "text": "How can you tell Windows to forget a wireless network? (Choose two methods.)",
     "options": [
       {
@@ -8816,7 +8816,7 @@
   {
     "id": "Chapter-17-q20",
     "localId": "20",
-    "chapter": "Chapter 17",
+    "chapter": "Chapter 17: Installing a Small Office/Home Office (SOHO) Network",
     "text": "How can you set up a VPN connection from the Control Panel?",
     "options": [
       {
@@ -8842,7 +8842,7 @@
   {
     "id": "Chapter-18-q1",
     "localId": "1",
-    "chapter": "Chapter 18",
+    "chapter": "Chapter 18: Internet, Cloud, and Remote Access",
     "text": "Which type of companies own and control the Internet backbone?",
     "options": [
       {
@@ -8868,7 +8868,7 @@
   {
     "id": "Chapter-18-q2",
     "localId": "2",
-    "chapter": "Chapter 18",
+    "chapter": "Chapter 18: Internet, Cloud, and Remote Access",
     "text": "Which of these is an FQDN?",
     "options": [
       {
@@ -8894,7 +8894,7 @@
   {
     "id": "Chapter-18-q3",
     "localId": "3",
-    "chapter": "Chapter 18",
+    "chapter": "Chapter 18: Internet, Cloud, and Remote Access",
     "text": "Which of these is a host name?",
     "options": [
       {
@@ -8920,7 +8920,7 @@
   {
     "id": "Chapter-18-q4",
     "localId": "4",
-    "chapter": "Chapter 18",
+    "chapter": "Chapter 18: Internet, Cloud, and Remote Access",
     "text": "What kind of server translates between IP addresses and domain names?",
     "options": [
       {
@@ -8946,7 +8946,7 @@
   {
     "id": "Chapter-18-q5",
     "localId": "5",
-    "chapter": "Chapter 18",
+    "chapter": "Chapter 18: Internet, Cloud, and Remote Access",
     "text": "Which of these is a mail protocol?",
     "options": [
       {
@@ -8972,7 +8972,7 @@
   {
     "id": "Chapter-18-q6",
     "localId": "6",
-    "chapter": "Chapter 18",
+    "chapter": "Chapter 18: Internet, Cloud, and Remote Access",
     "text": "Which of these is the protocol for a secure web page?",
     "options": [
       {
@@ -8998,7 +8998,7 @@
   {
     "id": "Chapter-18-q7",
     "localId": "7",
-    "chapter": "Chapter 18",
+    "chapter": "Chapter 18: Internet, Cloud, and Remote Access",
     "text": "What kind of server would use FTP?",
     "options": [
       {
@@ -9024,7 +9024,7 @@
   {
     "id": "Chapter-18-q8",
     "localId": "8",
-    "chapter": "Chapter 18",
+    "chapter": "Chapter 18: Internet, Cloud, and Remote Access",
     "text": "What kind of server assigns IP addresses to clients?",
     "options": [
       {
@@ -9050,7 +9050,7 @@
   {
     "id": "Chapter-18-q9",
     "localId": "9",
-    "chapter": "Chapter 18",
+    "chapter": "Chapter 18: Internet, Cloud, and Remote Access",
     "text": "What kind of server handles requests for Internet services for a client without exposing the client’s IP address to the Internet?",
     "options": [
       {
@@ -9076,7 +9076,7 @@
   {
     "id": "Chapter-18-q10",
     "localId": "10",
-    "chapter": "Chapter 18",
+    "chapter": "Chapter 18: Internet, Cloud, and Remote Access",
     "text": "Which is the best description of SCADA?",
     "options": [
       {
@@ -9102,7 +9102,7 @@
   {
     "id": "Chapter-18-q11",
     "localId": "11",
-    "chapter": "Chapter 18",
+    "chapter": "Chapter 18: Internet, Cloud, and Remote Access",
     "text": "When downloading browsers, the most important security consideration is:",
     "options": [
       {
@@ -9128,7 +9128,7 @@
   {
     "id": "Chapter-18-q12",
     "localId": "12",
-    "chapter": "Chapter 18",
+    "chapter": "Chapter 18: Internet, Cloud, and Remote Access",
     "text": "If your browser doesn’t come with a password manager, how can you add that feature to it?",
     "options": [
       {
@@ -9154,7 +9154,7 @@
   {
     "id": "Chapter-18-q13",
     "localId": "13",
-    "chapter": "Chapter 18",
+    "chapter": "Chapter 18: Internet, Cloud, and Remote Access",
     "text": "What kind of cookie comes from the website you are visiting?",
     "options": [
       {
@@ -9180,7 +9180,7 @@
   {
     "id": "Chapter-18-q14",
     "localId": "14",
-    "chapter": "Chapter 18",
+    "chapter": "Chapter 18: Internet, Cloud, and Remote Access",
     "text": "Which of these problems can clearing a browser’s cache sometimes solve?",
     "options": [
       {
@@ -9206,7 +9206,7 @@
   {
     "id": "Chapter-18-q15",
     "localId": "15",
-    "chapter": "Chapter 18",
+    "chapter": "Chapter 18: Internet, Cloud, and Remote Access",
     "text": "HTTP, HTTPS, FTP, and Socks are four types of what?",
     "options": [
       {
@@ -9232,7 +9232,7 @@
   {
     "id": "Chapter-18-q16",
     "localId": "16",
-    "chapter": "Chapter 18",
+    "chapter": "Chapter 18: Internet, Cloud, and Remote Access",
     "text": "Which of these is _not_ one of the five characteristics of cloud computing?",
     "options": [
       {
@@ -9258,7 +9258,7 @@
   {
     "id": "Chapter-18-q17",
     "localId": "17",
-    "chapter": "Chapter 18",
+    "chapter": "Chapter 18: Internet, Cloud, and Remote Access",
     "text": "Which of these refers to users running applications from a cloud’s server, rather than downloading the application?",
     "options": [
       {
@@ -9284,7 +9284,7 @@
   {
     "id": "Chapter-18-q18",
     "localId": "18",
-    "chapter": "Chapter 18",
+    "chapter": "Chapter 18: Internet, Cloud, and Remote Access",
     "text": "A cloud that operates via the Internet is a __________ cloud.",
     "options": [
       {
@@ -9310,7 +9310,7 @@
   {
     "id": "Chapter-18-q19",
     "localId": "19",
-    "chapter": "Chapter 18",
+    "chapter": "Chapter 18: Internet, Cloud, and Remote Access",
     "text": "What is mstsc.exe?",
     "options": [
       {
@@ -9336,7 +9336,7 @@
   {
     "id": "Chapter-18-q20",
     "localId": "20",
-    "chapter": "Chapter 18",
+    "chapter": "Chapter 18: Internet, Cloud, and Remote Access",
     "text": "If you wanted to help someone fix their Windows computer remotely but they didn’t have a Pro, Enterprise, or Education edition of Windows, what tool would you use?",
     "options": [
       {
@@ -9362,7 +9362,7 @@
   {
     "id": "Chapter-19-q1",
     "localId": "1",
-    "chapter": "Chapter 19",
+    "chapter": "Chapter 19: Troubleshooting Networks",
     "text": "You need to find out the Windows version number of a customer’s system. Which command-line tool should you use?",
     "options": [
       {
@@ -9388,7 +9388,7 @@
   {
     "id": "Chapter-19-q2",
     "localId": "2",
-    "chapter": "Chapter 19",
+    "chapter": "Chapter 19: Troubleshooting Networks",
     "text": "You are testing network connectivity and need a tool that sends echo requests to each router and evaluates the speed at which the packets are returned. What tool should you use?",
     "options": [
       {
@@ -9414,7 +9414,7 @@
   {
     "id": "Chapter-19-q3",
     "localId": "3",
-    "chapter": "Chapter 19",
+    "chapter": "Chapter 19: Troubleshooting Networks",
     "text": "Which of the following is a command-line utility you would use to release a DHCP-allocated IP address from a local NIC?",
     "options": [
       {
@@ -9440,7 +9440,7 @@
   {
     "id": "Chapter-19-q4",
     "localId": "4",
-    "chapter": "Chapter 19",
+    "chapter": "Chapter 19: Troubleshooting Networks",
     "text": "What tool would you use if you suspected that a cable contained broken wires?",
     "options": [
       {
@@ -9466,7 +9466,7 @@
   {
     "id": "Chapter-19-q5",
     "localId": "5",
-    "chapter": "Chapter 19",
+    "chapter": "Chapter 19: Troubleshooting Networks",
     "text": "Which of the following is a delay in packet sending and receiving due to network congestion often resulting in poor VoIP quality?",
     "options": [
       {
@@ -9492,7 +9492,7 @@
   {
     "id": "Chapter-19-q6",
     "localId": "6",
-    "chapter": "Chapter 19",
+    "chapter": "Chapter 19: Troubleshooting Networks",
     "text": "What should you look for first on a network that seems to have a bandwidth problem?",
     "options": [
       {
@@ -9518,7 +9518,7 @@
   {
     "id": "Chapter-19-q7",
     "localId": "7",
-    "chapter": "Chapter 19",
+    "chapter": "Chapter 19: Troubleshooting Networks",
     "text": "How can you quickly view the IP configuration information for all the network adapters in your computer?",
     "options": [
       {
@@ -9544,7 +9544,7 @@
   {
     "id": "Chapter-19-q8",
     "localId": "8",
-    "chapter": "Chapter 19",
+    "chapter": "Chapter 19: Troubleshooting Networks",
     "text": "Which of the following devices reduces network traffic within an Ethernet LAN?",
     "options": [
       {
@@ -9570,7 +9570,7 @@
   {
     "id": "Chapter-19-q9",
     "localId": "9",
-    "chapter": "Chapter 19",
+    "chapter": "Chapter 19: Troubleshooting Networks",
     "text": "How would you check the signal strength received by a wireless NIC? (Select all that apply.)",
     "options": [
       {
@@ -9596,7 +9596,7 @@
   {
     "id": "Chapter-19-q10",
     "localId": "10",
-    "chapter": "Chapter 19",
+    "chapter": "Chapter 19: Troubleshooting Networks",
     "text": "Which tool will show you the status of nearby Wi-Fi networks?",
     "options": [
       {
@@ -9622,7 +9622,7 @@
   {
     "id": "Chapter-19-q11",
     "localId": "11",
-    "chapter": "Chapter 19",
+    "chapter": "Chapter 19: Troubleshooting Networks",
     "text": "What is the effect when an older-technology NIC connects to a newer-technology switch?",
     "options": [
       {
@@ -9648,7 +9648,7 @@
   {
     "id": "Chapter-19-q12",
     "localId": "12",
-    "chapter": "Chapter 19",
+    "chapter": "Chapter 19: Troubleshooting Networks",
     "text": "The distance between a WAP and one group of wireless hosts causes the signal to degrade so badly that the transmissions are too slow and users are complaining. What can you do?",
     "options": [
       {
@@ -9674,7 +9674,7 @@
   {
     "id": "Chapter-19-q13",
     "localId": "13",
-    "chapter": "Chapter 19",
+    "chapter": "Chapter 19: Troubleshooting Networks",
     "text": "Which type of server automatically assigns IP addresses to hosts?",
     "options": [
       {
@@ -9700,7 +9700,7 @@
   {
     "id": "Chapter-19-q14",
     "localId": "14",
-    "chapter": "Chapter 19",
+    "chapter": "Chapter 19: Troubleshooting Networks",
     "text": "What command can you use to force a DHCP client to request an IP address assignment?",
     "options": [
       {
@@ -9726,7 +9726,7 @@
   {
     "id": "Chapter-19-q15",
     "localId": "15",
-    "chapter": "Chapter 19",
+    "chapter": "Chapter 19: Troubleshooting Networks",
     "text": "A user complains that an Internet connection to a website she needs to access for her work is extremely slow. Which of the following commands will you use first to analyze the problem?",
     "options": [
       {
@@ -9752,7 +9752,7 @@
   {
     "id": "Chapter-19-q16",
     "localId": "16",
-    "chapter": "Chapter 19",
+    "chapter": "Chapter 19: Troubleshooting Networks",
     "text": "Which of the following command-line utilities would _not_ help when troubleshooting a possible DNS problem?",
     "options": [
       {
@@ -9778,7 +9778,7 @@
   {
     "id": "Chapter-19-q17",
     "localId": "17",
-    "chapter": "Chapter 19",
+    "chapter": "Chapter 19: Troubleshooting Networks",
     "text": "How do you stop the output from a _ping_ command in which you used the -t switch?",
     "options": [
       {
@@ -9804,7 +9804,7 @@
   {
     "id": "Chapter-19-q18",
     "localId": "18",
-    "chapter": "Chapter 19",
+    "chapter": "Chapter 19: Troubleshooting Networks",
     "text": "When you ping this name, you are pinging the loopback network interface as a test of the local NIC to see if it is functioning.",
     "options": [
       {
@@ -9830,7 +9830,7 @@
   {
     "id": "Chapter-19-q19",
     "localId": "19",
-    "chapter": "Chapter 19",
+    "chapter": "Chapter 19: Troubleshooting Networks",
     "text": "Which of the following is the preferred environment for network equipment and servers in a law office?",
     "options": [
       {
@@ -9856,7 +9856,7 @@
   {
     "id": "Chapter-19-q20",
     "localId": "20",
-    "chapter": "Chapter 19",
+    "chapter": "Chapter 19: Troubleshooting Networks",
     "text": "You need to run a group of wires through a suspended ceiling. What should you use to keep the wires organized within the ceiling area?",
     "options": [
       {
@@ -9882,7 +9882,7 @@
   {
     "id": "Chapter-20-q1",
     "localId": "1",
-    "chapter": "Chapter 20",
+    "chapter": "Chapter 20: Physical Security and User Authentication",
     "text": "______ security is when you ensure that hardware is not damaged or compromised.",
     "options": [
       {
@@ -9908,7 +9908,7 @@
   {
     "id": "Chapter-20-q2",
     "localId": "2",
-    "chapter": "Chapter 20",
+    "chapter": "Chapter 20: Physical Security and User Authentication",
     "text": "Which of the following uses an electromagnetic field to scan a person or object for metal objects?",
     "options": [
       {
@@ -9934,7 +9934,7 @@
   {
     "id": "Chapter-20-q3",
     "localId": "3",
-    "chapter": "Chapter 20",
+    "chapter": "Chapter 20: Physical Security and User Authentication",
     "text": "Which of the following is a simple physical-security device for protecting on-screen data from prying eyes?",
     "options": [
       {
@@ -9960,7 +9960,7 @@
   {
     "id": "Chapter-20-q4",
     "localId": "4",
-    "chapter": "Chapter 20",
+    "chapter": "Chapter 20: Physical Security and User Authentication",
     "text": "What is it called when someone follows an authorized person into a secure area without their consent?",
     "options": [
       {
@@ -9986,7 +9986,7 @@
   {
     "id": "Chapter-20-q5",
     "localId": "5",
-    "chapter": "Chapter 20",
+    "chapter": "Chapter 20: Physical Security and User Authentication",
     "text": "What should you set to prevent someone from changing the boot order on a PC?",
     "options": [
       {
@@ -10012,7 +10012,7 @@
   {
     "id": "Chapter-20-q6",
     "localId": "6",
-    "chapter": "Chapter 20",
+    "chapter": "Chapter 20: Physical Security and User Authentication",
     "text": "Before walking away from your computer, press _windows key-l_ to enable this security feature.",
     "options": [
       {
@@ -10038,7 +10038,7 @@
   {
     "id": "Chapter-20-q7",
     "localId": "7",
-    "chapter": "Chapter 20",
+    "chapter": "Chapter 20: Physical Security and User Authentication",
     "text": "Which is the most secure way of deleting data from a hard disk before recycling it?",
     "options": [
       {
@@ -10064,7 +10064,7 @@
   {
     "id": "Chapter-20-q8",
     "localId": "8",
-    "chapter": "Chapter 20",
+    "chapter": "Chapter 20: Physical Security and User Authentication",
     "text": "Which of the following is a centralized authentication system that runs as a KDC server and mutually authenticates servers and users?",
     "options": [
       {
@@ -10090,7 +10090,7 @@
   {
     "id": "Chapter-20-q9",
     "localId": "9",
-    "chapter": "Chapter 20",
+    "chapter": "Chapter 20: Physical Security and User Authentication",
     "text": "Microsoft recommends that you use a(n) _____________ user account for everyday use to minimize the risk of malware modifications to system files.",
     "options": [
       {
@@ -10116,7 +10116,7 @@
   {
     "id": "Chapter-20-q10",
     "localId": "10",
-    "chapter": "Chapter 20",
+    "chapter": "Chapter 20: Physical Security and User Authentication",
     "text": "When you use a smart card with a PIN, this is an example of which of the following?",
     "options": [
       {
@@ -10142,7 +10142,7 @@
   {
     "id": "Chapter-20-q11",
     "localId": "11",
-    "chapter": "Chapter 20",
+    "chapter": "Chapter 20: Physical Security and User Authentication",
     "text": "Which of the following is a best practice to apply to passwords?",
     "options": [
       {
@@ -10168,7 +10168,7 @@
   {
     "id": "Chapter-20-q12",
     "localId": "12",
-    "chapter": "Chapter 20",
+    "chapter": "Chapter 20: Physical Security and User Authentication",
     "text": "This local built-in Windows account, disabled by default, is restricted in what it can do if enabled.",
     "options": [
       {
@@ -10194,7 +10194,7 @@
   {
     "id": "Chapter-20-q13",
     "localId": "13",
-    "chapter": "Chapter 20",
+    "chapter": "Chapter 20: Physical Security and User Authentication",
     "text": "This Windows feature protects against programs running in the background, changing settings, and installing malware when a logged-on user is a member of the Administrators group.",
     "options": [
       {
@@ -10220,7 +10220,7 @@
   {
     "id": "Chapter-20-q14",
     "localId": "14",
-    "chapter": "Chapter 20",
+    "chapter": "Chapter 20: Physical Security and User Authentication",
     "text": "What Windows utility stores and manages local passwords?",
     "options": [
       {
@@ -10246,7 +10246,7 @@
   {
     "id": "Chapter-20-q15",
     "localId": "15",
-    "chapter": "Chapter 20",
+    "chapter": "Chapter 20: Physical Security and User Authentication",
     "text": "How can you prevent hackers from trying repeatedly to guess a password?",
     "options": [
       {
@@ -10272,7 +10272,7 @@
   {
     "id": "Chapter-20-q16",
     "localId": "16",
-    "chapter": "Chapter 20",
+    "chapter": "Chapter 20: Physical Security and User Authentication",
     "text": "Which type of Windows account is the most resistant to malware attacks?",
     "options": [
       {
@@ -10298,7 +10298,7 @@
   {
     "id": "Chapter-20-q17",
     "localId": "17",
-    "chapter": "Chapter 20",
+    "chapter": "Chapter 20: Physical Security and User Authentication",
     "text": "How do you rebuild a corrupted local Windows user account?",
     "options": [
       {
@@ -10324,7 +10324,7 @@
   {
     "id": "Chapter-20-q18",
     "localId": "18",
-    "chapter": "Chapter 20",
+    "chapter": "Chapter 20: Physical Security and User Authentication",
     "text": "What is the most common reason why you might not be able to access the Group Policy Editor on a user’s PC?",
     "options": [
       {
@@ -10350,7 +10350,7 @@
   {
     "id": "Chapter-20-q19",
     "localId": "19",
-    "chapter": "Chapter 20",
+    "chapter": "Chapter 20: Physical Security and User Authentication",
     "text": "How do you create Active Directory user accounts?",
     "options": [
       {
@@ -10376,7 +10376,7 @@
   {
     "id": "Chapter-20-q20",
     "localId": "20",
-    "chapter": "Chapter 20",
+    "chapter": "Chapter 20: Physical Security and User Authentication",
     "text": "What PowerShell command can you use to enable or disable an Active Directory account?",
     "options": [
       {
@@ -10402,7 +10402,7 @@
   {
     "id": "Chapter-21-q1",
     "localId": "1",
-    "chapter": "Chapter 21",
+    "chapter": "Chapter 21: Protecting and Managing Data",
     "text": "If you want your PC to be visible to other PCs browsing your local network, set the network type to what?",
     "options": [
       {
@@ -10428,7 +10428,7 @@
   {
     "id": "Chapter-21-q2",
     "localId": "2",
-    "chapter": "Chapter 21",
+    "chapter": "Chapter 21: Protecting and Managing Data",
     "text": "From which Windows Control Panel dialog box can you choose a different workgroup or domain?",
     "options": [
       {
@@ -10454,7 +10454,7 @@
   {
     "id": "Chapter-21-q3",
     "localId": "3",
-    "chapter": "Chapter 21",
+    "chapter": "Chapter 21: Protecting and Managing Data",
     "text": "What should you disable if you want people who don’t have an account on your local PC to be able to access your shared folders?",
     "options": [
       {
@@ -10480,7 +10480,7 @@
   {
     "id": "Chapter-21-q4",
     "localId": "4",
-    "chapter": "Chapter 21",
+    "chapter": "Chapter 21: Protecting and Managing Data",
     "text": "A tax auditor is at your office for the next three days. She requires access to resources stored on servers in your AD domain. What should you do to grant her access to those resources she needs?",
     "options": [
       {
@@ -10506,7 +10506,7 @@
   {
     "id": "Chapter-21-q5",
     "localId": "5",
-    "chapter": "Chapter 21",
+    "chapter": "Chapter 21: Protecting and Managing Data",
     "text": "Which of these Windows editions cannot join an AD domain?",
     "options": [
       {
@@ -10532,7 +10532,7 @@
   {
     "id": "Chapter-21-q6",
     "localId": "6",
-    "chapter": "Chapter 21",
+    "chapter": "Chapter 21: Protecting and Managing Data",
     "text": "What strategy should you use when setting NTFS permissions?",
     "options": [
       {
@@ -10558,7 +10558,7 @@
   {
     "id": "Chapter-21-q7",
     "localId": "7",
-    "chapter": "Chapter 21",
+    "chapter": "Chapter 21: Protecting and Managing Data",
     "text": "What setting, applied directly to a file, defeats permission inheritance?",
     "options": [
       {
@@ -10584,7 +10584,7 @@
   {
     "id": "Chapter-21-q8",
     "localId": "8",
-    "chapter": "Chapter 21",
+    "chapter": "Chapter 21: Protecting and Managing Data",
     "text": "What rule does Windows apply to inherited NTFS permissions to determine effective permissions?",
     "options": [
       {
@@ -10610,7 +10610,7 @@
   {
     "id": "Chapter-21-q9",
     "localId": "9",
-    "chapter": "Chapter 21",
+    "chapter": "Chapter 21: Protecting and Managing Data",
     "text": "What is the recommended order of tasks for creating shares and applying permissions?",
     "options": [
       {
@@ -10636,7 +10636,7 @@
   {
     "id": "Chapter-21-q10",
     "localId": "10",
-    "chapter": "Chapter 21",
+    "chapter": "Chapter 21: Protecting and Managing Data",
     "text": "When a user connects over a network to a file share, how are the effective NTFS permissions and the share permissions combined for that user?",
     "options": [
       {
@@ -10662,7 +10662,7 @@
   {
     "id": "Chapter-21-q11",
     "localId": "11",
-    "chapter": "Chapter 21",
+    "chapter": "Chapter 21: Protecting and Managing Data",
     "text": "If an encrypted file is moved or copied into an unencrypted folder on an NTFS volume, which of the following will occur?",
     "options": [
       {
@@ -10688,7 +10688,7 @@
   {
     "id": "Chapter-21-q12",
     "localId": "12",
-    "chapter": "Chapter 21",
+    "chapter": "Chapter 21: Protecting and Managing Data",
     "text": "Which encryption feature comes with Windows 10 and 11 Pro, Enterprise, and Education and encrypts an entire volume?",
     "options": [
       {
@@ -10714,7 +10714,7 @@
   {
     "id": "Chapter-21-q13",
     "localId": "13",
-    "chapter": "Chapter 21",
+    "chapter": "Chapter 21: Protecting and Managing Data",
     "text": "Where are personal folders stored in Windows?",
     "options": [
       {
@@ -10740,7 +10740,7 @@
   {
     "id": "Chapter-21-q14",
     "localId": "14",
-    "chapter": "Chapter 21",
+    "chapter": "Chapter 21: Protecting and Managing Data",
     "text": "Which of the following identifies the administrative share that points to the system root folder?",
     "options": [
       {
@@ -10766,7 +10766,7 @@
   {
     "id": "Chapter-21-q15",
     "localId": "15",
-    "chapter": "Chapter 21",
+    "chapter": "Chapter 21: Protecting and Managing Data",
     "text": "Which of the following commands will map G: to the root of drive C: on a laptop called PC424?",
     "options": [
       {
@@ -10792,7 +10792,7 @@
   {
     "id": "Chapter-21-q16",
     "localId": "16",
-    "chapter": "Chapter 21",
+    "chapter": "Chapter 21: Protecting and Managing Data",
     "text": "Which of these is a real-time backup method you might use on a Windows system?",
     "options": [
       {
@@ -10818,7 +10818,7 @@
   {
     "id": "Chapter-21-q17",
     "localId": "17",
-    "chapter": "Chapter 21",
+    "chapter": "Chapter 21: Protecting and Managing Data",
     "text": "For what does the 3-2-1 rule provide guidelines?",
     "options": [
       {
@@ -10844,7 +10844,7 @@
   {
     "id": "Chapter-21-q18",
     "localId": "18",
-    "chapter": "Chapter 21",
+    "chapter": "Chapter 21: Protecting and Managing Data",
     "text": "Which of these is a backup rotation type that backs up only what has changed since the last full backup?",
     "options": [
       {
@@ -10870,7 +10870,7 @@
   {
     "id": "Chapter-21-q19",
     "localId": "19",
-    "chapter": "Chapter 21",
+    "chapter": "Chapter 21: Protecting and Managing Data",
     "text": "Which of these is a backup utility included in Ubuntu Linux?",
     "options": [
       {
@@ -10896,7 +10896,7 @@
   {
     "id": "Chapter-21-q20",
     "localId": "20",
-    "chapter": "Chapter 21",
+    "chapter": "Chapter 21: Protecting and Managing Data",
     "text": "What kind of device can protect a file server against file writing errors caused by power sags?",
     "options": [
       {
@@ -10922,7 +10922,7 @@
   {
     "id": "Chapter-22-q1",
     "localId": "1",
-    "chapter": "Chapter 22",
+    "chapter": "Chapter 22: Defending Against Malware and Social Engineering",
     "text": "What is the term for malware that is executable code that hides in an executable file and spreads to other executable files?",
     "options": [
       {
@@ -10948,7 +10948,7 @@
   {
     "id": "Chapter-22-q2",
     "localId": "2",
-    "chapter": "Chapter 22",
+    "chapter": "Chapter 22: Defending Against Malware and Social Engineering",
     "text": "What type of attack sends a large number of requests to a server, overwhelming it so it stops functioning?",
     "options": [
       {
@@ -10974,7 +10974,7 @@
   {
     "id": "Chapter-22-q3",
     "localId": "3",
-    "chapter": "Chapter 22",
+    "chapter": "Chapter 22: Defending Against Malware and Social Engineering",
     "text": "A hacker discovers and exploits a vulnerability before the software vendor is aware that the vulnerability exists. What type of attack is being described?",
     "options": [
       {
@@ -11000,7 +11000,7 @@
   {
     "id": "Chapter-22-q4",
     "localId": "4",
-    "chapter": "Chapter 22",
+    "chapter": "Chapter 22: Defending Against Malware and Social Engineering",
     "text": "Which of the following is a term for unsolicited e-mail?",
     "options": [
       {
@@ -11026,7 +11026,7 @@
   {
     "id": "Chapter-22-q5",
     "localId": "5",
-    "chapter": "Chapter 22",
+    "chapter": "Chapter 22: Defending Against Malware and Social Engineering",
     "text": "What type of program attempts to guess passwords on a computer?",
     "options": [
       {
@@ -11052,7 +11052,7 @@
   {
     "id": "Chapter-22-q6",
     "localId": "6",
-    "chapter": "Chapter 22",
+    "chapter": "Chapter 22: Defending Against Malware and Social Engineering",
     "text": "What type of malware is installed by an administrator and hides from detection by antimalware programs by concealing itself within the OS code or other program code?",
     "options": [
       {
@@ -11078,7 +11078,7 @@
   {
     "id": "Chapter-22-q7",
     "localId": "7",
-    "chapter": "Chapter 22",
+    "chapter": "Chapter 22: Defending Against Malware and Social Engineering",
     "text": "This threat installs on a computer without permission and collects information about a user in order to display targeted advertisements.",
     "options": [
       {
@@ -11104,7 +11104,7 @@
   {
     "id": "Chapter-22-q8",
     "localId": "8",
-    "chapter": "Chapter 22",
+    "chapter": "Chapter 22: Defending Against Malware and Social Engineering",
     "text": "The symptom of this threat is that your web browser home page changed from the one you selected, pointing to a site advertising some product.",
     "options": [
       {
@@ -11130,7 +11130,7 @@
   {
     "id": "Chapter-22-q9",
     "localId": "9",
-    "chapter": "Chapter 22",
+    "chapter": "Chapter 22: Defending Against Malware and Social Engineering",
     "text": "This is the general term for any method malware uses to gain access to a computer or network.",
     "options": [
       {
@@ -11156,7 +11156,7 @@
   {
     "id": "Chapter-22-q10",
     "localId": "10",
-    "chapter": "Chapter 22",
+    "chapter": "Chapter 22: Defending Against Malware and Social Engineering",
     "text": "You may install this type of malware because it appears to be a harmless program.",
     "options": [
       {
@@ -11182,7 +11182,7 @@
   {
     "id": "Chapter-22-q11",
     "localId": "11",
-    "chapter": "Chapter 22",
+    "chapter": "Chapter 22: Defending Against Malware and Social Engineering",
     "text": "What does using secure design practices when constructing website code that collects form data protect against? (Choose two.)",
     "options": [
       {
@@ -11208,7 +11208,7 @@
   {
     "id": "Chapter-22-q12",
     "localId": "12",
-    "chapter": "Chapter 22",
+    "chapter": "Chapter 22: Defending Against Malware and Social Engineering",
     "text": "Which of these is _not_ a common symptom of malware infection?",
     "options": [
       {
@@ -11234,7 +11234,7 @@
   {
     "id": "Chapter-22-q13",
     "localId": "13",
-    "chapter": "Chapter 22",
+    "chapter": "Chapter 22: Defending Against Malware and Social Engineering",
     "text": "What does an invalid security certificate message mean in a browser?",
     "options": [
       {
@@ -11260,7 +11260,7 @@
   {
     "id": "Chapter-22-q14",
     "localId": "14",
-    "chapter": "Chapter 22",
+    "chapter": "Chapter 22: Defending Against Malware and Social Engineering",
     "text": "What hardware device or software program prevents unwanted traffic from entering a network?",
     "options": [
       {
@@ -11286,7 +11286,7 @@
   {
     "id": "Chapter-22-q15",
     "localId": "15",
-    "chapter": "Chapter 22",
+    "chapter": "Chapter 22: Defending Against Malware and Social Engineering",
     "text": "What two antivirus components are frequently updated?",
     "options": [
       {
@@ -11312,7 +11312,7 @@
   {
     "id": "Chapter-22-q16",
     "localId": "16",
-    "chapter": "Chapter 22",
+    "chapter": "Chapter 22: Defending Against Malware and Social Engineering",
     "text": "When a Standard user tries to make a system change, what feature prompts for an Administrator account’s password?",
     "options": [
       {
@@ -11338,7 +11338,7 @@
   {
     "id": "Chapter-22-q17",
     "localId": "17",
-    "chapter": "Chapter 22",
+    "chapter": "Chapter 22: Defending Against Malware and Social Engineering",
     "text": "What utility that comes with Windows can you use to scan for and remove malware?",
     "options": [
       {
@@ -11364,7 +11364,7 @@
   {
     "id": "Chapter-22-q18",
     "localId": "18",
-    "chapter": "Chapter 22",
+    "chapter": "Chapter 22: Defending Against Malware and Social Engineering",
     "text": "What security software examines the contents of a drive and RAM, looking for hidden viruses and files that may act as hosts for virus code?",
     "options": [
       {
@@ -11390,7 +11390,7 @@
   {
     "id": "Chapter-22-q19",
     "localId": "19",
-    "chapter": "Chapter 22",
+    "chapter": "Chapter 22: Defending Against Malware and Social Engineering",
     "text": "What should you do before attempting to remove malware?",
     "options": [
       {
@@ -11416,7 +11416,7 @@
   {
     "id": "Chapter-22-q20",
     "localId": "20",
-    "chapter": "Chapter 22",
+    "chapter": "Chapter 22: Defending Against Malware and Social Engineering",
     "text": "Why would you want to use Windows Defender Firewall with Advanced Security rather than the standard Windows Defender Firewall?",
     "options": [
       {

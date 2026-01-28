@@ -12,7 +12,8 @@ export const routes: Routes = [
   { path: 'stats', component: StatsComponent, canActivate: [authGuard] },
   { path: 'profile', component: ProfileComponent, canActivate: [authGuard] },
   { path: '', component: HomeComponent, canActivate: [authGuard] },
-  { path: 'quiz', component: QuizComponent, canActivate: [authGuard] },
-  { path: 'result', component: ResultComponent, canActivate: [authGuard] },
+  { path: 'course/:courseId', component: HomeComponent, canActivate: [authGuard] },
+  { path: 'quiz/:courseId', component: QuizComponent, canActivate: [authGuard] },
+  { path: 'quiz/:courseId/result', component: ResultComponent, canActivate: [authGuard] },
   { path: '**', redirectTo: '' }
 ];

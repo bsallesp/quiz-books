@@ -4,7 +4,7 @@
     <!-- User info moved to Global Header -->
   </div>
 
-  <div *ngIf="loading" class="text-center p-8">
+  <div *ngIf="loading && !(selectedCourse$ | async)" class="text-center p-8">
     <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
     <p class="text-xl text-gray-600">Loading quizzes...</p>
   </div>
@@ -19,7 +19,7 @@
     <ng-container *ngIf="!(selectedCourse$ | async); else chapterView">
       <h2 class="text-2xl font-bold mb-6 text-gray-800">Available Courses</h2>
       <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3" *ngIf="courses$ | async as courses">
-        <div *ngFor="let course of courses" (click)="selectCourse(course)" 
+        <div *ngFor="let course of courses" [routerLink]="['/course', course.id]" 
              class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all cursor-pointer border-t-4 border-blue-600 group">
            <div class="flex items-center gap-4 mb-3">
               <div class="bg-blue-100 p-3 rounded-full text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors">
@@ -30,6 +30,11 @@
               <h3 class="text-xl font-bold group-hover:text-blue-600 transition-colors">{{ course.title }}</h3>
            </div>
            <p class="text-gray-600">{{ course.description }}</p>
+           <div class="mt-4 pt-4 border-t border-gray-100 flex items-center text-sm text-gray-500">
+             <span class="font-semibold text-blue-600 bg-blue-50 px-3 py-1 rounded-full">
+               {{ course.questionCount || 0 }} Questions
+             </span>
+           </div>
         </div>
       </div>
     </ng-container>
@@ -48,12 +53,42 @@
         <p class="text-gray-600 mb-6">{{ selectedCourse.description }}</p>
 
         <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          <div class="col-span-full mb-4">
-             <div class="flex items-center justify-center bg-blue-50 p-4 rounded-lg">
-              <label class="flex items-center space-x-3 cursor-pointer">
-                <input type="checkbox" [(ngModel)]="showImmediateFeedback" class="form-checkbox h-5 w-5 text-blue-600 rounded focus:ring-blue-500">
-                <span class="text-gray-700 font-medium select-none">Show immediate feedback after each answer</span>
-              </label>
+          <div class="col-span-full mb-6">
+             <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+               <h3 class="text-lg font-semibold text-gray-800 mb-4 border-b pb-2">Quiz Settings</h3>
+               
+               <div class="flex flex-col md:flex-row gap-6">
+                 <!-- Question Count -->
+                 <div class="flex-1">
+                   <label class="block text-sm font-medium text-gray-700 mb-2">Number of Questions</label>
+                   <div class="flex flex-wrap gap-2">
+                     <button *ngFor="let count of questionCountOptions"
+                             (click)="questionCount = count"
+                             [class.bg-blue-600]="questionCount === count"
+                             [class.text-white]="questionCount === count"
+                             [class.bg-gray-100]="questionCount !== count"
+                             [class.text-gray-700]="questionCount !== count"
+                             class="px-4 py-2 rounded-md font-medium transition-colors hover:bg-blue-500 hover:text-white">
+                       {{ count }}
+                     </button>
+                   </div>
+                 </div>
+
+                 <!-- Feedback Toggle -->
+                 <div class="flex-1 flex items-center">
+                    <label class="flex items-center space-x-3 cursor-pointer p-3 rounded-lg hover:bg-gray-50 w-full transition-colors border border-transparent hover:border-gray-200">
+                      <div class="relative">
+                        <input type="checkbox" [(ngModel)]="showImmediateFeedback" class="sr-only">
+                        <div class="w-10 h-6 bg-gray-200 rounded-full shadow-inner transition-colors" [class.bg-green-500]="showImmediateFeedback"></div>
+                        <div class="dot absolute w-4 h-4 bg-white rounded-full shadow -left-1 -top-1 transition-transform transform translate-x-1 translate-y-1" [class.translate-x-5]="showImmediateFeedback"></div>
+                      </div>
+                      <div class="flex flex-col">
+                        <span class="text-gray-900 font-medium select-none">Immediate Feedback</span>
+                        <span class="text-xs text-gray-500">Show answers after each question</span>
+                      </div>
+                    </label>
+                 </div>
+               </div>
              </div>
           </div>
 
@@ -68,20 +103,27 @@
           </div>
 
           <!-- Chapter List -->
-          <ng-container *ngIf="chapters$ | async as chapters">
-            <div *ngFor="let chapter of chapters" 
-                 class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 border-green-500">
-              <h2 class="text-xl font-semibold mb-2">{{ chapter }}</h2>
-              <p class="text-gray-600 mb-4">Focus on specific topics.</p>
-              <button (click)="startQuiz(chapter)" 
-                      class="w-full bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700 transition-colors">
-                Start Chapter Quiz
-              </button>
-            </div>
-            
-            <div *ngIf="chapters.length === 0" class="col-span-full text-center p-4 bg-yellow-50 rounded">
-              <p class="text-yellow-700">Loading chapters... (or none found)</p>
-            </div>
+          <div *ngIf="loadingChapters$ | async" class="col-span-full text-center p-8">
+            <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
+            <p class="text-xl text-gray-600">Loading chapters...</p>
+          </div>
+
+          <ng-container *ngIf="!(loadingChapters$ | async)">
+            <ng-container *ngIf="chapters$ | async as chapters">
+              <div *ngFor="let chapter of chapters" 
+                   class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 border-green-500">
+                <h2 class="text-xl font-semibold mb-2">{{ chapter }}</h2>
+                <p class="text-gray-600 mb-4">Focus on specific topics.</p>
+                <button (click)="startQuiz(chapter)" 
+                        class="w-full bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700 transition-colors">
+                  Start Chapter Quiz
+                </button>
+              </div>
+              
+              <div *ngIf="chapters.length === 0" class="col-span-full text-center p-4 bg-yellow-50 rounded">
+                <p class="text-yellow-700">No chapters found for this course.</p>
+              </div>
+            </ng-container>
           </ng-container>
         </div>
       </div>

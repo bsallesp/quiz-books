@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { QuizService, QuizState, Question } from '../../services/quiz.service';
@@ -11,11 +11,19 @@ import { Observable } from 'rxjs';
   templateUrl: './result.component.html',
   styleUrls: ['./result.component.scss']
 })
-export class ResultComponent {
+export class ResultComponent implements OnInit {
   state$: Observable<QuizState>;
 
   constructor(private quizService: QuizService, private router: Router) {
     this.state$ = this.quizService.getState();
+  }
+
+  ngOnInit() {
+    this.state$.subscribe(state => {
+      if (state.questions.length === 0) {
+        this.router.navigate(['/']);
+      }
+    });
   }
 
   isCorrect(state: QuizState, question: Question): boolean {

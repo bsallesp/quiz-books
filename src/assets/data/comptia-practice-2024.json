@@ -1,0 +1,982 @@
+[
+  {
+    "id": "q1-mobile-devices",
+    "localId": "1",
+    "chapter": "Mobile Devices",
+    "text": "A technician notices that a customer’s smartphone battery is bulging and the phone’s case is swollen. Which of the following actions should the technician take FIRST?",
+    "options": [
+      { "key": "A", "text": "Puncture the battery carefully to release the built-up gas" },
+      { "key": "B", "text": "Continue using the device until the battery fully discharges" },
+      { "key": "C", "text": "Power off the device and replace the swollen battery safely as per EPA guidelines" },
+      { "key": "D", "text": "Freeze the phone to cool down the battery before using it again" }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct answer is C). A swollen or bulging battery is dangerous – it can leak or catch fire – so the device should be turned off immediately and the battery replaced/disposed of properly (through a hazardous e-waste facility) rather than used further. Puncturing or applying extreme temperatures to a swollen lithium battery is unsafe."
+  },
+  {
+    "id": "q2-networking",
+    "localId": "2",
+    "chapter": "Networking",
+    "text": "A desktop PC is set to obtain an IP address automatically via DHCP. The user reports no internet access, and the ipconfig output shows an IP of 169.254.x.x. The network cable and switch port are known-good. Which of the following is the most likely cause?",
+    "options": [
+      { "key": "A", "text": "The DNS server is unreachable, causing name resolution to fail" },
+      { "key": "B", "text": "The DHCP server is down or unreachable, so the PC self-assigned an APIPA address" },
+      { "key": "C", "text": "The default gateway IP is misconfigured on the PC" },
+      { "key": "D", "text": "A duplicate IP address conflict exists on the network" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The symptoms indicate an APIPA address (169.254.*.*), which Windows assigns when a DHCP server cannot be reached. This means the PC did not get an IP from DHCP. The most likely cause is that the DHCP server is down or not reachable (B)."
+  },
+  {
+    "id": "q3-hardware",
+    "localId": "3",
+    "chapter": "Hardware",
+    "text": "A user’s laser printer is producing vertical black streaks on every printed page. Which of the following components is most likely causing this issue?",
+    "options": [
+      { "key": "A", "text": "The fuser unit is overheating" },
+      { "key": "B", "text": "A worn or dirty drum unit (imaging drum)" },
+      { "key": "C", "text": "The paper feed rollers are worn out" },
+      { "key": "D", "text": "Low quality or thin paper causing jams" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) A worn or dirty drum unit is the most likely culprit for black vertical streaks on laser printer output. Streaking on laser prints is usually caused by a spent toner cartridge or a worn imaging drum."
+  },
+  {
+    "id": "q4-virtualization",
+    "localId": "4",
+    "chapter": "Virtualization and Cloud Computing",
+    "text": "A technician is deploying a solution on a cloud service. They have to install the operating system, then install the application and its data on the provided cloud server. Which type of cloud service model is the technician using?",
+    "options": [
+      { "key": "A", "text": "SaaS – Software as a Service" },
+      { "key": "B", "text": "PaaS – Platform as a Service" },
+      { "key": "C", "text": "IaaS – Infrastructure as a Service" },
+      { "key": "D", "text": "DaaS – Desktop as a Service" }
+    ],
+    "correctAnswer": "C",
+    "explanation": "This scenario describes Infrastructure as a Service (IaaS) (Option C). With IaaS, the cloud provider supplies the infrastructure – virtual hardware/VMs, storage, networking – but the customer is responsible for the OS, runtime, and applications."
+  },
+  {
+    "id": "q5-troubleshooting",
+    "localId": "5",
+    "chapter": "Hardware and Network Troubleshooting",
+    "text": "A user’s custom-built PC powers on, but no display and no beeps are observed. After some troubleshooting, the technician finds that the motherboard’s 24-pin power connector was not fully seated. Upon correcting this, the system boots normally. Which step of the troubleshooting process does this scenario illustrate?",
+    "options": [
+      { "key": "A", "text": "Establish a theory of probable cause" },
+      { "key": "B", "text": "Test the theory and determine next steps" },
+      { "key": "C", "text": "Implement the solution and verify functionality" },
+      { "key": "D", "text": "Document findings and outcomes" }
+    ],
+    "correctAnswer": "C",
+    "explanation": "This scenario shows the technician implementing a fix and verifying that it resolved the problem, which corresponds to Step C: Implement the solution and verify full system functionality."
+  },
+  {
+    "id": "q6-os",
+    "localId": "6",
+    "chapter": "Operating Systems",
+    "text": "Which of the following file systems is commonly used by modern Windows operating systems for the system partition, and supports features like file permissions and encryption?",
+    "options": [
+      { "key": "A", "text": "NTFS" },
+      { "key": "B", "text": "FAT32" },
+      { "key": "C", "text": "ext4" },
+      { "key": "D", "text": "APFS" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "A) NTFS (New Technology File System) is the primary file system used by modern Windows OS for hard drive partitions, offering advanced features like NTFS permissions, encryption (EFS), disk quotas, etc."
+  },
+  {
+    "id": "q7-security",
+    "localId": "7",
+    "chapter": "Security",
+    "text": "A user receives a text message that appears to be from their bank, warning of a “suspicious login” and providing a link to verify their account. The user is being directed to a fake site via SMS. What type of security attack is this?",
+    "options": [
+      { "key": "A", "text": "Phishing" },
+      { "key": "B", "text": "Vishing" },
+      { "key": "C", "text": "Smishing" },
+      { "key": "D", "text": "Spoofing" }
+    ],
+    "correctAnswer": "C",
+    "explanation": "This scenario is describing SMS-based phishing, known as Smishing (Option C). Smishing combines “SMS” + “phishing” and refers to fraudulent text messages crafted to trick individuals into clicking malicious links or revealing personal info."
+  },
+  {
+    "id": "q8-soft-troubleshoot",
+    "localId": "8",
+    "chapter": "Software Troubleshooting",
+    "text": "After a recent video driver update, a user’s Windows 10 PC now crashes with a blue screen (BSOD) during boot. Which of the following is the BEST way to quickly restore the system to a working state without losing user files?",
+    "options": [
+      { "key": "A", "text": "Boot into Safe Mode and roll back the display driver to the previous version" },
+      { "key": "B", "text": "Perform a clean install of Windows, keeping nothing" },
+      { "key": "C", "text": "Replace the graphics card with a known-good model" },
+      { "key": "D", "text": "Boot to the Recovery Console and run diskpart" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "A) Booting into Safe Mode and rolling back the driver is the best first step. Safe Mode starts Windows with minimal drivers, allowing the technician to undo or remove the faulty driver. This preserves user files and most settings."
+  },
+  {
+    "id": "q9-procedures",
+    "localId": "9",
+    "chapter": "Operational Procedures",
+    "text": "A help desk technician is on a support call with an angry customer whose internet is not working. The customer is yelling and frustrated. What is the BEST approach for the technician to handle this situation?",
+    "options": [
+      { "key": "A", "text": "Remain calm and professionally acknowledge the customer’s frustration, listening actively to concerns" },
+      { "key": "B", "text": "Raise your voice to assert control over the conversation and tell the customer to calm down" },
+      { "key": "C", "text": "Immediately escalate the call to a supervisor because the customer is upset" },
+      { "key": "D", "text": "Argue with the customer only if they are factually wrong, to correct their misunderstanding" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "A) The technician should stay calm, show empathy, and actively listen to the customer’s concerns. This is a core customer service skill in IT support. Acknowledging the customer’s frustration can help defuse the situation."
+  },
+  {
+    "id": "q10-mobile-connectivity",
+    "localId": "10",
+    "chapter": "Mobile Devices",
+    "text": "A user is unable to pair a new Bluetooth headset with a smartphone. The headset is fully charged and turned on. Which of the following is the most likely step missing in the process?",
+    "options": [
+      { "key": "A", "text": "The user needs to install a specific driver for the headset on the smartphone" },
+      { "key": "B", "text": "The headset needs to be put into 'discovery' or 'pairing' mode" },
+      { "key": "C", "text": "Bluetooth is deprecated and replaced by NFC" },
+      { "key": "D", "text": "The smartphone needs to be rebooted to see new devices" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) Most Bluetooth devices must be explicitly placed in discovery mode (often by holding a button) to be seen by the phone. Drivers are typically not required for standard Bluetooth audio profiles on smartphones."
+  },
+  {
+    "id": "q11-networking-ports",
+    "localId": "11",
+    "chapter": "Networking",
+    "text": "A network administrator is configuring a firewall to allow remote secure access to a server using a command-line interface. Which port should be opened?",
+    "options": [
+      { "key": "A", "text": "23" },
+      { "key": "B", "text": "80" },
+      { "key": "C", "text": "22" },
+      { "key": "D", "text": "3389" }
+    ],
+    "correctAnswer": "C",
+    "explanation": "C) Port 22 is for SSH (Secure Shell), which provides a secure command-line interface. Port 23 is Telnet (unsecure), 80 is HTTP (web), and 3389 is RDP (Remote Desktop Protocol)."
+  },
+  {
+    "id": "q12-security-social",
+    "localId": "12",
+    "chapter": "Security",
+    "text": "An employee receives an email claiming to be from the CEO, asking for an urgent wire transfer to a vendor. The email address looks slightly misspelled. This is an example of:",
+    "options": [
+      { "key": "A", "text": "Whaling" },
+      { "key": "B", "text": "Vishing" },
+      { "key": "C", "text": "Tailgating" },
+      { "key": "D", "text": "Dictionary Attack" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "A) Whaling is a targeted phishing attack aimed at senior executives or high-profile targets (or impersonating them to trick employees). Vishing is voice phishing, and Tailgating is physical security breach."
+  },
+  {
+    "id": "q13-troubleshooting-method",
+    "localId": "13",
+    "chapter": "Hardware and Network Troubleshooting",
+    "text": "A technician has just installed a new GPU to fix a video issue. The PC boots up fine and the video works. What should the technician do NEXT according to the CompTIA troubleshooting methodology?",
+    "options": [
+      { "key": "A", "text": "Document the findings" },
+      { "key": "B", "text": "Establish a theory of probable cause" },
+      { "key": "C", "text": "Verify full system functionality and, if applicable, implement preventive measures" },
+      { "key": "D", "text": "Disconnect the PC and return it to the user immediately" }
+    ],
+    "correctAnswer": "C",
+    "explanation": "C) After implementing the fix, you must verify that the system is fully functional (e.g., run a benchmark, check resolution) before closing the ticket or documenting."
+  },
+  {
+    "id": "q14-ops-safety",
+    "localId": "14",
+    "chapter": "Operational Procedures",
+    "text": "Which of the following tools should a technician use to prevent static electricity from damaging internal computer components while working inside a PC case?",
+    "options": [
+      { "key": "A", "text": "Anti-static bag" },
+      { "key": "B", "text": "ESD wrist strap" },
+      { "key": "C", "text": "Multimeter" },
+      { "key": "D", "text": "Power supply tester" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) An ESD (Electrostatic Discharge) wrist strap keeps the technician at the same electrical potential as the equipment, preventing static shock damage. Anti-static bags are for storage, not active work."
+  },
+  {
+    "id": "q15-hardware-ram",
+    "localId": "15",
+    "chapter": "Hardware",
+    "text": "A technician is upgrading the memory in a laptop. Which of the following memory form factors is MOST likely to be used?",
+    "options": [
+      { "key": "A", "text": "DIMM" },
+      { "key": "B", "text": "SODIMM" },
+      { "key": "C", "text": "SIMM" },
+      { "key": "D", "text": "RIMM" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) SODIMM (Small Outline Dual In-line Memory Module) is the standard form factor for laptop memory due to its smaller size compared to the standard DIMM used in desktops."
+  },
+  {
+    "id": "q16-networking-wifi",
+    "localId": "16",
+    "chapter": "Networking",
+    "text": "Which wireless standard is capable of supporting speeds up to 9.6 Gbps and operates on both 2.4 GHz and 5 GHz frequencies, also known as Wi-Fi 6?",
+    "options": [
+      { "key": "A", "text": "802.11ac" },
+      { "key": "B", "text": "802.11n" },
+      { "key": "C", "text": "802.11ax" },
+      { "key": "D", "text": "802.11g" }
+    ],
+    "correctAnswer": "C",
+    "explanation": "C) 802.11ax is also known as Wi-Fi 6. It improves speed and efficiency in high-density environments. 802.11ac (Wi-Fi 5) operates primarily on 5 GHz."
+  },
+  {
+    "id": "q17-mobile-email",
+    "localId": "17",
+    "chapter": "Mobile Devices",
+    "text": "A user wants to configure corporate email on their smartphone manually. Which port number is securely used for SMTPS (Simple Mail Transfer Protocol Secure)?",
+    "options": [
+      { "key": "A", "text": "25" },
+      { "key": "B", "text": "110" },
+      { "key": "C", "text": "143" },
+      { "key": "D", "text": "465" }
+    ],
+    "correctAnswer": "D",
+    "explanation": "D) Port 465 is commonly used for SMTPS (Secure SMTP). Port 25 is unsecure SMTP. 110 is POP3, and 143 is IMAP."
+  },
+  {
+    "id": "q18-virtualization-hypervisor",
+    "localId": "18",
+    "chapter": "Virtualization and Cloud Computing",
+    "text": "A server administrator installs a hypervisor directly onto the physical server hardware without an underlying host operating system. What type of hypervisor is this?",
+    "options": [
+      { "key": "A", "text": "Type 1" },
+      { "key": "B", "text": "Type 2" },
+      { "key": "C", "text": "Application container" },
+      { "key": "D", "text": "VDI" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "A) A Type 1 hypervisor (Bare Metal) runs directly on the hardware. Type 2 (Hosted) runs as an application on top of an existing OS (like VMware Workstation or VirtualBox)."
+  },
+  {
+    "id": "q19-os-command",
+    "localId": "19",
+    "chapter": "Operating Systems",
+    "text": "A network technician needs to check the connectivity between a local PC and a remote server by sending ICMP packets. Which command should be used?",
+    "options": [
+      { "key": "A", "text": "netstat" },
+      { "key": "B", "text": "ping" },
+      { "key": "C", "text": "ipconfig" },
+      { "key": "D", "text": "nslookup" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) The 'ping' command uses ICMP to test reachability. 'ipconfig' shows local config, 'netstat' shows active connections, and 'nslookup' queries DNS."
+  },
+  {
+    "id": "q20-security-malware",
+    "localId": "20",
+    "chapter": "Security",
+    "text": "A user reports that their files have been renamed with strange extensions and a text file on the desktop demands payment in cryptocurrency to restore them. This is an example of:",
+    "options": [
+      { "key": "A", "text": "Spyware" },
+      { "key": "B", "text": "Ransomware" },
+      { "key": "C", "text": "Rootkit" },
+      { "key": "D", "text": "Keylogger" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) Ransomware encrypts user data and demands payment for the decryption key. It is a critical threat in modern cybersecurity."
+  },
+  {
+    "id": "q21-troubleshooting-storage",
+    "localId": "21",
+    "chapter": "Hardware and Network Troubleshooting",
+    "text": "A workstation with a mechanical hard drive (HDD) is running very slowly. The technician suspects file fragmentation. Which tool should be used to rectify this?",
+    "options": [
+      { "key": "A", "text": "Disk Cleanup" },
+      { "key": "B", "text": "Defragment and Optimize Drives" },
+      { "key": "C", "text": "chkdsk" },
+      { "key": "D", "text": "Format" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) Defragmentation reorganizes data on an HDD to be contiguous, improving read/write speeds. SSDs do not need traditional defragmentation (they use TRIM)."
+  },
+  {
+    "id": "q22-ops-change",
+    "localId": "22",
+    "chapter": "Operational Procedures",
+    "text": "Before implementing a major patch on a production server, a technician must submit a plan to the Change Advisory Board (CAB). Which of the following is a critical part of a Change Management plan?",
+    "options": [
+      { "key": "A", "text": "Backout plan" },
+      { "key": "B", "text": "Invoice for services" },
+      { "key": "C", "text": "Marketing announcement" },
+      { "key": "D", "text": "Hardware disposal form" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "A) A Backout (or Rollback) plan is essential so that if the change fails or causes issues, the system can be restored to its previous state."
+  },
+  {
+    "id": "q23-hardware-raid",
+    "localId": "23",
+    "chapter": "Hardware",
+    "text": "A video editor needs a storage solution that offers both high performance and redundancy. They have 4 hard drives available. Which RAID level is the BEST choice?",
+    "options": [
+      { "key": "A", "text": "RAID 0" },
+      { "key": "B", "text": "RAID 1" },
+      { "key": "C", "text": "RAID 5" },
+      { "key": "D", "text": "RAID 10" }
+    ],
+    "correctAnswer": "D",
+    "explanation": "D) RAID 10 (1+0) combines the speed of striping (RAID 0) with the redundancy of mirroring (RAID 1). RAID 5 is also an option but RAID 10 generally offers better write performance for video editing."
+  },
+  {
+    "id": "q24-networking-dns",
+    "localId": "24",
+    "chapter": "Networking",
+    "text": "Which network service is responsible for translating human-readable domain names (like www.google.com) into IP addresses?",
+    "options": [
+      { "key": "A", "text": "DHCP" },
+      { "key": "B", "text": "DNS" },
+      { "key": "C", "text": "FTP" },
+      { "key": "D", "text": "SNMP" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) DNS (Domain Name System) acts as the phonebook of the internet, resolving names to IPs. DHCP assigns IP addresses."
+  },
+  {
+    "id": "q25-os-linux",
+    "localId": "25",
+    "chapter": "Operating Systems",
+    "text": "In a Linux terminal, which command is used to change the permissions of a file?",
+    "options": [
+      { "key": "A", "text": "chown" },
+      { "key": "B", "text": "chmod" },
+      { "key": "C", "text": "pwd" },
+      { "key": "D", "text": "grep" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) 'chmod' (change mode) is used to change file access permissions (read, write, execute). 'chown' changes ownership."
+  },
+  {
+    "id": "q26-security-mfa",
+    "localId": "26",
+    "chapter": "Security",
+    "text": "Which of the following is an example of Multi-Factor Authentication (MFA) using 'Something you are'?",
+    "options": [
+      { "key": "A", "text": "Password" },
+      { "key": "B", "text": "Smart card" },
+      { "key": "C", "text": "Fingerprint scan" },
+      { "key": "D", "text": "PIN code" }
+    ],
+    "correctAnswer": "C",
+    "explanation": "C) Biometrics like fingerprints, facial recognition, or iris scans represent 'Something you are'. Passwords/PINs are 'Something you know', and Smart cards are 'Something you have'."
+  },
+  {
+    "id": "q27-troubleshooting-video",
+    "localId": "27",
+    "chapter": "Hardware and Network Troubleshooting",
+    "text": "A projector is displaying a 'No Signal' message when connected to a laptop via HDMI. The cable is good. What should the user check on the laptop FIRST?",
+    "options": [
+      { "key": "A", "text": "Update the BIOS" },
+      { "key": "B", "text": "Use the Fn key or Display settings to toggle the output to the external display" },
+      { "key": "C", "text": "Replace the projector bulb" },
+      { "key": "D", "text": "Reinstall Windows" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) Often the laptop does not automatically output to the external port. Using the function key (e.g., Fn+F4) or Windows+P to duplicate/extend the screen is the first step."
+  },
+  {
+    "id": "q28-hardware-cable",
+    "localId": "28",
+    "chapter": "Hardware",
+    "text": "Which connector type is reversible (can be plugged in either way) and is becoming the standard for charging and data transfer on modern mobile devices and laptops?",
+    "options": [
+      { "key": "A", "text": "Micro-USB" },
+      { "key": "B", "text": "USB-C" },
+      { "key": "C", "text": "Mini-USB" },
+      { "key": "D", "text": "USB-A" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) USB-C is the modern, reversible connector standard that supports high power delivery and high-speed data transfer."
+  },
+  {
+    "id": "q29-ops-pii",
+    "localId": "29",
+    "chapter": "Operational Procedures",
+    "text": "A technician finds a document on a printer tray containing customer names, social security numbers, and addresses. This data is classified as:",
+    "options": [
+      { "key": "A", "text": "Open Source" },
+      { "key": "B", "text": "PII (Personally Identifiable Information)" },
+      { "key": "C", "text": "Public Domain" },
+      { "key": "D", "text": "Encrypted Data" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) PII includes any data that can identify a specific individual. It requires strict handling and compliance with regulations like GDPR or CCPA."
+  },
+  {
+    "id": "q30-security-physical",
+    "localId": "30",
+    "chapter": "Security",
+    "text": "To prevent a laptop from being physically stolen from a desk in a public area, which security measure should be used?",
+    "options": [
+      { "key": "A", "text": "Strong password" },
+      { "key": "B", "text": "Full disk encryption" },
+      { "key": "C", "text": "Cable lock (Kensington lock)" },
+      { "key": "D", "text": "Antivirus software" }
+    ],
+    "correctAnswer": "C",
+    "explanation": "C) A physical cable lock secures the hardware itself to an immovable object. Passwords and encryption protect data, but not the physical device."
+  },
+  {
+    "id": "q31-mobile-touchpad",
+    "localId": "31",
+    "chapter": "Mobile Devices",
+    "text": "A user complains that their laptop cursor jumps around erratically while they are typing a document. Which of the following is the MOST likely cause?",
+    "options": [
+      { "key": "A", "text": "The laptop battery is failing" },
+      { "key": "B", "text": "The user's palm is accidentally brushing the touchpad" },
+      { "key": "C", "text": "The keyboard driver is corrupted" },
+      { "key": "D", "text": "The screen refresh rate is too low" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) This is a common issue on laptops. If the touchpad sensitivity is high or 'palm rejection' is disabled, accidental touches while typing move the cursor. Disabling the touchpad while typing or adjusting sensitivity usually fixes it."
+  },
+  {
+    "id": "q32-mobile-display",
+    "localId": "32",
+    "chapter": "Mobile Devices",
+    "text": "Which of the following mobile display technologies does NOT require a separate backlight because the pixels themselves emit light?",
+    "options": [
+      { "key": "A", "text": "LCD" },
+      { "key": "B", "text": "IPS" },
+      { "key": "C", "text": "OLED" },
+      { "key": "D", "text": "TN" }
+    ],
+    "correctAnswer": "C",
+    "explanation": "C) OLED (Organic Light Emitting Diode) pixels produce their own light. LCD (including IPS and TN panels) requires a backlight (CCFL or LED)."
+  },
+  {
+    "id": "q33-networking-tools",
+    "localId": "33",
+    "chapter": "Networking",
+    "text": "A technician needs to terminate a Cat 6 Ethernet cable with an RJ-45 connector. Which tool is essential for this task?",
+    "options": [
+      { "key": "A", "text": "Punchdown tool" },
+      { "key": "B", "text": "Crimper" },
+      { "key": "C", "text": "Loopback plug" },
+      { "key": "D", "text": "Toner probe" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) A Crimper is used to attach the RJ-45 connector to the cable wires. A punchdown tool is used for patch panels or keystone jacks."
+  },
+  {
+    "id": "q34-networking-protocols",
+    "localId": "34",
+    "chapter": "Networking",
+    "text": "Which Internet protocol is connectionless, meaning it sends data packets without establishing a connection or guaranteeing delivery, making it faster for streaming?",
+    "options": [
+      { "key": "A", "text": "TCP" },
+      { "key": "B", "text": "UDP" },
+      { "key": "C", "text": "HTTP" },
+      { "key": "D", "text": "FTP" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) UDP (User Datagram Protocol) is connectionless and 'fire-and-forget', making it faster but less reliable than TCP (Transmission Control Protocol), which guarantees delivery."
+  },
+  {
+    "id": "q35-networking-router",
+    "localId": "35",
+    "chapter": "Networking",
+    "text": "A SOHO router keeps restarting on its own every 10 minutes. The firmware is up to date. What is the MOST likely hardware cause?",
+    "options": [
+      { "key": "A", "text": "IP address conflict" },
+      { "key": "B", "text": "Overheating" },
+      { "key": "C", "text": "DNS failure" },
+      { "key": "D", "text": "Incorrect SSID" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) Overheating is a common hardware cause for random reboots. Ensuring proper ventilation can resolve this. The other options are configuration/software issues."
+  },
+  {
+    "id": "q36-hardware-tpm",
+    "localId": "36",
+    "chapter": "Hardware",
+    "text": "Which motherboard component is required for full support of Windows 11 security features, such as BitLocker encryption?",
+    "options": [
+      { "key": "A", "text": "CMOS Battery" },
+      { "key": "B", "text": "TPM 2.0" },
+      { "key": "C", "text": "Northbridge" },
+      { "key": "D", "text": "Overclocked CPU" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) TPM (Trusted Platform Module) 2.0 is a hardware security requirement for Windows 11, providing cryptographic keys for features like BitLocker."
+  },
+  {
+    "id": "q37-hardware-gpu",
+    "localId": "37",
+    "chapter": "Hardware",
+    "text": "A graphic designer needs a computer upgrade to speed up 3D rendering tasks. Which component should be prioritized?",
+    "options": [
+      { "key": "A", "text": "Network Interface Card" },
+      { "key": "B", "text": "Sound Card" },
+      { "key": "C", "text": "Graphics Processing Unit (GPU)" },
+      { "key": "D", "text": "Optical Drive" }
+    ],
+    "correctAnswer": "C",
+    "explanation": "C) The GPU is responsible for rendering images and 3D graphics. Upgrading it provides the most significant boost for design and gaming applications."
+  },
+  {
+    "id": "q38-hardware-psu",
+    "localId": "38",
+    "chapter": "Hardware",
+    "text": "Which connector from the power supply provides the main power to the motherboard?",
+    "options": [
+      { "key": "A", "text": "PCIe 6-pin" },
+      { "key": "B", "text": "Molex" },
+      { "key": "C", "text": "24-pin ATX" },
+      { "key": "D", "text": "SATA power" }
+    ],
+    "correctAnswer": "C",
+    "explanation": "C) The 24-pin ATX connector supplies the main power to the motherboard. PCIe 6/8-pin is for GPUs, and SATA/Molex are for drives/fans."
+  },
+  {
+    "id": "q39-hardware-ssd",
+    "localId": "39",
+    "chapter": "Hardware",
+    "text": "Which type of storage device uses NAND flash memory, has no moving parts, and offers faster read/write speeds than a mechanical drive?",
+    "options": [
+      { "key": "A", "text": "HDD" },
+      { "key": "B", "text": "SSD" },
+      { "key": "C", "text": "Tape Drive" },
+      { "key": "D", "text": "Blu-ray Disc" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) SSD (Solid State Drive) uses flash memory and is significantly faster and more durable than an HDD (Hard Disk Drive) which uses spinning platters."
+  },
+  {
+    "id": "q40-virtualization-sandbox",
+    "localId": "40",
+    "chapter": "Virtualization and Cloud Computing",
+    "text": "A security analyst wants to analyze a suspicious file without risking the host computer. What is the BEST environment for this?",
+    "options": [
+      { "key": "A", "text": "Production Server" },
+      { "key": "B", "text": "Sandbox / Virtual Machine" },
+      { "key": "C", "text": "The user's desktop" },
+      { "key": "D", "text": "A shared network folder" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) A Sandbox or VM is an isolated environment. If the file is malicious, it affects only the VM, keeping the host and network safe."
+  },
+  {
+    "id": "q41-troubleshooting-beep",
+    "localId": "41",
+    "chapter": "Hardware and Network Troubleshooting",
+    "text": "When powering on a PC, the technician hears a series of beep codes and sees no video. What is the most likely source of the problem?",
+    "options": [
+      { "key": "A", "text": "Operating System corruption" },
+      { "key": "B", "text": "Hardware failure (POST)" },
+      { "key": "C", "text": "Driver conflict" },
+      { "key": "D", "text": "Internet outage" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) Beep codes are generated by the BIOS/UEFI during the POST (Power-On Self-Test) to indicate hardware issues (like missing RAM or GPU) before the OS loads."
+  },
+  {
+    "id": "q42-troubleshooting-dns",
+    "localId": "42",
+    "chapter": "Hardware and Network Troubleshooting",
+    "text": "A user can access a website by typing its IP address (e.g., 8.8.8.8) but not by typing its domain name (e.g., www.google.com). What is the problem?",
+    "options": [
+      { "key": "A", "text": "DHCP Server is down" },
+      { "key": "B", "text": "DNS Server is unreachable or misconfigured" },
+      { "key": "C", "text": "Network card failure" },
+      { "key": "D", "text": "Firewall blocking port 80" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) This is a classic DNS issue. The connection works (IP reachable), but name resolution fails. The technician should check DNS settings."
+  },
+  {
+    "id": "q43-os-sfc",
+    "localId": "43",
+    "chapter": "Operating Systems",
+    "text": "A Windows 10 user reports system instability. The technician wants to scan for and restore corrupted system files. Which command should they run?",
+    "options": [
+      { "key": "A", "text": "chkdsk /f" },
+      { "key": "B", "text": "sfc /scannow" },
+      { "key": "C", "text": "gpupdate /force" },
+      { "key": "D", "text": "format c:" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) The System File Checker (sfc) with the /scannow switch checks the integrity of protected system files and repairs them if possible."
+  },
+  {
+    "id": "q44-os-macos",
+    "localId": "44",
+    "chapter": "Operating Systems",
+    "text": "Which feature in macOS allows users to search for files, apps, and emails across the entire system?",
+    "options": [
+      { "key": "A", "text": "Finder" },
+      { "key": "B", "text": "Spotlight" },
+      { "key": "C", "text": "Dock" },
+      { "key": "D", "text": "Mission Control" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) Spotlight is the system-wide search feature in macOS (accessed via Cmd+Space)."
+  },
+  {
+    "id": "q45-os-restore",
+    "localId": "45",
+    "chapter": "Operating Systems",
+    "text": "A user installed a new application and now the computer is crashing. They want to revert the system to the state it was in yesterday. Which utility should they use?",
+    "options": [
+      { "key": "A", "text": "Task Manager" },
+      { "key": "B", "text": "System Restore" },
+      { "key": "C", "text": "Disk Cleanup" },
+      { "key": "D", "text": "Windows Update" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) System Restore uses restore points to revert system files and settings to an earlier point in time without affecting personal files."
+  },
+  {
+    "id": "q46-security-baiting",
+    "localId": "46",
+    "chapter": "Security",
+    "text": "An attacker leaves a USB drive labeled 'Payroll 2024' in the company lobby, hoping an employee will plug it in. This social engineering attack is called:",
+    "options": [
+      { "key": "A", "text": "Tailgating" },
+      { "key": "B", "text": "Baiting" },
+      { "key": "C", "text": "Phishing" },
+      { "key": "D", "text": "Shoulder Surfing" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) Baiting involves using a physical media (like a USB drive) to tempt a victim into compromising their security."
+  },
+  {
+    "id": "q47-security-wpa3",
+    "localId": "47",
+    "chapter": "Security",
+    "text": "When configuring a new wireless router for a small office, which security standard provides the strongest encryption?",
+    "options": [
+      { "key": "A", "text": "WEP" },
+      { "key": "B", "text": "WPA" },
+      { "key": "C", "text": "WPA2" },
+      { "key": "D", "text": "WPA3" }
+    ],
+    "correctAnswer": "D",
+    "explanation": "D) WPA3 is the newest and most secure Wi-Fi security protocol. WEP and WPA are obsolete and insecure."
+  },
+  {
+    "id": "q48-soft-troubleshoot-crash",
+    "localId": "48",
+    "chapter": "Software Troubleshooting",
+    "text": "A mobile app keeps crashing immediately after launch. The user has already rebooted the phone. What is the next logical step?",
+    "options": [
+      { "key": "A", "text": "Factory reset the phone" },
+      { "key": "B", "text": "Clear the app cache/data or reinstall the app" },
+      { "key": "C", "text": "Replace the phone battery" },
+      { "key": "D", "text": "Root the device" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) Clearing cache/data or reinstalling the app often resolves corruption issues. A factory reset is a last resort."
+  },
+  {
+    "id": "q49-soft-troubleshoot-slow",
+    "localId": "49",
+    "chapter": "Software Troubleshooting",
+    "text": "A user's PC is running very slowly. Task Manager shows CPU usage at 100%, but no applications are open. What should the technician check for?",
+    "options": [
+      { "key": "A", "text": "Loose cables" },
+      { "key": "B", "text": "Background processes or malware" },
+      { "key": "C", "text": "Monitor refresh rate" },
+      { "key": "D", "text": "Keyboard layout" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) High CPU usage with no visible apps usually indicates a background process, service, or potential malware infection consuming resources."
+  },
+  {
+    "id": "q50-ops-incident",
+    "localId": "50",
+    "chapter": "Operational Procedures",
+    "text": "Upon discovering prohibited content on a user's computer during a support call, what is the FIRST thing the technician should do according to best practices?",
+    "options": [
+      { "key": "A", "text": "Delete the content immediately" },
+      { "key": "B", "text": "Report it through proper channels (First Response)" },
+      { "key": "C", "text": "Confront the user" },
+      { "key": "D", "text": "Post about it on social media" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) The technician should not tamper with evidence. They must follow the incident response plan, which usually involves reporting to a supervisor or security officer."
+  },
+  {
+    "id": "q51-mobile-digitizer",
+    "localId": "51",
+    "chapter": "Mobile Devices",
+    "text": "A user reports that the display on their laptop is visible, but the touchscreen is not responding to any input. There is no visible damage to the glass. Which component most likely needs to be replaced?",
+    "options": [
+      { "key": "A", "text": "Inverter" },
+      { "key": "B", "text": "Digitizer" },
+      { "key": "C", "text": "LCD Panel" },
+      { "key": "D", "text": "GPU" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) The digitizer is the component responsible for converting touch inputs into digital signals. If the display works (LCD) but touch doesn't, the digitizer is the likely failure point."
+  },
+  {
+    "id": "q52-networking-tone",
+    "localId": "52",
+    "chapter": "Networking",
+    "text": "A technician needs to identify which port on a patch panel corresponds to a specific wall jack in an office. Which tool is BEST suited for this task?",
+    "options": [
+      { "key": "A", "text": "Multimeter" },
+      { "key": "B", "text": "Cable Tester" },
+      { "key": "C", "text": "Tone Generator and Probe" },
+      { "key": "D", "text": "Punchdown Tool" }
+    ],
+    "correctAnswer": "C",
+    "explanation": "C) A Tone Generator and Probe kit is used to trace cables through walls and identify specific cables in a bundle or patch panel."
+  },
+  {
+    "id": "q53-hardware-cmos",
+    "localId": "53",
+    "chapter": "Hardware",
+    "text": "A user powers on their desktop computer and notices that the system time and date have reset to a default value from years ago. Which component is most likely failing?",
+    "options": [
+      { "key": "A", "text": "Power Supply Unit (PSU)" },
+      { "key": "B", "text": "CMOS Battery" },
+      { "key": "C", "text": "Hard Drive" },
+      { "key": "D", "text": "CPU" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) The CMOS battery (typically a CR2032 coin cell) powers the BIOS/UEFI chip to retain settings like date, time, and boot order when the PC is unplugged. If it fails, these settings reset."
+  },
+  {
+    "id": "q54-cloud-elasticity",
+    "localId": "54",
+    "chapter": "Virtualization and Cloud Computing",
+    "text": "An online retailer's website experiences a massive surge in traffic during a holiday sale. The cloud environment automatically adds more server resources to handle the load and releases them when traffic subsides. This is an example of:",
+    "options": [
+      { "key": "A", "text": "High Availability" },
+      { "key": "B", "text": "Rapid Elasticity" },
+      { "key": "C", "text": "Hybrid Cloud" },
+      { "key": "D", "text": "Resource Pooling" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) Rapid Elasticity is a cloud characteristic that allows resources to be scaled up or down instantly (often automatically) to match demand."
+  },
+  {
+    "id": "q55-troubleshooting-projector",
+    "localId": "55",
+    "chapter": "Hardware and Network Troubleshooting",
+    "text": "A conference room projector shuts down intermittently after about 15 minutes of use. A warning light indicates a temperature issue. What should the technician check FIRST?",
+    "options": [
+      { "key": "A", "text": "Replace the bulb immediately" },
+      { "key": "B", "text": "Check and clean the air filters and vents" },
+      { "key": "C", "text": "Adjust the keystone settings" },
+      { "key": "D", "text": "Replace the power cable" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) Overheating in projectors is often caused by clogged dust filters or blocked vents preventing proper airflow. Cleaning them is the first troubleshooting step."
+  },
+  {
+    "id": "q56-os-scheduler",
+    "localId": "56",
+    "chapter": "Operating Systems",
+    "text": "A system administrator wants to run a maintenance script on a Windows server every Sunday at 3:00 AM. Which utility should be used to configure this?",
+    "options": [
+      { "key": "A", "text": "Device Manager" },
+      { "key": "B", "text": "Task Scheduler" },
+      { "key": "C", "text": "Disk Management" },
+      { "key": "D", "text": "Registry Editor" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) Task Scheduler is the Windows utility designed to execute programs or scripts at pre-defined times or in response to specific events."
+  },
+  {
+    "id": "q57-security-mantrap",
+    "localId": "57",
+    "chapter": "Security",
+    "text": "To prevent 'piggybacking' or 'tailgating' into a secure server room, a company installs a small room with two doors where the first must close before the second opens. This is known as a:",
+    "options": [
+      { "key": "A", "text": "Biometric Lock" },
+      { "key": "B", "text": "Mantrap" },
+      { "key": "C", "text": "Cable Lock" },
+      { "key": "D", "text": "Privacy Filter" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) A Mantrap is a physical security access control system comprising a small space with two interlocking doors, ensuring only one person enters at a time and preventing tailgating."
+  },
+  {
+    "id": "q58-soft-troubleshoot-mobile-heat",
+    "localId": "58",
+    "chapter": "Software Troubleshooting",
+    "text": "A user reports their smartphone is running extremely slow, feels hot to the touch, and the battery is draining very quickly. They have not installed any new apps recently. What is the most likely cause?",
+    "options": [
+      { "key": "A", "text": "The battery is too old" },
+      { "key": "B", "text": "A specific app or process is stuck in a loop" },
+      { "key": "C", "text": "The screen brightness is too low" },
+      { "key": "D", "text": "The phone is in Airplane Mode" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) A stuck app or background process consuming high CPU cycles will cause performance lag, excessive heat generation, and rapid battery depletion."
+  },
+  {
+    "id": "q59-ops-safety-lift",
+    "localId": "59",
+    "chapter": "Operational Procedures",
+    "text": "A technician needs to move a heavy UPS (Uninterruptible Power Supply) unit to a new rack. Which lifting technique should they use to avoid injury?",
+    "options": [
+      { "key": "A", "text": "Lift with the back, keeping legs straight" },
+      { "key": "B", "text": "Lift with the legs, keeping the back straight and the object close to the body" },
+      { "key": "C", "text": "Twist the body while lifting to generate momentum" },
+      { "key": "D", "text": "Carry the object at arm's length to avoid dropping it on feet" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) Proper lifting technique involves using the strong leg muscles, keeping the back straight, and holding the heavy object close to the center of gravity to prevent back injury."
+  },
+  {
+    "id": "q60-mobile-tethering",
+    "localId": "60",
+    "chapter": "Mobile Devices",
+    "text": "A traveling salesperson needs to connect their laptop to the internet, but there is no Wi-Fi available. They have a smartphone with a 5G data plan. Which feature can they enable to share the phone's internet connection with the laptop?",
+    "options": [
+      { "key": "A", "text": "Airplane Mode" },
+      { "key": "B", "text": "NFC" },
+      { "key": "C", "text": "Hotspot / Tethering" },
+      { "key": "D", "text": "VPN" }
+    ],
+    "correctAnswer": "C",
+    "explanation": "C) Hotspot (or Tethering) allows a smartphone to share its cellular data connection with other devices via Wi-Fi, Bluetooth, or USB."
+  },
+  {
+    "id": "q61-networking-smb",
+    "localId": "61",
+    "chapter": "Networking",
+    "text": "Which network protocol uses TCP port 445 and is commonly used for Windows file and printer sharing?",
+    "options": [
+      { "key": "A", "text": "FTP" },
+      { "key": "B", "text": "SSH" },
+      { "key": "C", "text": "SMB/CIFS" },
+      { "key": "D", "text": "RDP" }
+    ],
+    "correctAnswer": "C",
+    "explanation": "C) SMB (Server Message Block), also known as CIFS, uses port 445 for file sharing on Windows networks. FTP uses 20/21, SSH uses 22, and RDP uses 3389."
+  },
+  {
+    "id": "q62-hardware-kvm",
+    "localId": "62",
+    "chapter": "Hardware",
+    "text": "A data center technician manages four rack-mounted servers but only has space for one monitor, keyboard, and mouse. Which device should they use?",
+    "options": [
+      { "key": "A", "text": "Docking Station" },
+      { "key": "B", "text": "KVM Switch" },
+      { "key": "C", "text": "USB Hub" },
+      { "key": "D", "text": "Port Replicator" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) A KVM (Keyboard, Video, Mouse) switch allows a user to control multiple computers from a single set of peripherals, switching between them as needed."
+  },
+  {
+    "id": "q63-virtualization-resources",
+    "localId": "63",
+    "chapter": "Virtualization and Cloud Computing",
+    "text": "A developer wants to run multiple virtual machines (VMs) simultaneously on their workstation for testing. Which hardware component is typically the most critical to upgrade to ensure smooth performance?",
+    "options": [
+      { "key": "A", "text": "Graphics Card (GPU)" },
+      { "key": "B", "text": "RAM (System Memory)" },
+      { "key": "C", "text": "Sound Card" },
+      { "key": "D", "text": "Optical Drive" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) Each VM requires a dedicated portion of system RAM. Running multiple VMs consumes a significant amount of memory, making RAM the most critical resource constraint in client-side virtualization."
+  },
+  {
+    "id": "q64-troubleshooting-nolink",
+    "localId": "64",
+    "chapter": "Hardware and Network Troubleshooting",
+    "text": "A user reports no network connectivity. The technician checks the back of the PC and sees that the LED status lights on the Ethernet port are completely dark. What is the most likely cause?",
+    "options": [
+      { "key": "A", "text": "Incorrect DNS settings" },
+      { "key": "B", "text": "Duplicate IP address" },
+      { "key": "C", "text": "Physical connectivity issue (cable unplugged or faulty)" },
+      { "key": "D", "text": "Firewall blocking traffic" }
+    ],
+    "correctAnswer": "C",
+    "explanation": "C) No link lights (LEDs) indicates a lack of physical connection. The cable might be unplugged, cut, or the switch port/NIC might be dead. Software issues (A, B, D) would typically still show a physical link light."
+  },
+  {
+    "id": "q65-os-sudo",
+    "localId": "65",
+    "chapter": "Operating Systems",
+    "text": "A Linux user attempts to install a package using 'apt-get install' but receives a 'permission denied' error. Which command should they preface the instruction with to run it with elevated privileges?",
+    "options": [
+      { "key": "A", "text": "runas" },
+      { "key": "B", "text": "admin" },
+      { "key": "C", "text": "sudo" },
+      { "key": "D", "text": "chmod" }
+    ],
+    "correctAnswer": "C",
+    "explanation": "C) 'sudo' (SuperUser DO) allows a permitted user to execute a command as the superuser (root) or another user."
+  },
+  {
+    "id": "q66-security-vpn",
+    "localId": "66",
+    "chapter": "Security",
+    "text": "A remote employee needs to access sensitive corporate data while working from a coffee shop with an open public Wi-Fi. What technology should they use to secure their connection?",
+    "options": [
+      { "key": "A", "text": "VPN" },
+      { "key": "B", "text": "WEP" },
+      { "key": "C", "text": "NAT" },
+      { "key": "D", "text": "DMZ" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "A) A VPN (Virtual Private Network) creates an encrypted tunnel over the public internet, protecting data from interception on unsecured networks like public Wi-Fi."
+  },
+  {
+    "id": "q67-hardware-thermal",
+    "localId": "67",
+    "chapter": "Hardware",
+    "text": "A user replaces the paper roll in a point-of-sale thermal printer, but now the printer feeds paper without printing any text. What is the most likely issue?",
+    "options": [
+      { "key": "A", "text": "The printer is out of ink" },
+      { "key": "B", "text": "The paper roll is installed backward" },
+      { "key": "C", "text": "The print head is clogged" },
+      { "key": "D", "text": "The ribbon is depleted" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) Thermal printers use heat-sensitive paper (no ink/ribbon). The paper only reacts to heat on one side. If installed backward, the heating element hits the non-reactive side, resulting in blank output."
+  },
+  {
+    "id": "q68-networking-vlan",
+    "localId": "68",
+    "chapter": "Networking",
+    "text": "A network administrator wants to separate the VoIP phones from the computer data traffic to prioritize voice quality and improve security, but they only have one physical switch. What feature should they configure?",
+    "options": [
+      { "key": "A", "text": "VPN" },
+      { "key": "B", "text": "VLAN" },
+      { "key": "C", "text": "NAT" },
+      { "key": "D", "text": "Proxy" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) A VLAN (Virtual Local Area Network) allows a single physical switch to be logically partitioned into multiple separate networks (e.g., Data VLAN and Voice VLAN)."
+  },
+  {
+    "id": "q69-mobile-mfa",
+    "localId": "69",
+    "chapter": "Mobile Devices",
+    "text": "Which type of mobile application is commonly used to generate temporary 6-digit codes for logging into secure websites, serving as a second factor of authentication?",
+    "options": [
+      { "key": "A", "text": "Password Manager" },
+      { "key": "B", "text": "Authenticator App" },
+      { "key": "C", "text": "Remote Desktop" },
+      { "key": "D", "text": "VPN Client" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) Authenticator apps (like Google Authenticator, Microsoft Authenticator) generate Time-based One-Time Passwords (TOTP) used for Multi-Factor Authentication (MFA)."
+  },
+  {
+    "id": "q70-hardware-psu",
+    "localId": "70",
+    "chapter": "Hardware",
+    "text": "A gamer upgrades their graphics card to a high-end model. When they launch a graphically intensive game, the computer immediately shuts down. The PC works fine for web browsing. What is the most likely cause?",
+    "options": [
+      { "key": "A", "text": "The GPU driver is outdated" },
+      { "key": "B", "text": "The PSU wattage is insufficient" },
+      { "key": "C", "text": "The monitor resolution is too high" },
+      { "key": "D", "text": "The RAM is incompatible" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "B) High-end GPUs draw significant power under load. If the Power Supply Unit (PSU) cannot provide enough wattage, the system will protect itself by shutting down when the load spikes."
+  }
+]

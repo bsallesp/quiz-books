@@ -103,7 +103,8 @@
               "buildTarget": "comptia-quiz-app:build:production"
             },
             "development": {
-              "buildTarget": "comptia-quiz-app:build:development"
+              "buildTarget": "comptia-quiz-app:build:development",
+              "proxyConfig": "proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"

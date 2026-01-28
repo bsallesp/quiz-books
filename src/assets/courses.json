@@ -1,9 +1,9 @@
 [
   {
-    "id": "comptia-a-plus",
-    "title": "CompTIA A+ Certification",
-    "description": "Exams 220-1101 & 220-1102. Comprehensive practice questions.",
-    "icon": "computer",
-    "dataUrl": "assets/data/comptia-a-plus.json"
+    "id": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+    "title": "CompTIA A+ 2024 Practice",
+    "description": "Selected realistic practice questions for 220-1101 & 1102 domains.",
+    "icon": "quiz",
+    "dataUrl": "assets/data/comptia-practice-2024.json"
   }
 ]

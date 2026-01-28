@@ -16,6 +16,11 @@ export class QuizComponent {
 
   constructor(private quizService: QuizService, private router: Router) {
     this.state$ = this.quizService.getState();
+    this.state$.subscribe(state => {
+      if (state.questions.length === 0) {
+        this.router.navigate(['/']);
+      }
+    });
   }
 
   currentQuestion(state: QuizState) {
@@ -52,6 +57,11 @@ export class QuizComponent {
 
   finish() {
     this.quizService.finishQuiz();
-    this.router.navigate(['/result']);
+    const courseId = this.quizService.getCurrentCourseId();
+    if (courseId) {
+      this.router.navigate(['/quiz', courseId, 'result']);
+    } else {
+      this.router.navigate(['/']);
+    }
   }
 }
